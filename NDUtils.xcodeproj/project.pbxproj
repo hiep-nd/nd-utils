@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E81420E05EB993261C52D94 /* Pods_NDUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F206841960E47241E10E19B2 /* Pods_NDUtils.framework */; };
+		A63BE7CE6664D70277D5D9E5 /* Pods_NDUtils_NDUtilsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1A99E34699FDAF6637AEAC /* Pods_NDUtils_NDUtilsTests.framework */; };
+		BAFD7F81247E1F7A00EC8CF3 /* NDUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD7F77247E1F7A00EC8CF3 /* NDUtils.framework */; };
+		BAFD7F86247E1F7A00EC8CF3 /* NDUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFD7F85247E1F7A00EC8CF3 /* NDUtilsTests.m */; };
+		BAFD7F88247E1F7A00EC8CF3 /* NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BAFD7F7A247E1F7A00EC8CF3 /* NDUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAFD7F93247E1FA400EC8CF3 /* UIColor+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BAFD7F91247E1FA400EC8CF3 /* UIColor+NDUtils.h */; };
+		BAFD7F94247E1FA400EC8CF3 /* UIColor+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAFD7F92247E1FA400EC8CF3 /* UIColor+NDUtils.mm */; };
+		BAFD7F97247E1FB700EC8CF3 /* UIFont+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BAFD7F95247E1FB700EC8CF3 /* UIFont+NDUtils.h */; };
+		BAFD7F98247E1FB700EC8CF3 /* UIFont+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAFD7F96247E1FB700EC8CF3 /* UIFont+NDUtils.mm */; };
+		BAFD7F9B247E20F700EC8CF3 /* UIColor+NDUtils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BAFD7F91247E1FA400EC8CF3 /* UIColor+NDUtils.h */; };
+		BAFD7F9C247E20F700EC8CF3 /* UIFont+NDUtils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BAFD7F95247E1FB700EC8CF3 /* UIFont+NDUtils.h */; };
+		BAFD7F9F247E214E00EC8CF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD7F9E247E214E00EC8CF3 /* UIKit.framework */; platformFilter = ios; };
+		BAFD7FA2247E23CD00EC8CF3 /* UIFontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFD7FA1247E23CD00EC8CF3 /* UIFontTests.swift */; };
+		BAFD7FA9247E27B600EC8CF3 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BAFD7FA4247E27B500EC8CF3 /* .swiftlint.yml */; };
+		BAFD7FAA247E27B600EC8CF3 /* .swift-format in Resources */ = {isa = PBXBuildFile; fileRef = BAFD7FA5247E27B600EC8CF3 /* .swift-format */; };
+		BAFD7FAB247E27B600EC8CF3 /* NDUtils.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BAFD7FA6247E27B600EC8CF3 /* NDUtils.podspec */; };
+		BAFD7FAC247E27B600EC8CF3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BAFD7FA7247E27B600EC8CF3 /* LICENSE */; };
+		BAFD7FAD247E27B600EC8CF3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BAFD7FA8247E27B600EC8CF3 /* README.md */; };
+		BAFD7FAF247E37E400EC8CF3 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFD7FAE247E37E400EC8CF3 /* UIColorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAFD7F82247E1F7A00EC8CF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAFD7F6E247E1F7A00EC8CF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAFD7F76247E1F7A00EC8CF3;
+			remoteInfo = NDUtils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAFD7F9A247E20DE00EC8CF3 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers/UIKit;
+			dstSubfolderSpec = 1;
+			files = (
+				BAFD7F9B247E20F700EC8CF3 /* UIColor+NDUtils.h in Copy Files */,
+				BAFD7F9C247E20F700EC8CF3 /* UIFont+NDUtils.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		28A5832CC16DCDCD5E92A67E /* Pods-NDUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDUtils.debug.xcconfig"; path = "Target Support Files/Pods-NDUtils/Pods-NDUtils.debug.xcconfig"; sourceTree = "<group>"; };
+		4A1A99E34699FDAF6637AEAC /* Pods_NDUtils_NDUtilsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NDUtils_NDUtilsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76273796DC9473A2F2A7758 /* Pods-NDUtils-NDUtilsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDUtils-NDUtilsTests.debug.xcconfig"; path = "Target Support Files/Pods-NDUtils-NDUtilsTests/Pods-NDUtils-NDUtilsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ABE3B821EE5CFF9CE3889C33 /* Pods-NDUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDUtils.release.xcconfig"; path = "Target Support Files/Pods-NDUtils/Pods-NDUtils.release.xcconfig"; sourceTree = "<group>"; };
+		BAFD7F77247E1F7A00EC8CF3 /* NDUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NDUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFD7F7A247E1F7A00EC8CF3 /* NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDUtils.h; sourceTree = "<group>"; };
+		BAFD7F7B247E1F7A00EC8CF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAFD7F80247E1F7A00EC8CF3 /* NDUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFD7F85247E1F7A00EC8CF3 /* NDUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDUtilsTests.m; sourceTree = "<group>"; };
+		BAFD7F87247E1F7A00EC8CF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAFD7F91247E1FA400EC8CF3 /* UIColor+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+NDUtils.h"; sourceTree = "<group>"; };
+		BAFD7F92247E1FA400EC8CF3 /* UIColor+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIColor+NDUtils.mm"; sourceTree = "<group>"; };
+		BAFD7F95247E1FB700EC8CF3 /* UIFont+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+NDUtils.h"; sourceTree = "<group>"; };
+		BAFD7F96247E1FB700EC8CF3 /* UIFont+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIFont+NDUtils.mm"; sourceTree = "<group>"; };
+		BAFD7F9E247E214E00EC8CF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BAFD7FA0247E23CC00EC8CF3 /* NDUtilsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NDUtilsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		BAFD7FA1247E23CD00EC8CF3 /* UIFontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontTests.swift; sourceTree = "<group>"; };
+		BAFD7FA4247E27B500EC8CF3 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		BAFD7FA5247E27B600EC8CF3 /* .swift-format */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-format"; sourceTree = "<group>"; };
+		BAFD7FA6247E27B600EC8CF3 /* NDUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NDUtils.podspec; sourceTree = "<group>"; };
+		BAFD7FA7247E27B600EC8CF3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BAFD7FA8247E27B600EC8CF3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BAFD7FAE247E37E400EC8CF3 /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
+		EDB36C6E5087DAC10A3A1206 /* Pods-NDUtils-NDUtilsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDUtils-NDUtilsTests.release.xcconfig"; path = "Target Support Files/Pods-NDUtils-NDUtilsTests/Pods-NDUtils-NDUtilsTests.release.xcconfig"; sourceTree = "<group>"; };
+		F206841960E47241E10E19B2 /* Pods_NDUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NDUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAFD7F74247E1F7A00EC8CF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFD7F9F247E214E00EC8CF3 /* UIKit.framework in Frameworks */,
+				3E81420E05EB993261C52D94 /* Pods_NDUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAFD7F7D247E1F7A00EC8CF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFD7F81247E1F7A00EC8CF3 /* NDUtils.framework in Frameworks */,
+				A63BE7CE6664D70277D5D9E5 /* Pods_NDUtils_NDUtilsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99E61FED668CA8745B73EEE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28A5832CC16DCDCD5E92A67E /* Pods-NDUtils.debug.xcconfig */,
+				ABE3B821EE5CFF9CE3889C33 /* Pods-NDUtils.release.xcconfig */,
+				A76273796DC9473A2F2A7758 /* Pods-NDUtils-NDUtilsTests.debug.xcconfig */,
+				EDB36C6E5087DAC10A3A1206 /* Pods-NDUtils-NDUtilsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BAFD7F6D247E1F7A00EC8CF3 = {
+			isa = PBXGroup;
+			children = (
+				BAFD7FA3247E272200EC8CF3 /* Config */,
+				BAFD7F79247E1F7A00EC8CF3 /* NDUtils */,
+				BAFD7F84247E1F7A00EC8CF3 /* NDUtilsTests */,
+				BAFD7F78247E1F7A00EC8CF3 /* Products */,
+				BAFD7F9D247E214E00EC8CF3 /* Frameworks */,
+				99E61FED668CA8745B73EEE5 /* Pods */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		BAFD7F78247E1F7A00EC8CF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAFD7F77247E1F7A00EC8CF3 /* NDUtils.framework */,
+				BAFD7F80247E1F7A00EC8CF3 /* NDUtilsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAFD7F79247E1F7A00EC8CF3 /* NDUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BAFD7F99247E208F00EC8CF3 /* UIKit */,
+				BAFD7F7A247E1F7A00EC8CF3 /* NDUtils.h */,
+				BAFD7F7B247E1F7A00EC8CF3 /* Info.plist */,
+			);
+			path = NDUtils;
+			sourceTree = "<group>";
+		};
+		BAFD7F84247E1F7A00EC8CF3 /* NDUtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAFD7F85247E1F7A00EC8CF3 /* NDUtilsTests.m */,
+				BAFD7F87247E1F7A00EC8CF3 /* Info.plist */,
+				BAFD7FA1247E23CD00EC8CF3 /* UIFontTests.swift */,
+				BAFD7FAE247E37E400EC8CF3 /* UIColorTests.swift */,
+				BAFD7FA0247E23CC00EC8CF3 /* NDUtilsTests-Bridging-Header.h */,
+			);
+			path = NDUtilsTests;
+			sourceTree = "<group>";
+		};
+		BAFD7F99247E208F00EC8CF3 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BAFD7F91247E1FA400EC8CF3 /* UIColor+NDUtils.h */,
+				BAFD7F92247E1FA400EC8CF3 /* UIColor+NDUtils.mm */,
+				BAFD7F95247E1FB700EC8CF3 /* UIFont+NDUtils.h */,
+				BAFD7F96247E1FB700EC8CF3 /* UIFont+NDUtils.mm */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		BAFD7F9D247E214E00EC8CF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAFD7F9E247E214E00EC8CF3 /* UIKit.framework */,
+				F206841960E47241E10E19B2 /* Pods_NDUtils.framework */,
+				4A1A99E34699FDAF6637AEAC /* Pods_NDUtils_NDUtilsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAFD7FA3247E272200EC8CF3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BAFD7FA5247E27B600EC8CF3 /* .swift-format */,
+				BAFD7FA4247E27B500EC8CF3 /* .swiftlint.yml */,
+				BAFD7FA7247E27B600EC8CF3 /* LICENSE */,
+				BAFD7FA6247E27B600EC8CF3 /* NDUtils.podspec */,
+				BAFD7FA8247E27B600EC8CF3 /* README.md */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BAFD7F72247E1F7A00EC8CF3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFD7F93247E1FA400EC8CF3 /* UIColor+NDUtils.h in Headers */,
+				BAFD7F88247E1F7A00EC8CF3 /* NDUtils.h in Headers */,
+				BAFD7F97247E1FB700EC8CF3 /* UIFont+NDUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BAFD7F76247E1F7A00EC8CF3 /* NDUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAFD7F8B247E1F7A00EC8CF3 /* Build configuration list for PBXNativeTarget "NDUtils" */;
+			buildPhases = (
+				68A08B86582E09796C91DFAF /* [CP] Check Pods Manifest.lock */,
+				BAFD7F72247E1F7A00EC8CF3 /* Headers */,
+				BAFD7F9A247E20DE00EC8CF3 /* Copy Files */,
+				BAFD7F73247E1F7A00EC8CF3 /* Sources */,
+				BAFD7F74247E1F7A00EC8CF3 /* Frameworks */,
+				BAFD7F75247E1F7A00EC8CF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NDUtils;
+			productName = NDUtils;
+			productReference = BAFD7F77247E1F7A00EC8CF3 /* NDUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BAFD7F7F247E1F7A00EC8CF3 /* NDUtilsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAFD7F8E247E1F7A00EC8CF3 /* Build configuration list for PBXNativeTarget "NDUtilsTests" */;
+			buildPhases = (
+				000F1E45A79C8E2B26115849 /* [CP] Check Pods Manifest.lock */,
+				BAFD7F7C247E1F7A00EC8CF3 /* Sources */,
+				BAFD7F7D247E1F7A00EC8CF3 /* Frameworks */,
+				BAFD7F7E247E1F7A00EC8CF3 /* Resources */,
+				2C5EAE8ABC2C185CFAC5C38C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAFD7F83247E1F7A00EC8CF3 /* PBXTargetDependency */,
+			);
+			name = NDUtilsTests;
+			productName = NDUtilsTests;
+			productReference = BAFD7F80247E1F7A00EC8CF3 /* NDUtilsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAFD7F6E247E1F7A00EC8CF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Nguyen Duc Hiep";
+				TargetAttributes = {
+					BAFD7F76247E1F7A00EC8CF3 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					BAFD7F7F247E1F7A00EC8CF3 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+				};
+			};
+			buildConfigurationList = BAFD7F71247E1F7A00EC8CF3 /* Build configuration list for PBXProject "NDUtils" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAFD7F6D247E1F7A00EC8CF3;
+			productRefGroup = BAFD7F78247E1F7A00EC8CF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAFD7F76247E1F7A00EC8CF3 /* NDUtils */,
+				BAFD7F7F247E1F7A00EC8CF3 /* NDUtilsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAFD7F75247E1F7A00EC8CF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFD7FAB247E27B600EC8CF3 /* NDUtils.podspec in Resources */,
+				BAFD7FAA247E27B600EC8CF3 /* .swift-format in Resources */,
+				BAFD7FAD247E27B600EC8CF3 /* README.md in Resources */,
+				BAFD7FAC247E27B600EC8CF3 /* LICENSE in Resources */,
+				BAFD7FA9247E27B600EC8CF3 /* .swiftlint.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAFD7F7E247E1F7A00EC8CF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		000F1E45A79C8E2B26115849 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NDUtils-NDUtilsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C5EAE8ABC2C185CFAC5C38C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NDUtils-NDUtilsTests/Pods-NDUtils-NDUtilsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NDUtils-NDUtilsTests/Pods-NDUtils-NDUtilsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NDUtils-NDUtilsTests/Pods-NDUtils-NDUtilsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68A08B86582E09796C91DFAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NDUtils-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAFD7F73247E1F7A00EC8CF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFD7F98247E1FB700EC8CF3 /* UIFont+NDUtils.mm in Sources */,
+				BAFD7F94247E1FA400EC8CF3 /* UIColor+NDUtils.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAFD7F7C247E1F7A00EC8CF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFD7FA2247E23CD00EC8CF3 /* UIFontTests.swift in Sources */,
+				BAFD7FAF247E37E400EC8CF3 /* UIColorTests.swift in Sources */,
+				BAFD7F86247E1F7A00EC8CF3 /* NDUtilsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAFD7F83247E1F7A00EC8CF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAFD7F76247E1F7A00EC8CF3 /* NDUtils */;
+			targetProxy = BAFD7F82247E1F7A00EC8CF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BAFD7F89247E1F7A00EC8CF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BAFD7F8A247E1F7A00EC8CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BAFD7F8C247E1F7A00EC8CF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28A5832CC16DCDCD5E92A67E /* Pods-NDUtils.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6UKD7V9S9N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NDUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neodata.NDUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/$(PROJECTNAME)";
+			};
+			name = Debug;
+		};
+		BAFD7F8D247E1F7A00EC8CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABE3B821EE5CFF9CE3889C33 /* Pods-NDUtils.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6UKD7V9S9N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NDUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neodata.NDUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/$(PROJECTNAME)";
+			};
+			name = Release;
+		};
+		BAFD7F8F247E1F7A00EC8CF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A76273796DC9473A2F2A7758 /* Pods-NDUtils-NDUtilsTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UKD7V9S9N;
+				INFOPLIST_FILE = NDUtilsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neodata.NDUtilsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NDUtilsTests/NDUtilsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAFD7F90247E1F7A00EC8CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB36C6E5087DAC10A3A1206 /* Pods-NDUtils-NDUtilsTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UKD7V9S9N;
+				INFOPLIST_FILE = NDUtilsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neodata.NDUtilsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NDUtilsTests/NDUtilsTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAFD7F71247E1F7A00EC8CF3 /* Build configuration list for PBXProject "NDUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFD7F89247E1F7A00EC8CF3 /* Debug */,
+				BAFD7F8A247E1F7A00EC8CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAFD7F8B247E1F7A00EC8CF3 /* Build configuration list for PBXNativeTarget "NDUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFD7F8C247E1F7A00EC8CF3 /* Debug */,
+				BAFD7F8D247E1F7A00EC8CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAFD7F8E247E1F7A00EC8CF3 /* Build configuration list for PBXNativeTarget "NDUtilsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFD7F8F247E1F7A00EC8CF3 /* Debug */,
+				BAFD7F90247E1F7A00EC8CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAFD7F6E247E1F7A00EC8CF3 /* Project object */;
+}

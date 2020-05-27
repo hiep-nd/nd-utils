@@ -1,0 +1,18 @@
+PODS:
+  - NDLog (0.0.2):
+    - NDLog/Core (= 0.0.2)
+  - NDLog/Core (0.0.2)
+
+DEPENDENCIES:
+  - NDLog
+
+SPEC REPOS:
+  trunk:
+    - NDLog
+
+SPEC CHECKSUMS:
+  NDLog: f1495562b793a8b2d4fbb9734bbc2bb10993c54a
+
+PODFILE CHECKSUM: 5599d36b2f891ea84f1006b7c066232b37324f8f
+
+COCOAPODS: 1.9.1
