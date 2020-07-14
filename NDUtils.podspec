@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "NDUtils"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Utility for Foundation, UIKit,...."
   s.description  = <<-DESC
   NDUtils is a small utility framework for Foundation, UIKit,....
@@ -16,5 +16,7 @@ s.name         = "NDUtils"
   s.source_files  = "NDUtils/**/*.{h,m,mm,swift}"
   #s.public_header_files = "NDUtils/**/*.h"
   s.header_mappings_dir = 'NDUtils'
+  s.module_map = "#{s.name}/#{s.name}.modulemap"
+  s.framework = 'Foundation', 'UIKit'
   s.dependency 'NDLog'
 end

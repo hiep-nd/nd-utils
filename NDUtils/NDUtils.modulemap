@@ -1,0 +1,17 @@
+framework module NDUtils {
+  umbrella header "NDUtils.h"
+  
+  header "Foundation/NDMacros.h"
+  header "Foundation/NSObject+NDUtils.h"
+  header "Foundation/NSString+NDUtils.h"
+  
+  header "UIKit/UIColor+NDUtils.h"
+  header "UIKit/UIFont+NDUtils.h"
+  header "UIKit/UIView+NDUtils.h"
+  
+  header "libextobjc/EXTScope.h"
+  header "libextobjc/metamacros.h"
+  
+  export *
+  module * { export * }
+}

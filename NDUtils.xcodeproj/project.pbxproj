@@ -9,6 +9,23 @@
 /* Begin PBXBuildFile section */
 		3E81420E05EB993261C52D94 /* Pods_NDUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F206841960E47241E10E19B2 /* Pods_NDUtils.framework */; };
 		A63BE7CE6664D70277D5D9E5 /* Pods_NDUtils_NDUtilsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1A99E34699FDAF6637AEAC /* Pods_NDUtils_NDUtilsTests.framework */; };
+		BA96091A24BD506600EB97FB /* UIView+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA96091824BD506600EB97FB /* UIView+NDUtils.h */; };
+		BA96091B24BD506600EB97FB /* UIView+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA96091924BD506600EB97FB /* UIView+NDUtils.mm */; };
+		BA96091C24BD56D500EB97FB /* NDMacros.h in Copy Files Foundation */ = {isa = PBXBuildFile; fileRef = BACED10A24A34B2400798A38 /* NDMacros.h */; };
+		BA96091D24BD56E300EB97FB /* UIView+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BA96091824BD506600EB97FB /* UIView+NDUtils.h */; };
+		BA96091F24BD572F00EB97FB /* EXTScope.h in Copy Files libextobjc */ = {isa = PBXBuildFile; fileRef = BACED10424A3436400798A38 /* EXTScope.h */; };
+		BA96092024BD572F00EB97FB /* metamacros.h in Copy Files libextobjc */ = {isa = PBXBuildFile; fileRef = BACED10824A3436A00798A38 /* metamacros.h */; };
+		BACED09324A1B3B900798A38 /* NSString+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED09124A1B3B900798A38 /* NSString+NDUtils.h */; };
+		BACED09424A1B3B900798A38 /* NSString+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BACED09224A1B3B900798A38 /* NSString+NDUtils.mm */; };
+		BACED09624A1B84400798A38 /* NSString+NDUtils.h in Copy Files Foundation */ = {isa = PBXBuildFile; fileRef = BACED09124A1B3B900798A38 /* NSString+NDUtils.h */; };
+		BACED0FE24A30ED300798A38 /* NSObject+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED0FC24A30ED300798A38 /* NSObject+NDUtils.h */; };
+		BACED0FF24A30ED300798A38 /* NSObject+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BACED0FD24A30ED300798A38 /* NSObject+NDUtils.mm */; };
+		BACED10024A326CB00798A38 /* NSObject+NDUtils.h in Copy Files Foundation */ = {isa = PBXBuildFile; fileRef = BACED0FC24A30ED300798A38 /* NSObject+NDUtils.h */; };
+		BACED10624A3436500798A38 /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED10424A3436400798A38 /* EXTScope.h */; };
+		BACED10724A3436500798A38 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = BACED10524A3436400798A38 /* EXTScope.m */; };
+		BACED10924A3436A00798A38 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED10824A3436A00798A38 /* metamacros.h */; };
+		BACED10C24A34B2400798A38 /* NDMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED10A24A34B2400798A38 /* NDMacros.h */; };
+		BACED10D24A34B2400798A38 /* NDMacros.mm in Sources */ = {isa = PBXBuildFile; fileRef = BACED10B24A34B2400798A38 /* NDMacros.mm */; };
 		BAFD7F81247E1F7A00EC8CF3 /* NDUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD7F77247E1F7A00EC8CF3 /* NDUtils.framework */; };
 		BAFD7F86247E1F7A00EC8CF3 /* NDUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFD7F85247E1F7A00EC8CF3 /* NDUtilsTests.m */; };
 		BAFD7F88247E1F7A00EC8CF3 /* NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BAFD7F7A247E1F7A00EC8CF3 /* NDUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,8 +33,8 @@
 		BAFD7F94247E1FA400EC8CF3 /* UIColor+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAFD7F92247E1FA400EC8CF3 /* UIColor+NDUtils.mm */; };
 		BAFD7F97247E1FB700EC8CF3 /* UIFont+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BAFD7F95247E1FB700EC8CF3 /* UIFont+NDUtils.h */; };
 		BAFD7F98247E1FB700EC8CF3 /* UIFont+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAFD7F96247E1FB700EC8CF3 /* UIFont+NDUtils.mm */; };
-		BAFD7F9B247E20F700EC8CF3 /* UIColor+NDUtils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BAFD7F91247E1FA400EC8CF3 /* UIColor+NDUtils.h */; };
-		BAFD7F9C247E20F700EC8CF3 /* UIFont+NDUtils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BAFD7F95247E1FB700EC8CF3 /* UIFont+NDUtils.h */; };
+		BAFD7F9B247E20F700EC8CF3 /* UIColor+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BAFD7F91247E1FA400EC8CF3 /* UIColor+NDUtils.h */; };
+		BAFD7F9C247E20F700EC8CF3 /* UIFont+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BAFD7F95247E1FB700EC8CF3 /* UIFont+NDUtils.h */; };
 		BAFD7F9F247E214E00EC8CF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD7F9E247E214E00EC8CF3 /* UIKit.framework */; platformFilter = ios; };
 		BAFD7FA2247E23CD00EC8CF3 /* UIFontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFD7FA1247E23CD00EC8CF3 /* UIFontTests.swift */; };
 		BAFD7FA9247E27B600EC8CF3 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BAFD7FA4247E27B500EC8CF3 /* .swiftlint.yml */; };
@@ -39,16 +56,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BAFD7F9A247E20DE00EC8CF3 /* Copy Files */ = {
+		BA96091E24BD56E900EB97FB /* Copy Files libextobjc */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers/libextobjc;
+			dstSubfolderSpec = 1;
+			files = (
+				BA96091F24BD572F00EB97FB /* EXTScope.h in Copy Files libextobjc */,
+				BA96092024BD572F00EB97FB /* metamacros.h in Copy Files libextobjc */,
+			);
+			name = "Copy Files libextobjc";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACED09524A1B82700798A38 /* Copy Files Foundation */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers/Foundation;
+			dstSubfolderSpec = 1;
+			files = (
+				BA96091C24BD56D500EB97FB /* NDMacros.h in Copy Files Foundation */,
+				BACED10024A326CB00798A38 /* NSObject+NDUtils.h in Copy Files Foundation */,
+				BACED09624A1B84400798A38 /* NSString+NDUtils.h in Copy Files Foundation */,
+			);
+			name = "Copy Files Foundation";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAFD7F9A247E20DE00EC8CF3 /* Copy Files UIKit */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = Headers/UIKit;
 			dstSubfolderSpec = 1;
 			files = (
-				BAFD7F9B247E20F700EC8CF3 /* UIColor+NDUtils.h in Copy Files */,
-				BAFD7F9C247E20F700EC8CF3 /* UIFont+NDUtils.h in Copy Files */,
+				BA96091D24BD56E300EB97FB /* UIView+NDUtils.h in Copy Files UIKit */,
+				BAFD7F9B247E20F700EC8CF3 /* UIColor+NDUtils.h in Copy Files UIKit */,
+				BAFD7F9C247E20F700EC8CF3 /* UIFont+NDUtils.h in Copy Files UIKit */,
 			);
-			name = "Copy Files";
+			name = "Copy Files UIKit";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -58,6 +101,18 @@
 		4A1A99E34699FDAF6637AEAC /* Pods_NDUtils_NDUtilsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NDUtils_NDUtilsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76273796DC9473A2F2A7758 /* Pods-NDUtils-NDUtilsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDUtils-NDUtilsTests.debug.xcconfig"; path = "Target Support Files/Pods-NDUtils-NDUtilsTests/Pods-NDUtils-NDUtilsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ABE3B821EE5CFF9CE3889C33 /* Pods-NDUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDUtils.release.xcconfig"; path = "Target Support Files/Pods-NDUtils/Pods-NDUtils.release.xcconfig"; sourceTree = "<group>"; };
+		BA96091724BD4CF200EB97FB /* NDUtils.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = NDUtils.modulemap; sourceTree = "<group>"; };
+		BA96091824BD506600EB97FB /* UIView+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+NDUtils.h"; sourceTree = "<group>"; };
+		BA96091924BD506600EB97FB /* UIView+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIView+NDUtils.mm"; sourceTree = "<group>"; };
+		BACED09124A1B3B900798A38 /* NSString+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+NDUtils.h"; sourceTree = "<group>"; };
+		BACED09224A1B3B900798A38 /* NSString+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+NDUtils.mm"; sourceTree = "<group>"; };
+		BACED0FC24A30ED300798A38 /* NSObject+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NDUtils.h"; sourceTree = "<group>"; };
+		BACED0FD24A30ED300798A38 /* NSObject+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject+NDUtils.mm"; sourceTree = "<group>"; };
+		BACED10424A3436400798A38 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
+		BACED10524A3436400798A38 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
+		BACED10824A3436A00798A38 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		BACED10A24A34B2400798A38 /* NDMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDMacros.h; sourceTree = "<group>"; };
+		BACED10B24A34B2400798A38 /* NDMacros.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NDMacros.mm; sourceTree = "<group>"; };
 		BAFD7F77247E1F7A00EC8CF3 /* NDUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NDUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFD7F7A247E1F7A00EC8CF3 /* NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDUtils.h; sourceTree = "<group>"; };
 		BAFD7F7B247E1F7A00EC8CF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,7 +128,7 @@
 		BAFD7FA1247E23CD00EC8CF3 /* UIFontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontTests.swift; sourceTree = "<group>"; };
 		BAFD7FA4247E27B500EC8CF3 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BAFD7FA5247E27B600EC8CF3 /* .swift-format */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-format"; sourceTree = "<group>"; };
-		BAFD7FA6247E27B600EC8CF3 /* NDUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NDUtils.podspec; sourceTree = "<group>"; };
+		BAFD7FA6247E27B600EC8CF3 /* NDUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NDUtils.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BAFD7FA7247E27B600EC8CF3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BAFD7FA8247E27B600EC8CF3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BAFD7FAE247E37E400EC8CF3 /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
@@ -114,6 +169,45 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BACED09024A1B38F00798A38 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				BACED10A24A34B2400798A38 /* NDMacros.h */,
+				BACED10B24A34B2400798A38 /* NDMacros.mm */,
+				BACED0FC24A30ED300798A38 /* NSObject+NDUtils.h */,
+				BACED0FD24A30ED300798A38 /* NSObject+NDUtils.mm */,
+				BACED09124A1B3B900798A38 /* NSString+NDUtils.h */,
+				BACED09224A1B3B900798A38 /* NSString+NDUtils.mm */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		BACED10124A342BA00798A38 /* libextobjc */ = {
+			isa = PBXGroup;
+			children = (
+				BACED10224A342E000798A38 /* EXTScope */,
+				BACED10324A3430800798A38 /* RuntimeExtensions */,
+			);
+			path = libextobjc;
+			sourceTree = "<group>";
+		};
+		BACED10224A342E000798A38 /* EXTScope */ = {
+			isa = PBXGroup;
+			children = (
+				BACED10424A3436400798A38 /* EXTScope.h */,
+				BACED10524A3436400798A38 /* EXTScope.m */,
+			);
+			name = EXTScope;
+			sourceTree = "<group>";
+		};
+		BACED10324A3430800798A38 /* RuntimeExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				BACED10824A3436A00798A38 /* metamacros.h */,
+			);
+			name = RuntimeExtensions;
+			sourceTree = "<group>";
+		};
 		BAFD7F6D247E1F7A00EC8CF3 = {
 			isa = PBXGroup;
 			children = (
@@ -140,8 +234,11 @@
 		BAFD7F79247E1F7A00EC8CF3 /* NDUtils */ = {
 			isa = PBXGroup;
 			children = (
+				BACED10124A342BA00798A38 /* libextobjc */,
+				BACED09024A1B38F00798A38 /* Foundation */,
 				BAFD7F99247E208F00EC8CF3 /* UIKit */,
 				BAFD7F7A247E1F7A00EC8CF3 /* NDUtils.h */,
+				BA96091724BD4CF200EB97FB /* NDUtils.modulemap */,
 				BAFD7F7B247E1F7A00EC8CF3 /* Info.plist */,
 			);
 			path = NDUtils;
@@ -166,6 +263,8 @@
 				BAFD7F92247E1FA400EC8CF3 /* UIColor+NDUtils.mm */,
 				BAFD7F95247E1FB700EC8CF3 /* UIFont+NDUtils.h */,
 				BAFD7F96247E1FB700EC8CF3 /* UIFont+NDUtils.mm */,
+				BA96091824BD506600EB97FB /* UIView+NDUtils.h */,
+				BA96091924BD506600EB97FB /* UIView+NDUtils.mm */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -199,9 +298,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BACED0FE24A30ED300798A38 /* NSObject+NDUtils.h in Headers */,
+				BA96091A24BD506600EB97FB /* UIView+NDUtils.h in Headers */,
 				BAFD7F93247E1FA400EC8CF3 /* UIColor+NDUtils.h in Headers */,
+				BACED10924A3436A00798A38 /* metamacros.h in Headers */,
 				BAFD7F88247E1F7A00EC8CF3 /* NDUtils.h in Headers */,
+				BACED09324A1B3B900798A38 /* NSString+NDUtils.h in Headers */,
 				BAFD7F97247E1FB700EC8CF3 /* UIFont+NDUtils.h in Headers */,
+				BACED10624A3436500798A38 /* EXTScope.h in Headers */,
+				BACED10C24A34B2400798A38 /* NDMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +319,9 @@
 			buildPhases = (
 				68A08B86582E09796C91DFAF /* [CP] Check Pods Manifest.lock */,
 				BAFD7F72247E1F7A00EC8CF3 /* Headers */,
-				BAFD7F9A247E20DE00EC8CF3 /* Copy Files */,
+				BACED09524A1B82700798A38 /* Copy Files Foundation */,
+				BAFD7F9A247E20DE00EC8CF3 /* Copy Files UIKit */,
+				BA96091E24BD56E900EB97FB /* Copy Files libextobjc */,
 				BAFD7F73247E1F7A00EC8CF3 /* Sources */,
 				BAFD7F74247E1F7A00EC8CF3 /* Frameworks */,
 				BAFD7F75247E1F7A00EC8CF3 /* Resources */,
@@ -376,8 +483,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BACED10724A3436500798A38 /* EXTScope.m in Sources */,
 				BAFD7F98247E1FB700EC8CF3 /* UIFont+NDUtils.mm in Sources */,
+				BA96091B24BD506600EB97FB /* UIView+NDUtils.mm in Sources */,
+				BACED10D24A34B2400798A38 /* NDMacros.mm in Sources */,
 				BAFD7F94247E1FA400EC8CF3 /* UIColor+NDUtils.mm in Sources */,
+				BACED09424A1B3B900798A38 /* NSString+NDUtils.mm in Sources */,
+				BACED0FF24A30ED300798A38 /* NSObject+NDUtils.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@ target 'NDUtils' do
 
   # Pods for NDUtils
   pod 'NDLog'
+#  pod 'libextobjc/EXTScope'
 
   target 'NDUtilsTests' do
     # Pods for testing
