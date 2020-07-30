@@ -6,7 +6,7 @@ target 'NDUtils' do
   use_frameworks!
 
   # Pods for NDUtils
-  pod 'NDLog'
+  pod 'NDLog', :path => '../NDLog'
 #  pod 'libextobjc/EXTScope'
 
   target 'NDUtilsTests' do

@@ -6,6 +6,7 @@ framework module NDUtils {
   header "Foundation/NSString+NDUtils.h"
   
   header "UIKit/UIColor+NDUtils.h"
+  header "UIKit/UIControl+NDUtils.h"
   header "UIKit/UIFont+NDUtils.h"
   header "UIKit/UIView+NDUtils.h"
   

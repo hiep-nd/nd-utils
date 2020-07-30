@@ -19,6 +19,7 @@ FOUNDATION_EXPORT const unsigned char NDUtilsVersionString[];
 #import <NDUtils/Foundation/NSString+NDUtils.h>
 
 #import <NDUtils/UIKit/UIColor+NDUtils.h>
+#import <NDUtils/UIKit/UIControl+NDUtils.h>
 #import <NDUtils/UIKit/UIFont+NDUtils.h>
 #import <NDUtils/UIKit/UIView+NDUtils.h>
 

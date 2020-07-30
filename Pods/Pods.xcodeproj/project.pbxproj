@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		028C5BECAF6D08FB02C7BB2A71068FB2 /* NDLog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E0EA22D173E9CAF2DD6C6D491E6973 /* NDLog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		028C5BECAF6D08FB02C7BB2A71068FB2 /* NDLog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05852B71637829B4E8D0E633C010B653 /* NDLog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06B9A576A9EFBEDEE82ED195B955A4DA /* Pods-NDUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E52BBE7B72B4A71A5B516183BFEEB3 /* Pods-NDUtils-dummy.m */; };
 		133F076971D8B102119152CDA9656C8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		1C24B158D723FB80D044F81C031906C7 /* NDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA34F81451ECBE13E4C221F1A1D6442 /* NDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38B3139F2D20AAF831A6800CFB4FDA90 /* NDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = DD83A2EE54FE303133973E3CCD0A1D50 /* NDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44BC53875A3388A3002E7954F08E7C69 /* Pods-NDUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3CE59D99D6EE80445E2057B4F4B45CE /* Pods-NDUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6891E189C0281D69CBFD7A2E8958B168 /* Log.mm in Sources */ = {isa = PBXBuildFile; fileRef = B118EC71D462F187F68009FC766DBE69 /* Log.mm */; };
+		68AE99B709657563211A2728FA0EE315 /* Log.h in Headers */ = {isa = PBXBuildFile; fileRef = 015EFC71F09A5E3CC4941CBB583BC5E1 /* Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DC6F0A18BBEAAEA44E4B12202CE7856 /* Pods-NDUtils-NDUtilsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDC09980A6CB7350350F763C97029A /* Pods-NDUtils-NDUtilsTests-dummy.m */; };
-		A134C80E5CAABB9F7FEF155543D3736E /* Log.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C573CF1CF26858924E0BB8AC44895F /* Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2A1941CE4A55041F59F94A0384B7CD2 /* NDLog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F62281C4D1ECA0525A3726A00A815636 /* NDLog-dummy.m */; };
-		AD3169DF93F90D5DDA38D025B948C8BE /* Log.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2705E2D94009003BDC5945939B484CE /* Log.mm */; };
+		A2A1941CE4A55041F59F94A0384B7CD2 /* NDLog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B78C6092C58D950CD5C5BCE546FD /* NDLog-dummy.m */; };
 		C714AEE15F081F6003ED466D5437E86B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		CDFDCFE248554EBAB034C7942B44A309 /* Pods-NDUtils-NDUtilsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E33080EBACA6CC7DD074D8CBF246CF /* Pods-NDUtils-NDUtilsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9D99EE3A5B3113C4616E1BBE95E0015 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -39,36 +39,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		015EFC71F09A5E3CC4941CBB583BC5E1 /* Log.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Log.h; path = NDLog/Log.h; sourceTree = "<group>"; };
+		05852B71637829B4E8D0E633C010B653 /* NDLog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NDLog-umbrella.h"; sourceTree = "<group>"; };
 		06EDC09980A6CB7350350F763C97029A /* Pods-NDUtils-NDUtilsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NDUtils-NDUtilsTests-dummy.m"; sourceTree = "<group>"; };
 		0FC541297CBAC0166C85887389223D77 /* Pods-NDUtils-NDUtilsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NDUtils-NDUtilsTests.release.xcconfig"; sourceTree = "<group>"; };
-		1387F4A4FAAC2F9276582358302A85F5 /* NDLog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NDLog.modulemap; sourceTree = "<group>"; };
+		14FDDBB45997A5926C653CFC19E52715 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1A09366BEA4E74E5ECCBAAD9E90FC6CA /* Pods-NDUtils-NDUtilsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NDUtils-NDUtilsTests.modulemap"; sourceTree = "<group>"; };
+		20DB6D53F9B46449143C69DD213CC398 /* NDLog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NDLog.modulemap; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		338C1D88878BE23E587E353A5EA2C071 /* Pods-NDUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NDUtils.release.xcconfig"; sourceTree = "<group>"; };
-		34C573CF1CF26858924E0BB8AC44895F /* Log.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Log.h; path = NDLog/Core/Log.h; sourceTree = "<group>"; };
-		3D26C9CF7F3669587B65E4E786205E86 /* Pods_NDUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NDUtils.framework; path = "Pods-NDUtils.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		42D35B506B55848765577DE6892C5764 /* NDLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NDLog.debug.xcconfig; sourceTree = "<group>"; };
-		4E5DBD7A3FE8AA2B456005E2C2E50D3C /* NDLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NDLog.framework; path = NDLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD4B29A8CA92B7EEA8120C0061030E9 /* NDLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NDLog-prefix.pch"; sourceTree = "<group>"; };
+		3D26C9CF7F3669587B65E4E786205E86 /* Pods_NDUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NDUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		414D8B40DC8B7BA781DFD2555293C9FE /* NDLog.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NDLog.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		4E5DBD7A3FE8AA2B456005E2C2E50D3C /* NDLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NDLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6330637BE265B5BA83C9222967B955A0 /* Pods-NDUtils-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NDUtils-acknowledgements.plist"; sourceTree = "<group>"; };
+		677D63E0BD2CCD5A65F679EF309A2026 /* NDLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NDLog.release.xcconfig; sourceTree = "<group>"; };
 		6B54AB6C243E9B2897E639C22F77817D /* Pods-NDUtils-NDUtilsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NDUtils-NDUtilsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		78E33080EBACA6CC7DD074D8CBF246CF /* Pods-NDUtils-NDUtilsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NDUtils-NDUtilsTests-umbrella.h"; sourceTree = "<group>"; };
+		79278A7D5BD0816C47C51B06A9DE950B /* NDLog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NDLog-Info.plist"; sourceTree = "<group>"; };
 		83BE2E34C42FC5AB74D0373F8B6BD735 /* Pods-NDUtils-NDUtilsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NDUtils-NDUtilsTests-frameworks.sh"; sourceTree = "<group>"; };
 		861D6A733EB8F908FDF2E8E18C6449E8 /* Pods-NDUtils-NDUtilsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NDUtils-NDUtilsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		91FD38179A0E2A4841B9043D8CD49297 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		99F9A29278C979FDD68D5399F29AEE41 /* Pods-NDUtils-NDUtilsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NDUtils-NDUtilsTests-Info.plist"; sourceTree = "<group>"; };
 		9C10D6260A01F409626CA17E4A00D356 /* Pods-NDUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NDUtils.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FA3B78C6092C58D950CD5C5BCE546FD /* NDLog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NDLog-dummy.m"; sourceTree = "<group>"; };
+		B118EC71D462F187F68009FC766DBE69 /* Log.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = Log.mm; path = NDLog/Log.mm; sourceTree = "<group>"; };
 		B4DAB600D94D2B00770C8DFF458F2B7B /* Pods-NDUtils-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NDUtils-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C2705E2D94009003BDC5945939B484CE /* Log.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = Log.mm; path = NDLog/Core/Log.mm; sourceTree = "<group>"; };
+		CA6F6A1B03D601F5B5F8FCE2F8D47018 /* NDLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NDLog.debug.xcconfig; sourceTree = "<group>"; };
 		CCB191F44CCB4E61E99445C858733476 /* Pods-NDUtils-NDUtilsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NDUtils-NDUtilsTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D25BD101A717C367BCB18ED58C45053E /* NDLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NDLog-prefix.pch"; sourceTree = "<group>"; };
-		D85FEAA548AB795925906E785BF82603 /* NDLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NDLog.release.xcconfig; sourceTree = "<group>"; };
-		D9DDDFEAA562453275B857F22EA4962C /* NDLog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NDLog-Info.plist"; sourceTree = "<group>"; };
-		DEAA1510F1A4EBBE4AFD1CA92FEE07FC /* Pods_NDUtils_NDUtilsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NDUtils_NDUtilsTests.framework; path = "Pods-NDUtils-NDUtilsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0E0EA22D173E9CAF2DD6C6D491E6973 /* NDLog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NDLog-umbrella.h"; sourceTree = "<group>"; };
-		EAA34F81451ECBE13E4C221F1A1D6442 /* NDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NDLog.h; path = NDLog/Core/NDLog.h; sourceTree = "<group>"; };
+		DD83A2EE54FE303133973E3CCD0A1D50 /* NDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NDLog.h; path = NDLog/NDLog.h; sourceTree = "<group>"; };
+		DEAA1510F1A4EBBE4AFD1CA92FEE07FC /* Pods_NDUtils_NDUtilsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NDUtils_NDUtilsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7419B02C5A2D816DA9BB3309109B02 /* Pods-NDUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NDUtils.modulemap"; sourceTree = "<group>"; };
 		F3CE59D99D6EE80445E2057B4F4B45CE /* Pods-NDUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NDUtils-umbrella.h"; sourceTree = "<group>"; };
-		F62281C4D1ECA0525A3726A00A815636 /* NDLog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NDLog-dummy.m"; sourceTree = "<group>"; };
 		F7E52BBE7B72B4A71A5B516183BFEEB3 /* Pods-NDUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NDUtils-dummy.m"; sourceTree = "<group>"; };
 		FD310AFEEEF4EBA0D3E35EF52BF88A95 /* Pods-NDUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NDUtils-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,47 +104,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		360D5A96623A1D2D013A9F3405E9328F /* Support Files */ = {
+		364E7050B2476E9A25670F31236D0905 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				1387F4A4FAAC2F9276582358302A85F5 /* NDLog.modulemap */,
-				F62281C4D1ECA0525A3726A00A815636 /* NDLog-dummy.m */,
-				D9DDDFEAA562453275B857F22EA4962C /* NDLog-Info.plist */,
-				D25BD101A717C367BCB18ED58C45053E /* NDLog-prefix.pch */,
-				E0E0EA22D173E9CAF2DD6C6D491E6973 /* NDLog-umbrella.h */,
-				42D35B506B55848765577DE6892C5764 /* NDLog.debug.xcconfig */,
-				D85FEAA548AB795925906E785BF82603 /* NDLog.release.xcconfig */,
+				14FDDBB45997A5926C653CFC19E52715 /* LICENSE */,
+				414D8B40DC8B7BA781DFD2555293C9FE /* NDLog.podspec */,
+				91FD38179A0E2A4841B9043D8CD49297 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		959DBF8080D06913C2B82EEAE46F8691 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20DB6D53F9B46449143C69DD213CC398 /* NDLog.modulemap */,
+				9FA3B78C6092C58D950CD5C5BCE546FD /* NDLog-dummy.m */,
+				79278A7D5BD0816C47C51B06A9DE950B /* NDLog-Info.plist */,
+				3AD4B29A8CA92B7EEA8120C0061030E9 /* NDLog-prefix.pch */,
+				05852B71637829B4E8D0E633C010B653 /* NDLog-umbrella.h */,
+				CA6F6A1B03D601F5B5F8FCE2F8D47018 /* NDLog.debug.xcconfig */,
+				677D63E0BD2CCD5A65F679EF309A2026 /* NDLog.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/NDLog";
-			sourceTree = "<group>";
-		};
-		442B4D677F05A5F4E5720CAB5EE3D757 /* NDLog */ = {
-			isa = PBXGroup;
-			children = (
-				8064292D9F981875FB92968D9639A5D3 /* Core */,
-				360D5A96623A1D2D013A9F3405E9328F /* Support Files */,
-			);
-			name = NDLog;
-			path = NDLog;
-			sourceTree = "<group>";
-		};
-		578520AEE477724B4B5829A41CACBC76 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				442B4D677F05A5F4E5720CAB5EE3D757 /* NDLog */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		8064292D9F981875FB92968D9639A5D3 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				34C573CF1CF26858924E0BB8AC44895F /* Log.h */,
-				C2705E2D94009003BDC5945939B484CE /* Log.mm */,
-				EAA34F81451ECBE13E4C221F1A1D6442 /* NDLog.h */,
-			);
-			name = Core;
+			path = "../NDUtils/Pods/Target Support Files/NDLog";
 			sourceTree = "<group>";
 		};
 		99E1A56D433E87ED6E9458246B2C7326 /* Pods-NDUtils-NDUtilsTests */ = {
@@ -159,6 +144,27 @@
 			);
 			name = "Pods-NDUtils-NDUtilsTests";
 			path = "Target Support Files/Pods-NDUtils-NDUtilsTests";
+			sourceTree = "<group>";
+		};
+		9D7F73D8780BC996C9E46B2DB8B62B9D /* NDLog */ = {
+			isa = PBXGroup;
+			children = (
+				015EFC71F09A5E3CC4941CBB583BC5E1 /* Log.h */,
+				B118EC71D462F187F68009FC766DBE69 /* Log.mm */,
+				DD83A2EE54FE303133973E3CCD0A1D50 /* NDLog.h */,
+				364E7050B2476E9A25670F31236D0905 /* Pod */,
+				959DBF8080D06913C2B82EEAE46F8691 /* Support Files */,
+			);
+			name = NDLog;
+			path = ../../NDLog;
+			sourceTree = "<group>";
+		};
+		A3DFACA53679DD4DC61BEAE5366BEABB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D7F73D8780BC996C9E46B2DB8B62B9D /* NDLog */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -189,8 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A3DFACA53679DD4DC61BEAE5366BEABB /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				578520AEE477724B4B5829A41CACBC76 /* Pods */,
 				F539284A25807C0DECB6A253DC5E8A76 /* Products */,
 				DD5ED142C5A81F4DC6CC30440A985FC7 /* Targets Support Files */,
 			);
@@ -238,9 +244,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A134C80E5CAABB9F7FEF155543D3736E /* Log.h in Headers */,
+				68AE99B709657563211A2728FA0EE315 /* Log.h in Headers */,
 				028C5BECAF6D08FB02C7BB2A71068FB2 /* NDLog-umbrella.h in Headers */,
-				1C24B158D723FB80D044F81C031906C7 /* NDLog.h in Headers */,
+				38B3139F2D20AAF831A6800CFB4FDA90 /* NDLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3169DF93F90D5DDA38D025B948C8BE /* Log.mm in Sources */,
+				6891E189C0281D69CBFD7A2E8958B168 /* Log.mm in Sources */,
 				A2A1941CE4A55041F59F94A0384B7CD2 /* NDLog-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,7 +454,7 @@
 		};
 		35BEFA7448361B0D0C19DDFD74DEDCF7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D85FEAA548AB795925906E785BF82603 /* NDLog.release.xcconfig */;
+			baseConfigurationReference = 677D63E0BD2CCD5A65F679EF309A2026 /* NDLog.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -645,7 +651,7 @@
 		};
 		B36A0872D84F6ED88C19E2479B1BCEDC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42D35B506B55848765577DE6892C5764 /* NDLog.debug.xcconfig */;
+			baseConfigurationReference = CA6F6A1B03D601F5B5F8FCE2F8D47018 /* NDLog.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

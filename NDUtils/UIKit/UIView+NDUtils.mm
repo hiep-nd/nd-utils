@@ -14,7 +14,7 @@
 
 - (void)nd_forEach:(void(NS_NOESCAPE ^)(__kindof UIView*))handler {
   if (!handler) {
-    NDAssertFailure(@"Can not foreach UIView with handler: '%@'.", handler);
+    NDAssertionFailure(@"Can not foreach UIView with handler: '%@'.", handler);
     return;
   }
   handler(self);

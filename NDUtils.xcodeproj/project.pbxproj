@@ -15,6 +15,9 @@
 		BA96091D24BD56E300EB97FB /* UIView+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BA96091824BD506600EB97FB /* UIView+NDUtils.h */; };
 		BA96091F24BD572F00EB97FB /* EXTScope.h in Copy Files libextobjc */ = {isa = PBXBuildFile; fileRef = BACED10424A3436400798A38 /* EXTScope.h */; };
 		BA96092024BD572F00EB97FB /* metamacros.h in Copy Files libextobjc */ = {isa = PBXBuildFile; fileRef = BACED10824A3436A00798A38 /* metamacros.h */; };
+		BAA7BF5A24CFDED900737B61 /* UIControl+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA7BF5824CFDED900737B61 /* UIControl+NDUtils.h */; };
+		BAA7BF5B24CFDED900737B61 /* UIControl+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAA7BF5924CFDED900737B61 /* UIControl+NDUtils.mm */; };
+		BAA7BF5D24CFDFAE00737B61 /* UIControl+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BAA7BF5824CFDED900737B61 /* UIControl+NDUtils.h */; };
 		BACED09324A1B3B900798A38 /* NSString+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED09124A1B3B900798A38 /* NSString+NDUtils.h */; };
 		BACED09424A1B3B900798A38 /* NSString+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BACED09224A1B3B900798A38 /* NSString+NDUtils.mm */; };
 		BACED09624A1B84400798A38 /* NSString+NDUtils.h in Copy Files Foundation */ = {isa = PBXBuildFile; fileRef = BACED09124A1B3B900798A38 /* NSString+NDUtils.h */; };
@@ -87,6 +90,7 @@
 			dstPath = Headers/UIKit;
 			dstSubfolderSpec = 1;
 			files = (
+				BAA7BF5D24CFDFAE00737B61 /* UIControl+NDUtils.h in Copy Files UIKit */,
 				BA96091D24BD56E300EB97FB /* UIView+NDUtils.h in Copy Files UIKit */,
 				BAFD7F9B247E20F700EC8CF3 /* UIColor+NDUtils.h in Copy Files UIKit */,
 				BAFD7F9C247E20F700EC8CF3 /* UIFont+NDUtils.h in Copy Files UIKit */,
@@ -104,6 +108,8 @@
 		BA96091724BD4CF200EB97FB /* NDUtils.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = NDUtils.modulemap; sourceTree = "<group>"; };
 		BA96091824BD506600EB97FB /* UIView+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+NDUtils.h"; sourceTree = "<group>"; };
 		BA96091924BD506600EB97FB /* UIView+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIView+NDUtils.mm"; sourceTree = "<group>"; };
+		BAA7BF5824CFDED900737B61 /* UIControl+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+NDUtils.h"; sourceTree = "<group>"; };
+		BAA7BF5924CFDED900737B61 /* UIControl+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIControl+NDUtils.mm"; sourceTree = "<group>"; };
 		BACED09124A1B3B900798A38 /* NSString+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+NDUtils.h"; sourceTree = "<group>"; };
 		BACED09224A1B3B900798A38 /* NSString+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+NDUtils.mm"; sourceTree = "<group>"; };
 		BACED0FC24A30ED300798A38 /* NSObject+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NDUtils.h"; sourceTree = "<group>"; };
@@ -265,6 +271,8 @@
 				BAFD7F96247E1FB700EC8CF3 /* UIFont+NDUtils.mm */,
 				BA96091824BD506600EB97FB /* UIView+NDUtils.h */,
 				BA96091924BD506600EB97FB /* UIView+NDUtils.mm */,
+				BAA7BF5824CFDED900737B61 /* UIControl+NDUtils.h */,
+				BAA7BF5924CFDED900737B61 /* UIControl+NDUtils.mm */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -302,6 +310,7 @@
 				BA96091A24BD506600EB97FB /* UIView+NDUtils.h in Headers */,
 				BAFD7F93247E1FA400EC8CF3 /* UIColor+NDUtils.h in Headers */,
 				BACED10924A3436A00798A38 /* metamacros.h in Headers */,
+				BAA7BF5A24CFDED900737B61 /* UIControl+NDUtils.h in Headers */,
 				BAFD7F88247E1F7A00EC8CF3 /* NDUtils.h in Headers */,
 				BACED09324A1B3B900798A38 /* NSString+NDUtils.h in Headers */,
 				BAFD7F97247E1FB700EC8CF3 /* UIFont+NDUtils.h in Headers */,
@@ -486,6 +495,7 @@
 				BACED10724A3436500798A38 /* EXTScope.m in Sources */,
 				BAFD7F98247E1FB700EC8CF3 /* UIFont+NDUtils.mm in Sources */,
 				BA96091B24BD506600EB97FB /* UIView+NDUtils.mm in Sources */,
+				BAA7BF5B24CFDED900737B61 /* UIControl+NDUtils.mm in Sources */,
 				BACED10D24A34B2400798A38 /* NDMacros.mm in Sources */,
 				BAFD7F94247E1FA400EC8CF3 /* UIColor+NDUtils.mm in Sources */,
 				BACED09424A1B3B900798A38 /* NSString+NDUtils.mm in Sources */,
