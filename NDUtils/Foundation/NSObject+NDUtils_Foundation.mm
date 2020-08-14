@@ -1,12 +1,12 @@
 //
-//  NSObject+NDUtils.mm
+//  NSObject+NDUtils_Foundation.mm
 //  NDUtils
 //
-//  Created by Nguyen Duc Hiep on 6/24/20.
+//  Created by Nguyen Duc Hiep on 8/12/20.
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/Foundation/NSObject+NDUtils.h>
+#import <NDUtils/Foundation/NSObject+NDUtils_Foundation.h>
 
 #import <NDLog/NDLog.h>
 
@@ -82,7 +82,7 @@ void* kNDKeyValueObservationContext = &kNDKeyValueObservationContext;
 
 @end
 
-@implementation NSObject (NDUtils)
+@implementation NSObject (NDUtils_Foundation)
 
 - (id<NSObject>)nd_observeKeyPath:(NSString*)keyPath
                           options:(NSKeyValueObservingOptions)options

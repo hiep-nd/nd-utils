@@ -1,8 +1,8 @@
 //
-//  NSObject+NDUtils.h
+//  NSObject+NDUtils_Foundation.h
 //  NDUtils
 //
-//  Created by Nguyen Duc Hiep on 6/24/20.
+//  Created by Nguyen Duc Hiep on 8/12/20.
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (NDUtils)
+@interface NSObject (NDUtils_Foundation)
 
 - (id<NSObject>)nd_observeKeyPath:(NSString*)keyPath
                           options:(NSKeyValueObservingOptions)options
@@ -20,8 +20,3 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
-
-inline BOOL NDSameOrEquals(id _Nullable lv, id _Nullable rv)
-    NS_SWIFT_UNAVAILABLE("For ObjC only.") {
-  return (lv == rv) || [lv isEqual:rv];
-}

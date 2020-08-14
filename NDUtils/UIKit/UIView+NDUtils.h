@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)nd_forEach:(void(NS_NOESCAPE ^)(__kindof UIView*))handler
     NS_SWIFT_NAME(nd_forEach(_:));
+- (void)nd_shakeWithDuration:(NSTimeInterval)duration
+                 translation:(CGPoint)translation NS_REFINED_FOR_SWIFT
+    API_AVAILABLE(ios(10.0));
 
 @end
 

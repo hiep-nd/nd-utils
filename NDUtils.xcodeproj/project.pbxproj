@@ -9,6 +9,44 @@
 /* Begin PBXBuildFile section */
 		3E81420E05EB993261C52D94 /* Pods_NDUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F206841960E47241E10E19B2 /* Pods_NDUtils.framework */; };
 		A63BE7CE6664D70277D5D9E5 /* Pods_NDUtils_NDUtilsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1A99E34699FDAF6637AEAC /* Pods_NDUtils_NDUtilsTests.framework */; };
+		BA33795F24E1338E0061B1DC /* UIViewController+NDUtils_PanDownToDismiss.h in Headers */ = {isa = PBXBuildFile; fileRef = BA33795D24E1338E0061B1DC /* UIViewController+NDUtils_PanDownToDismiss.h */; };
+		BA33796024E1338E0061B1DC /* UIViewController+NDUtils_PanDownToDismiss.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA33795E24E1338E0061B1DC /* UIViewController+NDUtils_PanDownToDismiss.mm */; };
+		BA33796324E133EF0061B1DC /* NDPossession.h in Headers */ = {isa = PBXBuildFile; fileRef = BA33796124E133EF0061B1DC /* NDPossession.h */; };
+		BA33796424E133EF0061B1DC /* NDPossession.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA33796224E133EF0061B1DC /* NDPossession.mm */; };
+		BA33796524E134650061B1DC /* NDPossession.h in Copy Files objc */ = {isa = PBXBuildFile; fileRef = BA33796124E133EF0061B1DC /* NDPossession.h */; };
+		BA33796624E134E20061B1DC /* UIViewController+NDUtils_PanDownToDismiss.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BA33795D24E1338E0061B1DC /* UIViewController+NDUtils_PanDownToDismiss.h */; };
+		BA33796A24E138640061B1DC /* runtime+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA33796824E138640061B1DC /* runtime+NDUtils.h */; };
+		BA33796B24E138640061B1DC /* runtime+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA33796924E138640061B1DC /* runtime+NDUtils.mm */; };
+		BA33796D24E139300061B1DC /* runtime+NDUtils.h in Copy Files objc */ = {isa = PBXBuildFile; fileRef = BA33796824E138640061B1DC /* runtime+NDUtils.h */; };
+		BA33797024E13DE30061B1DC /* UITextField+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA33796E24E13DE30061B1DC /* UITextField+NDUtils.h */; };
+		BA33797124E13DE30061B1DC /* UITextField+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA33796F24E13DE30061B1DC /* UITextField+NDUtils.mm */; };
+		BA33797224E13E450061B1DC /* UITextField+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BA33796E24E13DE30061B1DC /* UITextField+NDUtils.h */; };
+		BA33797424E143F20061B1DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA33797324E143F20061B1DC /* CoreGraphics.framework */; };
+		BA33797724E144F30061B1DC /* UITextView+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA33797524E144F30061B1DC /* UITextView+NDUtils.h */; };
+		BA33797824E144F30061B1DC /* UITextView+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA33797624E144F30061B1DC /* UITextView+NDUtils.mm */; };
+		BA33797924E1452F0061B1DC /* UITextView+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BA33797524E144F30061B1DC /* UITextView+NDUtils.h */; };
+		BA33797C24E146330061B1DC /* UIScrollView+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA33797A24E146330061B1DC /* UIScrollView+NDUtils.h */; };
+		BA33797D24E146330061B1DC /* UIScrollView+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA33797B24E146330061B1DC /* UIScrollView+NDUtils.mm */; };
+		BA33797E24E146AC0061B1DC /* UIScrollView+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BA33797A24E146330061B1DC /* UIScrollView+NDUtils.h */; };
+		BA33798124E147AD0061B1DC /* UINavigationController+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA33797F24E147AD0061B1DC /* UINavigationController+NDUtils.h */; };
+		BA33798224E147AD0061B1DC /* UINavigationController+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA33798024E147AD0061B1DC /* UINavigationController+NDUtils.mm */; };
+		BA33798524E147BE0061B1DC /* UIImagePickerController+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA33798324E147BE0061B1DC /* UIImagePickerController+NDUtils.h */; };
+		BA33798624E147BE0061B1DC /* UIImagePickerController+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA33798424E147BE0061B1DC /* UIImagePickerController+NDUtils.mm */; };
+		BA33798724E1488E0061B1DC /* UINavigationController+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BA33797F24E147AD0061B1DC /* UINavigationController+NDUtils.h */; };
+		BA33798824E1488E0061B1DC /* UIImagePickerController+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BA33798324E147BE0061B1DC /* UIImagePickerController+NDUtils.h */; };
+		BA33798C24E14B530061B1DC /* CATransaction+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA33798A24E14B520061B1DC /* CATransaction+NDUtils.h */; };
+		BA33798D24E14B530061B1DC /* CATransaction+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA33798B24E14B530061B1DC /* CATransaction+NDUtils.mm */; };
+		BA33798F24E14F830061B1DC /* CATransaction+NDUtils.h in Copy Files QuartzCore */ = {isa = PBXBuildFile; fileRef = BA33798A24E14B520061B1DC /* CATransaction+NDUtils.h */; };
+		BA33799124E150310061B1DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA33799024E150310061B1DC /* QuartzCore.framework */; };
+		BA33799424E1533C0061B1DC /* NSAttributedString+NDUtils_UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA33799224E1533B0061B1DC /* NSAttributedString+NDUtils_UIKit.h */; };
+		BA33799524E1533C0061B1DC /* NSAttributedString+NDUtils_UIKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA33799324E1533C0061B1DC /* NSAttributedString+NDUtils_UIKit.mm */; };
+		BA33799624E153B50061B1DC /* NSAttributedString+NDUtils_UIKit.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BA33799224E1533B0061B1DC /* NSAttributedString+NDUtils_UIKit.h */; };
+		BA337A0524E39C960061B1DC /* UIImage+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA337A0324E39C960061B1DC /* UIImage+NDUtils.h */; };
+		BA337A0624E39C960061B1DC /* UIImage+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA337A0424E39C960061B1DC /* UIImage+NDUtils.mm */; };
+		BA337A0724E39CD10061B1DC /* UIImage+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BA337A0324E39C960061B1DC /* UIImage+NDUtils.h */; };
+		BA337A0A24E3CC660061B1DC /* NSObject+NDUtils_Foundation.h in Headers */ = {isa = PBXBuildFile; fileRef = BA337A0824E3CC660061B1DC /* NSObject+NDUtils_Foundation.h */; };
+		BA337A0B24E3CC660061B1DC /* NSObject+NDUtils_Foundation.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA337A0924E3CC660061B1DC /* NSObject+NDUtils_Foundation.mm */; };
+		BA337A0C24E3CD300061B1DC /* NSObject+NDUtils_Foundation.h in Copy Files Foundation */ = {isa = PBXBuildFile; fileRef = BA337A0824E3CC660061B1DC /* NSObject+NDUtils_Foundation.h */; };
 		BA96091A24BD506600EB97FB /* UIView+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA96091824BD506600EB97FB /* UIView+NDUtils.h */; };
 		BA96091B24BD506600EB97FB /* UIView+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA96091924BD506600EB97FB /* UIView+NDUtils.mm */; };
 		BA96091C24BD56D500EB97FB /* NDMacros.h in Copy Files Foundation */ = {isa = PBXBuildFile; fileRef = BACED10A24A34B2400798A38 /* NDMacros.h */; };
@@ -18,12 +56,15 @@
 		BAA7BF5A24CFDED900737B61 /* UIControl+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA7BF5824CFDED900737B61 /* UIControl+NDUtils.h */; };
 		BAA7BF5B24CFDED900737B61 /* UIControl+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAA7BF5924CFDED900737B61 /* UIControl+NDUtils.mm */; };
 		BAA7BF5D24CFDFAE00737B61 /* UIControl+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BAA7BF5824CFDED900737B61 /* UIControl+NDUtils.h */; };
+		BABCD91624E6907100CCB07C /* UIDevice+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BABCD91424E6907100CCB07C /* UIDevice+NDUtils.h */; };
+		BABCD91724E6907100CCB07C /* UIDevice+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BABCD91524E6907100CCB07C /* UIDevice+NDUtils.mm */; };
+		BABCD91824E6935300CCB07C /* UIDevice+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BABCD91424E6907100CCB07C /* UIDevice+NDUtils.h */; };
 		BACED09324A1B3B900798A38 /* NSString+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED09124A1B3B900798A38 /* NSString+NDUtils.h */; };
 		BACED09424A1B3B900798A38 /* NSString+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BACED09224A1B3B900798A38 /* NSString+NDUtils.mm */; };
 		BACED09624A1B84400798A38 /* NSString+NDUtils.h in Copy Files Foundation */ = {isa = PBXBuildFile; fileRef = BACED09124A1B3B900798A38 /* NSString+NDUtils.h */; };
 		BACED0FE24A30ED300798A38 /* NSObject+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED0FC24A30ED300798A38 /* NSObject+NDUtils.h */; };
 		BACED0FF24A30ED300798A38 /* NSObject+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BACED0FD24A30ED300798A38 /* NSObject+NDUtils.mm */; };
-		BACED10024A326CB00798A38 /* NSObject+NDUtils.h in Copy Files Foundation */ = {isa = PBXBuildFile; fileRef = BACED0FC24A30ED300798A38 /* NSObject+NDUtils.h */; };
+		BACED10024A326CB00798A38 /* NSObject+NDUtils.h in Copy Files objc */ = {isa = PBXBuildFile; fileRef = BACED0FC24A30ED300798A38 /* NSObject+NDUtils.h */; };
 		BACED10624A3436500798A38 /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED10424A3436400798A38 /* EXTScope.h */; };
 		BACED10724A3436500798A38 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = BACED10524A3436400798A38 /* EXTScope.m */; };
 		BACED10924A3436A00798A38 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED10824A3436A00798A38 /* metamacros.h */; };
@@ -59,6 +100,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BA33796C24E1391C0061B1DC /* Copy Files objc */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers/objc;
+			dstSubfolderSpec = 1;
+			files = (
+				BA33796D24E139300061B1DC /* runtime+NDUtils.h in Copy Files objc */,
+				BACED10024A326CB00798A38 /* NSObject+NDUtils.h in Copy Files objc */,
+				BA33796524E134650061B1DC /* NDPossession.h in Copy Files objc */,
+			);
+			name = "Copy Files objc";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA33798E24E14F490061B1DC /* Copy Files QuartzCore */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers/QuartzCore;
+			dstSubfolderSpec = 1;
+			files = (
+				BA33798F24E14F830061B1DC /* CATransaction+NDUtils.h in Copy Files QuartzCore */,
+			);
+			name = "Copy Files QuartzCore";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA96091E24BD56E900EB97FB /* Copy Files libextobjc */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,8 +142,8 @@
 			dstPath = Headers/Foundation;
 			dstSubfolderSpec = 1;
 			files = (
+				BA337A0C24E3CD300061B1DC /* NSObject+NDUtils_Foundation.h in Copy Files Foundation */,
 				BA96091C24BD56D500EB97FB /* NDMacros.h in Copy Files Foundation */,
-				BACED10024A326CB00798A38 /* NSObject+NDUtils.h in Copy Files Foundation */,
 				BACED09624A1B84400798A38 /* NSString+NDUtils.h in Copy Files Foundation */,
 			);
 			name = "Copy Files Foundation";
@@ -90,6 +155,15 @@
 			dstPath = Headers/UIKit;
 			dstSubfolderSpec = 1;
 			files = (
+				BABCD91824E6935300CCB07C /* UIDevice+NDUtils.h in Copy Files UIKit */,
+				BA337A0724E39CD10061B1DC /* UIImage+NDUtils.h in Copy Files UIKit */,
+				BA33799624E153B50061B1DC /* NSAttributedString+NDUtils_UIKit.h in Copy Files UIKit */,
+				BA33798724E1488E0061B1DC /* UINavigationController+NDUtils.h in Copy Files UIKit */,
+				BA33798824E1488E0061B1DC /* UIImagePickerController+NDUtils.h in Copy Files UIKit */,
+				BA33797E24E146AC0061B1DC /* UIScrollView+NDUtils.h in Copy Files UIKit */,
+				BA33797924E1452F0061B1DC /* UITextView+NDUtils.h in Copy Files UIKit */,
+				BA33797224E13E450061B1DC /* UITextField+NDUtils.h in Copy Files UIKit */,
+				BA33796624E134E20061B1DC /* UIViewController+NDUtils_PanDownToDismiss.h in Copy Files UIKit */,
 				BAA7BF5D24CFDFAE00737B61 /* UIControl+NDUtils.h in Copy Files UIKit */,
 				BA96091D24BD56E300EB97FB /* UIView+NDUtils.h in Copy Files UIKit */,
 				BAFD7F9B247E20F700EC8CF3 /* UIColor+NDUtils.h in Copy Files UIKit */,
@@ -105,11 +179,39 @@
 		4A1A99E34699FDAF6637AEAC /* Pods_NDUtils_NDUtilsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NDUtils_NDUtilsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76273796DC9473A2F2A7758 /* Pods-NDUtils-NDUtilsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDUtils-NDUtilsTests.debug.xcconfig"; path = "Target Support Files/Pods-NDUtils-NDUtilsTests/Pods-NDUtils-NDUtilsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ABE3B821EE5CFF9CE3889C33 /* Pods-NDUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDUtils.release.xcconfig"; path = "Target Support Files/Pods-NDUtils/Pods-NDUtils.release.xcconfig"; sourceTree = "<group>"; };
+		BA33795D24E1338E0061B1DC /* UIViewController+NDUtils_PanDownToDismiss.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NDUtils_PanDownToDismiss.h"; sourceTree = "<group>"; };
+		BA33795E24E1338E0061B1DC /* UIViewController+NDUtils_PanDownToDismiss.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIViewController+NDUtils_PanDownToDismiss.mm"; sourceTree = "<group>"; };
+		BA33796124E133EF0061B1DC /* NDPossession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDPossession.h; sourceTree = "<group>"; };
+		BA33796224E133EF0061B1DC /* NDPossession.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NDPossession.mm; sourceTree = "<group>"; };
+		BA33796824E138640061B1DC /* runtime+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "runtime+NDUtils.h"; sourceTree = "<group>"; };
+		BA33796924E138640061B1DC /* runtime+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "runtime+NDUtils.mm"; sourceTree = "<group>"; };
+		BA33796E24E13DE30061B1DC /* UITextField+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+NDUtils.h"; sourceTree = "<group>"; };
+		BA33796F24E13DE30061B1DC /* UITextField+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UITextField+NDUtils.mm"; sourceTree = "<group>"; };
+		BA33797324E143F20061B1DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BA33797524E144F30061B1DC /* UITextView+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+NDUtils.h"; sourceTree = "<group>"; };
+		BA33797624E144F30061B1DC /* UITextView+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UITextView+NDUtils.mm"; sourceTree = "<group>"; };
+		BA33797A24E146330061B1DC /* UIScrollView+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+NDUtils.h"; sourceTree = "<group>"; };
+		BA33797B24E146330061B1DC /* UIScrollView+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIScrollView+NDUtils.mm"; sourceTree = "<group>"; };
+		BA33797F24E147AD0061B1DC /* UINavigationController+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NDUtils.h"; sourceTree = "<group>"; };
+		BA33798024E147AD0061B1DC /* UINavigationController+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UINavigationController+NDUtils.mm"; sourceTree = "<group>"; };
+		BA33798324E147BE0061B1DC /* UIImagePickerController+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+NDUtils.h"; sourceTree = "<group>"; };
+		BA33798424E147BE0061B1DC /* UIImagePickerController+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImagePickerController+NDUtils.mm"; sourceTree = "<group>"; };
+		BA33798A24E14B520061B1DC /* CATransaction+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CATransaction+NDUtils.h"; sourceTree = "<group>"; };
+		BA33798B24E14B530061B1DC /* CATransaction+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "CATransaction+NDUtils.mm"; sourceTree = "<group>"; };
+		BA33799024E150310061B1DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BA33799224E1533B0061B1DC /* NSAttributedString+NDUtils_UIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+NDUtils_UIKit.h"; sourceTree = "<group>"; };
+		BA33799324E1533C0061B1DC /* NSAttributedString+NDUtils_UIKit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSAttributedString+NDUtils_UIKit.mm"; sourceTree = "<group>"; };
+		BA337A0324E39C960061B1DC /* UIImage+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+NDUtils.h"; sourceTree = "<group>"; };
+		BA337A0424E39C960061B1DC /* UIImage+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+NDUtils.mm"; sourceTree = "<group>"; };
+		BA337A0824E3CC660061B1DC /* NSObject+NDUtils_Foundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NDUtils_Foundation.h"; sourceTree = "<group>"; };
+		BA337A0924E3CC660061B1DC /* NSObject+NDUtils_Foundation.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject+NDUtils_Foundation.mm"; sourceTree = "<group>"; };
 		BA96091724BD4CF200EB97FB /* NDUtils.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = NDUtils.modulemap; sourceTree = "<group>"; };
 		BA96091824BD506600EB97FB /* UIView+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+NDUtils.h"; sourceTree = "<group>"; };
 		BA96091924BD506600EB97FB /* UIView+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIView+NDUtils.mm"; sourceTree = "<group>"; };
 		BAA7BF5824CFDED900737B61 /* UIControl+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+NDUtils.h"; sourceTree = "<group>"; };
 		BAA7BF5924CFDED900737B61 /* UIControl+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIControl+NDUtils.mm"; sourceTree = "<group>"; };
+		BABCD91424E6907100CCB07C /* UIDevice+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+NDUtils.h"; sourceTree = "<group>"; };
+		BABCD91524E6907100CCB07C /* UIDevice+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIDevice+NDUtils.mm"; sourceTree = "<group>"; };
 		BACED09124A1B3B900798A38 /* NSString+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+NDUtils.h"; sourceTree = "<group>"; };
 		BACED09224A1B3B900798A38 /* NSString+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+NDUtils.mm"; sourceTree = "<group>"; };
 		BACED0FC24A30ED300798A38 /* NSObject+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NDUtils.h"; sourceTree = "<group>"; };
@@ -147,6 +249,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA33799124E150310061B1DC /* QuartzCore.framework in Frameworks */,
+				BA33797424E143F20061B1DC /* CoreGraphics.framework in Frameworks */,
 				BAFD7F9F247E214E00EC8CF3 /* UIKit.framework in Frameworks */,
 				3E81420E05EB993261C52D94 /* Pods_NDUtils.framework in Frameworks */,
 			);
@@ -175,13 +279,35 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BA33796724E138530061B1DC /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				BACED0FC24A30ED300798A38 /* NSObject+NDUtils.h */,
+				BACED0FD24A30ED300798A38 /* NSObject+NDUtils.mm */,
+				BA33796124E133EF0061B1DC /* NDPossession.h */,
+				BA33796224E133EF0061B1DC /* NDPossession.mm */,
+				BA33796824E138640061B1DC /* runtime+NDUtils.h */,
+				BA33796924E138640061B1DC /* runtime+NDUtils.mm */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		BA33798924E149BF0061B1DC /* QuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+				BA33798A24E14B520061B1DC /* CATransaction+NDUtils.h */,
+				BA33798B24E14B530061B1DC /* CATransaction+NDUtils.mm */,
+			);
+			path = QuartzCore;
+			sourceTree = "<group>";
+		};
 		BACED09024A1B38F00798A38 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
 				BACED10A24A34B2400798A38 /* NDMacros.h */,
 				BACED10B24A34B2400798A38 /* NDMacros.mm */,
-				BACED0FC24A30ED300798A38 /* NSObject+NDUtils.h */,
-				BACED0FD24A30ED300798A38 /* NSObject+NDUtils.mm */,
+				BA337A0824E3CC660061B1DC /* NSObject+NDUtils_Foundation.h */,
+				BA337A0924E3CC660061B1DC /* NSObject+NDUtils_Foundation.mm */,
 				BACED09124A1B3B900798A38 /* NSString+NDUtils.h */,
 				BACED09224A1B3B900798A38 /* NSString+NDUtils.mm */,
 			);
@@ -241,7 +367,9 @@
 			isa = PBXGroup;
 			children = (
 				BACED10124A342BA00798A38 /* libextobjc */,
+				BA33796724E138530061B1DC /* objc */,
 				BACED09024A1B38F00798A38 /* Foundation */,
+				BA33798924E149BF0061B1DC /* QuartzCore */,
 				BAFD7F99247E208F00EC8CF3 /* UIKit */,
 				BAFD7F7A247E1F7A00EC8CF3 /* NDUtils.h */,
 				BA96091724BD4CF200EB97FB /* NDUtils.modulemap */,
@@ -265,6 +393,8 @@
 		BAFD7F99247E208F00EC8CF3 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				BA33799224E1533B0061B1DC /* NSAttributedString+NDUtils_UIKit.h */,
+				BA33799324E1533C0061B1DC /* NSAttributedString+NDUtils_UIKit.mm */,
 				BAFD7F91247E1FA400EC8CF3 /* UIColor+NDUtils.h */,
 				BAFD7F92247E1FA400EC8CF3 /* UIColor+NDUtils.mm */,
 				BAFD7F95247E1FB700EC8CF3 /* UIFont+NDUtils.h */,
@@ -273,6 +403,22 @@
 				BA96091924BD506600EB97FB /* UIView+NDUtils.mm */,
 				BAA7BF5824CFDED900737B61 /* UIControl+NDUtils.h */,
 				BAA7BF5924CFDED900737B61 /* UIControl+NDUtils.mm */,
+				BA33795D24E1338E0061B1DC /* UIViewController+NDUtils_PanDownToDismiss.h */,
+				BA33795E24E1338E0061B1DC /* UIViewController+NDUtils_PanDownToDismiss.mm */,
+				BA33796E24E13DE30061B1DC /* UITextField+NDUtils.h */,
+				BA33796F24E13DE30061B1DC /* UITextField+NDUtils.mm */,
+				BA33797524E144F30061B1DC /* UITextView+NDUtils.h */,
+				BA33797624E144F30061B1DC /* UITextView+NDUtils.mm */,
+				BA33797A24E146330061B1DC /* UIScrollView+NDUtils.h */,
+				BA33797B24E146330061B1DC /* UIScrollView+NDUtils.mm */,
+				BA33797F24E147AD0061B1DC /* UINavigationController+NDUtils.h */,
+				BA33798024E147AD0061B1DC /* UINavigationController+NDUtils.mm */,
+				BA33798324E147BE0061B1DC /* UIImagePickerController+NDUtils.h */,
+				BA33798424E147BE0061B1DC /* UIImagePickerController+NDUtils.mm */,
+				BA337A0324E39C960061B1DC /* UIImage+NDUtils.h */,
+				BA337A0424E39C960061B1DC /* UIImage+NDUtils.mm */,
+				BABCD91424E6907100CCB07C /* UIDevice+NDUtils.h */,
+				BABCD91524E6907100CCB07C /* UIDevice+NDUtils.mm */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -280,6 +426,8 @@
 		BAFD7F9D247E214E00EC8CF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA33799024E150310061B1DC /* QuartzCore.framework */,
+				BA33797324E143F20061B1DC /* CoreGraphics.framework */,
 				BAFD7F9E247E214E00EC8CF3 /* UIKit.framework */,
 				F206841960E47241E10E19B2 /* Pods_NDUtils.framework */,
 				4A1A99E34699FDAF6637AEAC /* Pods_NDUtils_NDUtilsTests.framework */,
@@ -306,16 +454,29 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA33798124E147AD0061B1DC /* UINavigationController+NDUtils.h in Headers */,
+				BA33795F24E1338E0061B1DC /* UIViewController+NDUtils_PanDownToDismiss.h in Headers */,
 				BACED0FE24A30ED300798A38 /* NSObject+NDUtils.h in Headers */,
+				BA33797C24E146330061B1DC /* UIScrollView+NDUtils.h in Headers */,
+				BA337A0524E39C960061B1DC /* UIImage+NDUtils.h in Headers */,
 				BA96091A24BD506600EB97FB /* UIView+NDUtils.h in Headers */,
 				BAFD7F93247E1FA400EC8CF3 /* UIColor+NDUtils.h in Headers */,
+				BA33797724E144F30061B1DC /* UITextView+NDUtils.h in Headers */,
 				BACED10924A3436A00798A38 /* metamacros.h in Headers */,
 				BAA7BF5A24CFDED900737B61 /* UIControl+NDUtils.h in Headers */,
 				BAFD7F88247E1F7A00EC8CF3 /* NDUtils.h in Headers */,
+				BA33796A24E138640061B1DC /* runtime+NDUtils.h in Headers */,
+				BA33799424E1533C0061B1DC /* NSAttributedString+NDUtils_UIKit.h in Headers */,
 				BACED09324A1B3B900798A38 /* NSString+NDUtils.h in Headers */,
+				BA33796324E133EF0061B1DC /* NDPossession.h in Headers */,
+				BA33798C24E14B530061B1DC /* CATransaction+NDUtils.h in Headers */,
 				BAFD7F97247E1FB700EC8CF3 /* UIFont+NDUtils.h in Headers */,
+				BA33798524E147BE0061B1DC /* UIImagePickerController+NDUtils.h in Headers */,
+				BABCD91624E6907100CCB07C /* UIDevice+NDUtils.h in Headers */,
 				BACED10624A3436500798A38 /* EXTScope.h in Headers */,
+				BA33797024E13DE30061B1DC /* UITextField+NDUtils.h in Headers */,
 				BACED10C24A34B2400798A38 /* NDMacros.h in Headers */,
+				BA337A0A24E3CC660061B1DC /* NSObject+NDUtils_Foundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,8 +490,10 @@
 				68A08B86582E09796C91DFAF /* [CP] Check Pods Manifest.lock */,
 				BAFD7F72247E1F7A00EC8CF3 /* Headers */,
 				BACED09524A1B82700798A38 /* Copy Files Foundation */,
+				BA33798E24E14F490061B1DC /* Copy Files QuartzCore */,
 				BAFD7F9A247E20DE00EC8CF3 /* Copy Files UIKit */,
 				BA96091E24BD56E900EB97FB /* Copy Files libextobjc */,
+				BA33796C24E1391C0061B1DC /* Copy Files objc */,
 				BAFD7F73247E1F7A00EC8CF3 /* Sources */,
 				BAFD7F74247E1F7A00EC8CF3 /* Frameworks */,
 				BAFD7F75247E1F7A00EC8CF3 /* Resources */,
@@ -492,12 +655,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA33798D24E14B530061B1DC /* CATransaction+NDUtils.mm in Sources */,
 				BACED10724A3436500798A38 /* EXTScope.m in Sources */,
+				BA33797D24E146330061B1DC /* UIScrollView+NDUtils.mm in Sources */,
 				BAFD7F98247E1FB700EC8CF3 /* UIFont+NDUtils.mm in Sources */,
 				BA96091B24BD506600EB97FB /* UIView+NDUtils.mm in Sources */,
+				BA33796024E1338E0061B1DC /* UIViewController+NDUtils_PanDownToDismiss.mm in Sources */,
+				BA33796B24E138640061B1DC /* runtime+NDUtils.mm in Sources */,
+				BA33797124E13DE30061B1DC /* UITextField+NDUtils.mm in Sources */,
+				BA33798624E147BE0061B1DC /* UIImagePickerController+NDUtils.mm in Sources */,
+				BA33798224E147AD0061B1DC /* UINavigationController+NDUtils.mm in Sources */,
+				BA337A0624E39C960061B1DC /* UIImage+NDUtils.mm in Sources */,
+				BA33799524E1533C0061B1DC /* NSAttributedString+NDUtils_UIKit.mm in Sources */,
+				BA337A0B24E3CC660061B1DC /* NSObject+NDUtils_Foundation.mm in Sources */,
 				BAA7BF5B24CFDED900737B61 /* UIControl+NDUtils.mm in Sources */,
 				BACED10D24A34B2400798A38 /* NDMacros.mm in Sources */,
 				BAFD7F94247E1FA400EC8CF3 /* UIColor+NDUtils.mm in Sources */,
+				BA33796424E133EF0061B1DC /* NDPossession.mm in Sources */,
+				BA33797824E144F30061B1DC /* UITextView+NDUtils.mm in Sources */,
+				BABCD91724E6907100CCB07C /* UIDevice+NDUtils.mm in Sources */,
 				BACED09424A1B3B900798A38 /* NSString+NDUtils.mm in Sources */,
 				BACED0FF24A30ED300798A38 /* NSObject+NDUtils.mm in Sources */,
 			);

@@ -24,4 +24,21 @@
       }];
 }
 
+- (void)nd_shakeWithDuration:(NSTimeInterval)duration
+                 translation:(CGPoint)translation {
+  auto animator = [[UIViewPropertyAnimator alloc]
+      initWithDuration:duration
+          dampingRatio:0.3
+            animations:^{
+              self.transform = CGAffineTransformMakeTranslation(translation.x,
+                                                                translation.y);
+            }];
+  [animator
+      addAnimations:^{
+        self.transform = CGAffineTransformMakeTranslation(0, 0);
+      }
+        delayFactor:0.2];
+  [animator startAnimation];
+}
+
 @end
