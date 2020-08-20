@@ -9,8 +9,10 @@
 #import <NDUtils/UIKit/UIControl+NDUtils.h>
 
 #import <NDLog/NDLog.h>
-#import <NDUtils/Foundation/NDMacros.h>
-#import <objc/runtime.h>
+#import <NDUtils/objc/NDMacros+NDUtils.h>
+#import <NDUtils/objc/runtime+NDUtils.h>
+
+using namespace nd::objc;
 
 @interface NDUIControlActionHandle : NSObject
 
@@ -69,12 +71,10 @@
 @implementation UIControl (NDUtils)
 
 - (NSMutableArray*)nd_actionHandles {
-  NSMutableArray* obj =
-      objc_getAssociatedObject(self, @selector(nd_actionHandles));
+  auto obj = PeekAssociatedObject<NSMutableArray*>(self, @selector(nd_actionHandles));
   if (obj == nil) {
     obj = [[NSMutableArray alloc] init];
-    objc_setAssociatedObject(self, @selector(nd_actionHandles), obj,
-                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    SetAssociatedObject<OBJC_ASSOCIATION_RETAIN_NONATOMIC>(self, @selector(nd_actionHandles), obj);
   }
   return obj;
 }

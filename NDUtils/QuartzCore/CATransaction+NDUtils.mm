@@ -8,7 +8,7 @@
 
 #import <NDUtils/QuartzCore/CATransaction+NDUtils.h>
 
-#import <NDUtils/Foundation/NDMacros.h>
+#import <NDUtils/objc/NDMacros+NDUtils.h>
 
 void NDAttachToAnimationCompletion(void(NS_NOESCAPE ^ animation)(void),
                                    void (^completion)(void)) {

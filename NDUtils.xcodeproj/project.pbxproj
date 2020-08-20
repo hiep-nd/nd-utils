@@ -49,7 +49,7 @@
 		BA337A0C24E3CD300061B1DC /* NSObject+NDUtils_Foundation.h in Copy Files Foundation */ = {isa = PBXBuildFile; fileRef = BA337A0824E3CC660061B1DC /* NSObject+NDUtils_Foundation.h */; };
 		BA96091A24BD506600EB97FB /* UIView+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA96091824BD506600EB97FB /* UIView+NDUtils.h */; };
 		BA96091B24BD506600EB97FB /* UIView+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA96091924BD506600EB97FB /* UIView+NDUtils.mm */; };
-		BA96091C24BD56D500EB97FB /* NDMacros.h in Copy Files Foundation */ = {isa = PBXBuildFile; fileRef = BACED10A24A34B2400798A38 /* NDMacros.h */; };
+		BA96091C24BD56D500EB97FB /* NDMacros+NDUtils.h in Copy Files objc */ = {isa = PBXBuildFile; fileRef = BACED10A24A34B2400798A38 /* NDMacros+NDUtils.h */; };
 		BA96091D24BD56E300EB97FB /* UIView+NDUtils.h in Copy Files UIKit */ = {isa = PBXBuildFile; fileRef = BA96091824BD506600EB97FB /* UIView+NDUtils.h */; };
 		BA96091F24BD572F00EB97FB /* EXTScope.h in Copy Files libextobjc */ = {isa = PBXBuildFile; fileRef = BACED10424A3436400798A38 /* EXTScope.h */; };
 		BA96092024BD572F00EB97FB /* metamacros.h in Copy Files libextobjc */ = {isa = PBXBuildFile; fileRef = BACED10824A3436A00798A38 /* metamacros.h */; };
@@ -68,8 +68,11 @@
 		BACED10624A3436500798A38 /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED10424A3436400798A38 /* EXTScope.h */; };
 		BACED10724A3436500798A38 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = BACED10524A3436400798A38 /* EXTScope.m */; };
 		BACED10924A3436A00798A38 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED10824A3436A00798A38 /* metamacros.h */; };
-		BACED10C24A34B2400798A38 /* NDMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED10A24A34B2400798A38 /* NDMacros.h */; };
-		BACED10D24A34B2400798A38 /* NDMacros.mm in Sources */ = {isa = PBXBuildFile; fileRef = BACED10B24A34B2400798A38 /* NDMacros.mm */; };
+		BACED10C24A34B2400798A38 /* NDMacros+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BACED10A24A34B2400798A38 /* NDMacros+NDUtils.h */; };
+		BACED10D24A34B2400798A38 /* NDMacros+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BACED10B24A34B2400798A38 /* NDMacros+NDUtils.mm */; };
+		BAEEC5CF24ED22EC0053F895 /* NSFastEnumeration+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEEC5CD24ED22EC0053F895 /* NSFastEnumeration+NDUtils.h */; };
+		BAEEC5D024ED22EC0053F895 /* NSFastEnumeration+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAEEC5CE24ED22EC0053F895 /* NSFastEnumeration+NDUtils.mm */; };
+		BAEEC5D124ED27950053F895 /* NSFastEnumeration+NDUtils.h in Copy Files Foundation */ = {isa = PBXBuildFile; fileRef = BAEEC5CD24ED22EC0053F895 /* NSFastEnumeration+NDUtils.h */; };
 		BAFD7F81247E1F7A00EC8CF3 /* NDUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD7F77247E1F7A00EC8CF3 /* NDUtils.framework */; };
 		BAFD7F86247E1F7A00EC8CF3 /* NDUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFD7F85247E1F7A00EC8CF3 /* NDUtilsTests.m */; };
 		BAFD7F88247E1F7A00EC8CF3 /* NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BAFD7F7A247E1F7A00EC8CF3 /* NDUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -106,6 +109,7 @@
 			dstPath = Headers/objc;
 			dstSubfolderSpec = 1;
 			files = (
+				BA96091C24BD56D500EB97FB /* NDMacros+NDUtils.h in Copy Files objc */,
 				BA33796D24E139300061B1DC /* runtime+NDUtils.h in Copy Files objc */,
 				BACED10024A326CB00798A38 /* NSObject+NDUtils.h in Copy Files objc */,
 				BA33796524E134650061B1DC /* NDPossession.h in Copy Files objc */,
@@ -142,8 +146,8 @@
 			dstPath = Headers/Foundation;
 			dstSubfolderSpec = 1;
 			files = (
+				BAEEC5D124ED27950053F895 /* NSFastEnumeration+NDUtils.h in Copy Files Foundation */,
 				BA337A0C24E3CD300061B1DC /* NSObject+NDUtils_Foundation.h in Copy Files Foundation */,
-				BA96091C24BD56D500EB97FB /* NDMacros.h in Copy Files Foundation */,
 				BACED09624A1B84400798A38 /* NSString+NDUtils.h in Copy Files Foundation */,
 			);
 			name = "Copy Files Foundation";
@@ -219,8 +223,10 @@
 		BACED10424A3436400798A38 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		BACED10524A3436400798A38 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
 		BACED10824A3436A00798A38 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
-		BACED10A24A34B2400798A38 /* NDMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDMacros.h; sourceTree = "<group>"; };
-		BACED10B24A34B2400798A38 /* NDMacros.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NDMacros.mm; sourceTree = "<group>"; };
+		BACED10A24A34B2400798A38 /* NDMacros+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NDMacros+NDUtils.h"; sourceTree = "<group>"; };
+		BACED10B24A34B2400798A38 /* NDMacros+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NDMacros+NDUtils.mm"; sourceTree = "<group>"; };
+		BAEEC5CD24ED22EC0053F895 /* NSFastEnumeration+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFastEnumeration+NDUtils.h"; sourceTree = "<group>"; };
+		BAEEC5CE24ED22EC0053F895 /* NSFastEnumeration+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSFastEnumeration+NDUtils.mm"; sourceTree = "<group>"; };
 		BAFD7F77247E1F7A00EC8CF3 /* NDUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NDUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFD7F7A247E1F7A00EC8CF3 /* NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDUtils.h; sourceTree = "<group>"; };
 		BAFD7F7B247E1F7A00EC8CF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -282,6 +288,8 @@
 		BA33796724E138530061B1DC /* objc */ = {
 			isa = PBXGroup;
 			children = (
+				BACED10A24A34B2400798A38 /* NDMacros+NDUtils.h */,
+				BACED10B24A34B2400798A38 /* NDMacros+NDUtils.mm */,
 				BACED0FC24A30ED300798A38 /* NSObject+NDUtils.h */,
 				BACED0FD24A30ED300798A38 /* NSObject+NDUtils.mm */,
 				BA33796124E133EF0061B1DC /* NDPossession.h */,
@@ -304,12 +312,12 @@
 		BACED09024A1B38F00798A38 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				BACED10A24A34B2400798A38 /* NDMacros.h */,
-				BACED10B24A34B2400798A38 /* NDMacros.mm */,
 				BA337A0824E3CC660061B1DC /* NSObject+NDUtils_Foundation.h */,
 				BA337A0924E3CC660061B1DC /* NSObject+NDUtils_Foundation.mm */,
 				BACED09124A1B3B900798A38 /* NSString+NDUtils.h */,
 				BACED09224A1B3B900798A38 /* NSString+NDUtils.mm */,
+				BAEEC5CD24ED22EC0053F895 /* NSFastEnumeration+NDUtils.h */,
+				BAEEC5CE24ED22EC0053F895 /* NSFastEnumeration+NDUtils.mm */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -467,6 +475,7 @@
 				BAFD7F88247E1F7A00EC8CF3 /* NDUtils.h in Headers */,
 				BA33796A24E138640061B1DC /* runtime+NDUtils.h in Headers */,
 				BA33799424E1533C0061B1DC /* NSAttributedString+NDUtils_UIKit.h in Headers */,
+				BAEEC5CF24ED22EC0053F895 /* NSFastEnumeration+NDUtils.h in Headers */,
 				BACED09324A1B3B900798A38 /* NSString+NDUtils.h in Headers */,
 				BA33796324E133EF0061B1DC /* NDPossession.h in Headers */,
 				BA33798C24E14B530061B1DC /* CATransaction+NDUtils.h in Headers */,
@@ -475,7 +484,7 @@
 				BABCD91624E6907100CCB07C /* UIDevice+NDUtils.h in Headers */,
 				BACED10624A3436500798A38 /* EXTScope.h in Headers */,
 				BA33797024E13DE30061B1DC /* UITextField+NDUtils.h in Headers */,
-				BACED10C24A34B2400798A38 /* NDMacros.h in Headers */,
+				BACED10C24A34B2400798A38 /* NDMacros+NDUtils.h in Headers */,
 				BA337A0A24E3CC660061B1DC /* NSObject+NDUtils_Foundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,6 +666,7 @@
 			files = (
 				BA33798D24E14B530061B1DC /* CATransaction+NDUtils.mm in Sources */,
 				BACED10724A3436500798A38 /* EXTScope.m in Sources */,
+				BAEEC5D024ED22EC0053F895 /* NSFastEnumeration+NDUtils.mm in Sources */,
 				BA33797D24E146330061B1DC /* UIScrollView+NDUtils.mm in Sources */,
 				BAFD7F98247E1FB700EC8CF3 /* UIFont+NDUtils.mm in Sources */,
 				BA96091B24BD506600EB97FB /* UIView+NDUtils.mm in Sources */,
@@ -669,7 +679,7 @@
 				BA33799524E1533C0061B1DC /* NSAttributedString+NDUtils_UIKit.mm in Sources */,
 				BA337A0B24E3CC660061B1DC /* NSObject+NDUtils_Foundation.mm in Sources */,
 				BAA7BF5B24CFDED900737B61 /* UIControl+NDUtils.mm in Sources */,
-				BACED10D24A34B2400798A38 /* NDMacros.mm in Sources */,
+				BACED10D24A34B2400798A38 /* NDMacros+NDUtils.mm in Sources */,
 				BAFD7F94247E1FA400EC8CF3 /* UIColor+NDUtils.mm in Sources */,
 				BA33796424E133EF0061B1DC /* NDPossession.mm in Sources */,
 				BA33797824E144F30061B1DC /* UITextView+NDUtils.mm in Sources */,

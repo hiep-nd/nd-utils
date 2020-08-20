@@ -14,7 +14,7 @@ FOUNDATION_EXPORT double NDUtilsVersionNumber;
 //! Project version string for NDUtils.
 FOUNDATION_EXPORT const unsigned char NDUtilsVersionString[];
 
-#import <NDUtils/Foundation/NDMacros.h>
+#import <NDUtils/Foundation/NSFastEnumeration+NDUtils.h>
 #import <NDUtils/Foundation/NSObject+NDUtils_Foundation.h>
 #import <NDUtils/Foundation/NSString+NDUtils.h>
 
@@ -37,6 +37,7 @@ FOUNDATION_EXPORT const unsigned char NDUtilsVersionString[];
 #import <NDUtils/libextobjc/EXTScope.h>
 #import <NDUtils/libextobjc/metamacros.h>
 
+#import <NDUtils/objc/NDMacros+NDUtils.h>
 #import <NDUtils/objc/NDPossession.h>
 #import <NDUtils/objc/NSObject+NDUtils.h>
 #import <NDUtils/objc/runtime+NDUtils.h>

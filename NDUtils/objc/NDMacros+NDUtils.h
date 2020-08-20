@@ -1,5 +1,5 @@
 //
-//  NDMacros.h
+//  NDMacros+NDUtils.h
 //  NDUtils
 //
 //  Created by Nguyen Duc Hiep on 6/24/20.

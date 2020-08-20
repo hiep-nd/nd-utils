@@ -1,7 +1,7 @@
 framework module NDUtils {
   umbrella header "NDUtils.h"
   
-  header "Foundation/NDMacros.h"
+  header "Foundation/NSFastEnumeration+NDUtils.h"
   header "Foundation/NSObject+NDUtils_Foundation.h"
   header "Foundation/NSString+NDUtils.h"
 
@@ -24,6 +24,7 @@ framework module NDUtils {
   header "libextobjc/EXTScope.h"
   header "libextobjc/metamacros.h"
 
+  header "objc/NDMacros+NDUtils.h"
   header "objc/NSObject+NDUtils.h"
   header "objc/NDPossession.h"
   header "objc/runtime+NDUtils.h"

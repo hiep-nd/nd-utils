@@ -9,8 +9,10 @@
 #import <NDUtils/UIKit/UIImagePickerController+NDUtils.h>
 
 #import <NDLog/NDLog.h>
-#import <NDUtils/Foundation/NDMacros.h>
+#import <NDUtils/objc/NDMacros+NDUtils.h>
 #import <NDUtils/objc/runtime+NDUtils.h>
+
+using namespace nd::objc;
 
 @interface NDUIImagePickerControllerDelegateHandlers () <
     UIImagePickerControllerDelegate>
@@ -63,7 +65,7 @@ id UIImagePickerController_nd_delegateHandlers_creator(id owner) {
 }
 
 - (NDUIImagePickerControllerDelegateHandlers*)nd_delegateHandlers {
-  return nd::GetAssociatedObject<
+  return GetAssociatedObject<
       UIImagePickerController_nd_delegateHandlers_creator,
       OBJC_ASSOCIATION_RETAIN_NONATOMIC>(self, @selector(nd_delegateHandlers));
 }

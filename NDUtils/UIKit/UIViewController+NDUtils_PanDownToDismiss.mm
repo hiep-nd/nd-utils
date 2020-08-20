@@ -9,11 +9,11 @@
 #import <NDUtils/UIKit/UIViewController+NDUtils_PanDownToDismiss.h>
 
 #import <NDLog/NDLog.h>
-#import <NDUtils/Foundation/NDMacros.h>
+#import <NDUtils/objc/NDMacros+NDUtils.h>
 #import <NDUtils/objc/NDPossession.h>
 #import <NDUtils/objc/runtime+NDUtils.h>
 
-using namespace nd;
+using namespace nd::objc;
 
 @interface NDUIViewControllerPanDownToDismissInteractionController
     : UIPercentDrivenInteractiveTransition

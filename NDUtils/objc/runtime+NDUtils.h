@@ -10,6 +10,7 @@
 
 #ifdef __cplusplus
 namespace nd {
+namespace objc {
 template <typename T>
 inline T PeekAssociatedObject(id _Nonnull object, const void* _Nonnull key) {
   return (T)objc_getAssociatedObject(object, key);
@@ -32,5 +33,6 @@ inline id _Nonnull GetAssociatedObject(id _Nonnull object,
   }
   return obj;
 }
+} // namespace objc
 }  // namespace nd
 #endif

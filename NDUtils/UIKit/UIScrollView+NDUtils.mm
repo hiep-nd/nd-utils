@@ -10,6 +10,8 @@
 
 #import <NDUtils/objc/runtime+NDUtils.h>
 
+using namespace nd::objc;
+
 @interface NDUIScrollViewDelegateHandlers () <UIScrollViewDelegate>
 @end
 
@@ -34,7 +36,7 @@ id UIScrollView_nd_delegateHandlers_creator(id owner) {
 }
 
 - (NDUIScrollViewDelegateHandlers*)nd_delegateHandlers {
-  return nd::GetAssociatedObject<UIScrollView_nd_delegateHandlers_creator,
+  return GetAssociatedObject<UIScrollView_nd_delegateHandlers_creator,
                                  OBJC_ASSOCIATION_RETAIN_NONATOMIC>(
       self, @selector(nd_delegateHandlers));
 }
