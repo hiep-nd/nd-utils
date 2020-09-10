@@ -140,7 +140,6 @@
 		BA337A0424E39C960061B1DC /* UIImage+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+NDUtils.mm"; sourceTree = "<group>"; };
 		BA337A0824E3CC660061B1DC /* NSObject+NDUtils_Foundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NDUtils_Foundation.h"; sourceTree = "<group>"; };
 		BA337A0924E3CC660061B1DC /* NSObject+NDUtils_Foundation.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject+NDUtils_Foundation.mm"; sourceTree = "<group>"; };
-		BA96091724BD4CF200EB97FB /* NDUtils.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = NDUtils.modulemap; sourceTree = "<group>"; };
 		BA96091824BD506600EB97FB /* UIView+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+NDUtils.h"; sourceTree = "<group>"; };
 		BA96091924BD506600EB97FB /* UIView+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIView+NDUtils.mm"; sourceTree = "<group>"; };
 		BA9C378B24EFE08A0062BB30 /* libextobjc+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libextobjc+NDUtils.h"; sourceTree = "<group>"; };
@@ -328,7 +327,6 @@
 				BA33798924E149BF0061B1DC /* QuartzCore */,
 				BAFD7F99247E208F00EC8CF3 /* UIKit */,
 				BAFD7F7A247E1F7A00EC8CF3 /* NDUtils.h */,
-				BA96091724BD4CF200EB97FB /* NDUtils.modulemap */,
 				BAFD7F7B247E1F7A00EC8CF3 /* Info.plist */,
 			);
 			path = NDUtils;
