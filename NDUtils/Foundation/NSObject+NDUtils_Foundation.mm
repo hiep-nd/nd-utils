@@ -6,7 +6,7 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/Foundation/NSObject+NDUtils_Foundation.h>
+#import <NDUtils/NSObject+NDUtils_Foundation.h>
 
 #import <NDLog/NDLog.h>
 

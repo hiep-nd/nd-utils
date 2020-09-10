@@ -50,7 +50,7 @@
 		338C1D88878BE23E587E353A5EA2C071 /* Pods-NDUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NDUtils.release.xcconfig"; sourceTree = "<group>"; };
 		3AD4B29A8CA92B7EEA8120C0061030E9 /* NDLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NDLog-prefix.pch"; sourceTree = "<group>"; };
 		3D26C9CF7F3669587B65E4E786205E86 /* Pods_NDUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NDUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		414D8B40DC8B7BA781DFD2555293C9FE /* NDLog.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NDLog.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		414D8B40DC8B7BA781DFD2555293C9FE /* NDLog.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NDLog.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4E5DBD7A3FE8AA2B456005E2C2E50D3C /* NDLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NDLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6330637BE265B5BA83C9222967B955A0 /* Pods-NDUtils-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NDUtils-acknowledgements.plist"; sourceTree = "<group>"; };
 		677D63E0BD2CCD5A65F679EF309A2026 /* NDLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NDLog.release.xcconfig; sourceTree = "<group>"; };

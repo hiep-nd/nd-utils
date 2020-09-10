@@ -14,31 +14,30 @@ FOUNDATION_EXPORT double NDUtilsVersionNumber;
 //! Project version string for NDUtils.
 FOUNDATION_EXPORT const unsigned char NDUtilsVersionString[];
 
-#import <NDUtils/Foundation/NSFastEnumeration+NDUtils.h>
-#import <NDUtils/Foundation/NSObject+NDUtils_Foundation.h>
-#import <NDUtils/Foundation/NSString+NDUtils.h>
+#if !defined(__has_include)
+#error \
+    "NDUtils.h won't import anything if your compiler doesn't support \
+          __has_include. Please import the headers individually."
+#else
 
-#import <NDUtils/QuartzCore/CATransaction+NDUtils.h>
+#if __has_include(<NDUtils/libextobjc+NDUtils.h>)
+#import <NDUtils/libextobjc+NDUtils.h>
+#endif
 
-#import <NDUtils/UIKit/NSAttributedString+NDUtils_UIKit.h>
-#import <NDUtils/UIKit/UIColor+NDUtils.h>
+#if __has_include(<NDUtils/objc+NDUtils.h>)
+#import <NDUtils/objc+NDUtils.h>
+#endif
 
-#import <NDUtils/UIKit/UIControl+NDUtils.h>
-#import <NDUtils/UIKit/UIDevice+NDUtils.h>
-#import <NDUtils/UIKit/UIFont+NDUtils.h>
-#import <NDUtils/UIKit/UIImage+NDUtils.h>
-#import <NDUtils/UIKit/UIImagePickerController+NDUtils.h>
-#import <NDUtils/UIKit/UINavigationController+NDUtils.h>
-#import <NDUtils/UIKit/UIScrollView+NDUtils.h>
-#import <NDUtils/UIKit/UITextField+NDUtils.h>
-#import <NDUtils/UIKit/UITextView+NDUtils.h>
-#import <NDUtils/UIKit/UIView+NDUtils.h>
-#import <NDUtils/UIKit/UIViewController+NDUtils_PanDownToDismiss.h>
+#if __has_include(<NDUtils/Foundation+NDUtils.h>)
+#import <NDUtils/Foundation+NDUtils.h>
+#endif
 
-#import <NDUtils/libextobjc/EXTScope.h>
-#import <NDUtils/libextobjc/metamacros.h>
+#if __has_include(<NDUtils/QuartzCore+NDUtils.h>)
+#import <NDUtils/QuartzCore+NDUtils.h>
+#endif
 
-#import <NDUtils/objc/NDMacros+NDUtils.h>
-#import <NDUtils/objc/NDPossession.h>
-#import <NDUtils/objc/NSObject+NDUtils.h>
-#import <NDUtils/objc/runtime+NDUtils.h>
+#if __has_include(<NDUtils/UIKit+NDUtils.h>)
+#import <NDUtils/UIKit+NDUtils.h>
+#endif
+
+#endif

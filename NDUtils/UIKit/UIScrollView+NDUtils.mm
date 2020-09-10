@@ -6,9 +6,9 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/UIKit/UIScrollView+NDUtils.h>
+#import <NDUtils/UIScrollView+NDUtils.h>
 
-#import <NDUtils/objc/runtime+NDUtils.h>
+#import <NDUtils/runtime+NDUtils.h>
 
 using namespace nd::objc;
 
@@ -37,7 +37,7 @@ id UIScrollView_nd_delegateHandlers_creator(id owner) {
 
 - (NDUIScrollViewDelegateHandlers*)nd_delegateHandlers {
   return GetAssociatedObject<UIScrollView_nd_delegateHandlers_creator,
-                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC>(
+                             OBJC_ASSOCIATION_RETAIN_NONATOMIC>(
       self, @selector(nd_delegateHandlers));
 }
 

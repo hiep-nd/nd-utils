@@ -6,7 +6,7 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/UIKit/UINavigationController+NDUtils.h>
+#import <NDUtils/UINavigationController+NDUtils.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

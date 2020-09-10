@@ -6,11 +6,11 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/UIKit/UITextView+NDUtils.h>
+#import <NDUtils/UITextView+NDUtils.h>
 
 #import <NDLog/NDLog.h>
-#import <NDUtils/objc/NDMacros+NDUtils.h>
-#import <NDUtils/objc/runtime+NDUtils.h>
+#import <NDUtils/NDMacros+NDUtils.h>
+#import <NDUtils/runtime+NDUtils.h>
 
 using namespace nd::objc;
 
@@ -39,7 +39,7 @@ id UITextView_nd_delegateHandlers_creator(id owner) {
 
 - (NDUIUITextViewDelegateHandlers*)nd_delegateHandlers {
   return GetAssociatedObject<UITextView_nd_delegateHandlers_creator,
-                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC>(
+                             OBJC_ASSOCIATION_RETAIN_NONATOMIC>(
       self, @selector(nd_delegateHandlers));
 }
 

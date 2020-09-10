@@ -6,7 +6,7 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/UIKit/UIDevice+NDUtils.h>
+#import <NDUtils/UIDevice+NDUtils.h>
 
 #import <sys/utsname.h>
 

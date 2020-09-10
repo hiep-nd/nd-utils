@@ -6,11 +6,11 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/UIKit/UIImagePickerController+NDUtils.h>
+#import <NDUtils/UIImagePickerController+NDUtils.h>
 
 #import <NDLog/NDLog.h>
-#import <NDUtils/objc/NDMacros+NDUtils.h>
-#import <NDUtils/objc/runtime+NDUtils.h>
+#import <NDUtils/NDMacros+NDUtils.h>
+#import <NDUtils/runtime+NDUtils.h>
 
 using namespace nd::objc;
 

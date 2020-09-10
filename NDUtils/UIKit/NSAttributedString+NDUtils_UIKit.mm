@@ -6,7 +6,7 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/UIKit/NSAttributedString+NDUtils_UIKit.h>
+#import <NDUtils/NSAttributedString+NDUtils_UIKit.h>
 
 @implementation NSAttributedString (NDUtils_UIKit)
 

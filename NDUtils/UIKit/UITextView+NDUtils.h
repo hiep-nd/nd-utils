@@ -6,7 +6,7 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/UIKit/UIScrollView+NDUtils.h>
+#import <NDUtils/UIScrollView+NDUtils.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

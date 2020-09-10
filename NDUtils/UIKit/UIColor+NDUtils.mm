@@ -6,7 +6,7 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/UIKit/UIColor+NDUtils.h>
+#import <NDUtils/UIColor+NDUtils.h>
 
 #import <NDLog/NDLog.h>
 

@@ -6,4 +6,4 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/objc/runtime+NDUtils.h>
+#import <NDUtils/runtime+NDUtils.h>

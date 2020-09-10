@@ -6,4 +6,4 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/Foundation/NSFastEnumeration+NDUtils.h>
+#import <NDUtils/NSFastEnumeration+NDUtils.h>

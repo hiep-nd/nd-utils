@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import <NDUtils/objc/NDPossession.h>
+#import <NDUtils/NDPossession.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

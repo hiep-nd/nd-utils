@@ -6,41 +6,43 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/UIKit/UIControl+NDUtils.h>
+#import <NDUtils/UIControl+NDUtils.h>
 
 #import <NDLog/NDLog.h>
-#import <NDUtils/objc/NDMacros+NDUtils.h>
-#import <NDUtils/objc/runtime+NDUtils.h>
+#import <NDUtils/NDMacros+NDUtils.h>
+#import <NDUtils/NDUITargetActionHandle.h>
+#import <NDUtils/runtime+NDUtils.h>
 
 using namespace nd::objc;
 
-@interface NDUIControlActionHandle : NSObject
+@interface NDUIControlActionHandle : NDUITargetActionHandle <UIControl*>
 
-- (instancetype)initWithControl:(UIControl*)control
-                         events:(UIControlEvents)events
-                         action:(void (^)(__kindof UIControl*, UIEvent*))action;
-- (void)removeFromControl;
+- (instancetype)initWithOwner:(UIControl*)owner
+                       action:(void (^)(__kindof UIControl* _Nonnull,
+                                        UIEvent* _Nonnull))action
+    NS_UNAVAILABLE;
+
+- (instancetype)initWithOwner:(UIControl*)control
+                       events:(UIControlEvents)events
+                       action:(void (^)(__kindof UIControl*, UIEvent*))action
+    NS_DESIGNATED_INITIALIZER;
+
+- (void)disconnectWithControl;
 
 @end
 
 @implementation NDUIControlActionHandle {
-  __weak UIControl* _control;
   UIControlEvents _events;
-  void (^_action)(__kindof UIControl*, UIEvent*);
 }
 
-- (instancetype)initWithControl:(UIControl*)control
-                         events:(UIControlEvents)events
-                         action:
-                             (void (^)(__kindof UIControl*, UIEvent*))action {
-  self = [super init];
+- (instancetype)initWithOwner:(UIControl*)owner
+                       events:(UIControlEvents)events
+                       action:(void (^)(__kindof UIControl*, UIEvent*))action {
+  self = [super initWithOwner:owner action:action];
   if (self) {
-    _control = control;
     _events = events;
-    _action = [action copy];
-
-    if (_control && _action) {
-      [_control addTarget:self
+    if (owner && action) {
+      [owner addTarget:self
                     action:@selector(actionWithSender:event:)
           forControlEvents:_events];
     }
@@ -48,22 +50,16 @@ using namespace nd::objc;
   return self;
 }
 
-- (void)removeFromControl {
-  if (_control && _action) {
-    [_control removeTarget:self
-                    action:@selector(actionWithSender:event:)
-          forControlEvents:_events];
-    _control = nil;
-    _action = nil;
+- (void)disconnectWithControl {
+  if (self.owner && self.action) {
+    [self.owner removeTarget:self
+                      action:@selector(actionWithSender:event:)
+            forControlEvents:_events];
   }
 }
 
 - (void)dealloc {
-  [self removeFromControl];
-}
-
-- (void)actionWithSender:(UIControl*)sender event:(UIEvent*)event {
-  NDCallAndReturnIfCan(_action, sender, event);
+  [self disconnectWithControl];
 }
 
 @end
@@ -71,10 +67,12 @@ using namespace nd::objc;
 @implementation UIControl (NDUtils)
 
 - (NSMutableArray*)nd_actionHandles {
-  auto obj = PeekAssociatedObject<NSMutableArray*>(self, @selector(nd_actionHandles));
+  auto obj =
+      PeekAssociatedObject<NSMutableArray*>(self, @selector(nd_actionHandles));
   if (obj == nil) {
     obj = [[NSMutableArray alloc] init];
-    SetAssociatedObject<OBJC_ASSOCIATION_RETAIN_NONATOMIC>(self, @selector(nd_actionHandles), obj);
+    SetAssociatedObject<OBJC_ASSOCIATION_RETAIN_NONATOMIC>(
+        self, @selector(nd_actionHandles), obj);
   }
   return obj;
 }
@@ -99,9 +97,9 @@ using namespace nd::objc;
                 addAction:(void (^)(__kindof UIControl*, UIEvent*))action {
   NDAssert(action, @"Can not add action: '%@'.", action);
 
-  auto handle = [[NDUIControlActionHandle alloc] initWithControl:self
-                                                          events:events
-                                                          action:action];
+  auto handle = [[NDUIControlActionHandle alloc] initWithOwner:self
+                                                        events:events
+                                                        action:action];
   [self.nd_actionHandles addObject:handle];
   return handle;
 }
@@ -113,7 +111,7 @@ using namespace nd::objc;
     return;
   }
 
-  [(NDUIControlActionHandle*)actionHandle removeFromControl];
+  [(NDUIControlActionHandle*)actionHandle disconnectWithControl];
   [self.nd_actionHandles removeObject:actionHandle];
 }
 

@@ -33,6 +33,6 @@ inline id _Nonnull GetAssociatedObject(id _Nonnull object,
   }
   return obj;
 }
-} // namespace objc
+}  // namespace objc
 }  // namespace nd
 #endif

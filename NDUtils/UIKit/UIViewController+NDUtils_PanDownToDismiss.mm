@@ -6,12 +6,12 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/UIKit/UIViewController+NDUtils_PanDownToDismiss.h>
+#import <NDUtils/UIViewController+NDUtils_PanDownToDismiss.h>
 
 #import <NDLog/NDLog.h>
-#import <NDUtils/objc/NDMacros+NDUtils.h>
-#import <NDUtils/objc/NDPossession.h>
-#import <NDUtils/objc/runtime+NDUtils.h>
+#import <NDUtils/NDMacros+NDUtils.h>
+#import <NDUtils/NDPossession.h>
+#import <NDUtils/runtime+NDUtils.h>
 
 using namespace nd::objc;
 

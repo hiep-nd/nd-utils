@@ -6,9 +6,9 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/UIKit/UIImage+NDUtils.h>
+#import <NDUtils/UIImage+NDUtils.h>
 
-#import <NDUtils/objc/NSObject+NDUtils.h>
+#import <NDUtils/NSObject+NDUtils.h>
 
 using namespace nd::objc;
 

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDUtils/objc/NDPossession.h>
+#import <NDUtils/NDPossession.h>
 
 #import <NDLog/NDLog.h>
 
