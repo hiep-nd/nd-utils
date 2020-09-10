@@ -65,7 +65,7 @@ using namespace nd::objc;
       self, @selector(nd_actionHandle), handle);
 }
 
-- (void)setNd_action0:(void (^)())nd_action0 {
+- (void)setNd_action0:(void (^)(void))nd_action0 {
   if (nd_action0) {
     self.nd_action = ^(UIBarButtonItem*, UIEvent*) {
       nd_action0();

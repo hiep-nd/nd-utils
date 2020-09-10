@@ -48,7 +48,7 @@ id UINavigationController_nd_delegateHandlers_creator(id owner) {
 - (NSArray<__kindof UIViewController*>*)
     nd_popToViewController:(UIViewController*)viewController
                   animated:(BOOL)animated
-                completion:(void (^)())completion {
+                completion:(void (^)(void))completion {
   return nd::attachToAnimation(
       ^{
         return [self popToViewController:viewController animated:animated];
@@ -59,7 +59,7 @@ id UINavigationController_nd_delegateHandlers_creator(id owner) {
 - (NSArray<__kindof UIViewController*>*)
     nd_popToPreviousViewController:(UIViewController*)viewController
                           animated:(BOOL)animated
-                        completion:(void (^)())completion {
+                        completion:(void (^)(void))completion {
   auto index = [self.viewControllers indexOfObject:viewController];
   if (index == NSNotFound || index == 0) {
     NDAssertionFailure(

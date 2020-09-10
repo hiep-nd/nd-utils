@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, copy) void (^_Nullable nd_action)
     (__kindof UIBarButtonItem*, UIEvent*);
-- (void)setNd_action0:(void (^_Nullable)())nd_action0
+- (void)setNd_action0:(void (^_Nullable)(void))nd_action0
     NS_SWIFT_NAME(nd_set(action:));
 - (void)setNd_action1:(void (^_Nullable)(__kindof UIBarButtonItem*))nd_action1
     NS_SWIFT_NAME(nd_set(action:));
