@@ -26,28 +26,25 @@ Pod::Spec.new do |s|
   s.subspec 'objc' do |ss|
     ss.source_files = 'NDUtils/objc/**/*.{h,m,mm,swift}'
     ss.dependency 'NDUtils/Core'
-    ss.dependency 'NDLog', '~> 0.0.4'
+    ss.dependency 'NDLog', '~> 0.0.5'
   end
 
   s.subspec 'Foundation' do |ss|
     ss.source_files = 'NDUtils/Foundation/**/*.{h,m,mm,swift}'
     ss.framework = 'Foundation'
     ss.dependency 'NDUtils/Core'
-    ss.dependency 'NDLog', '~> 0.0.4'
+    ss.dependency 'NDLog', '~> 0.0.5'
   end
 
   s.subspec 'QuartzCore' do |ss|
     ss.source_files = 'NDUtils/QuartzCore/**/*.{h,m,mm,swift}'
     ss.framework = 'QuartzCore'
-    ss.dependency 'NDUtils/Core'
     ss.dependency 'NDUtils/objc'
   end
 
   s.subspec 'UIKit' do |ss|
     ss.source_files = 'NDUtils/UIKit/**/*.{h,m,mm,swift}'
     ss.framework = 'UIKit'
-    ss.dependency 'NDUtils/objc'
     ss.dependency 'NDUtils/QuartzCore'
-    ss.dependency 'NDLog', '~> 0.0.4'
   end
 end
