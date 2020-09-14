@@ -18,4 +18,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+#ifdef __cplusplus
+namespace nd {
+namespace objc {
+template <typename Owner>
+inline Owner _Nullable ROwner(NDPossession* self) {
+  return (Owner)self.owner;
+}
+}  // namespace objc
+}  // namespace nd
+
+#define NDPossession_ROwner_Default_Impl(Owner)       \
+  namespace {                                         \
+  inline Owner _Nullable ROwner(NDPossession* self) { \
+    return nd::objc::ROwner<Owner>(self);             \
+  }                                                   \
+  }
+#endif
+
 NS_ASSUME_NONNULL_END
