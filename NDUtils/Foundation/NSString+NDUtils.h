@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)nd_containsRegexPattern:(NSString*)pattern
     NS_SWIFT_NAME(nd_contains(regexPattern:));
+- (BOOL)nd_matchsRegexPattern:(NSString*)pattern
+    NS_SWIFT_NAME(nd_matchs(regexPattern:));
 
 @end
 

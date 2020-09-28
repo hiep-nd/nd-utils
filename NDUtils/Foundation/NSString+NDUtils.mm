@@ -120,6 +120,16 @@ auto cache = [[NDMemoryCache<NSString*, NSString*> alloc] init];
                              range:NSMakeRange(0, self.length)];
 }
 
+- (BOOL)nd_matchsRegexPattern:(NSString*)pattern {
+  if (!pattern) {
+    NDAssertionFailure(@"Invalid regex pattern: '%@'.", pattern);
+    return NO;
+  }
+
+  return [self
+      nd_containsRegexPattern:[NSString stringWithFormat:@"^%@$", pattern]];
+}
+
 namespace {
 auto const kHostSeparator = @".";
 inline NSArray<NSString*>* GetHostCompos(NSString* self) {
