@@ -57,8 +57,8 @@ auto cache = [[NDMemoryCache<NSString*, NSString*> alloc] init];
 @implementation NSString (NDUtils)
 
 + (instancetype)nd_stringNamed:(NSString*)name {
-  NDAssert(name != nil, @"Invalid string name: '%@'.", name);
   if (!name) {
+    NDAssertionFailure(@"Invalid string name: '%@'.", name);
     return nil;
   }
 
@@ -68,18 +68,20 @@ auto cache = [[NDMemoryCache<NSString*, NSString*> alloc] init];
   }
 
   auto url = [NSBundle.mainBundle URLForResource:name withExtension:nil];
-  NDAssert(url != nil, @"Invalid string name: '%@'.", name);
   if (!url) {
+    NDAssertionFailure(@"Invalid string name: '%@'.", name);
     return nil;
   }
 
   obj = [NSString stringWithContentsOfURL:url
                              usedEncoding:nullptr
                                     error:nullptr];
-  NDAssert(obj, @"Can not read string from resource name: '%@'.", name);
-  if (obj) {
-    cache[name] = obj;
+  if (!obj) {
+    NDAssertionFailure(@"Can not read string from resource name: '%@'.", name);
+    return nil;
   }
+
+  cache[name] = obj;
   return obj;
 }
 
@@ -101,6 +103,21 @@ auto cache = [[NDMemoryCache<NSString*, NSString*> alloc] init];
 
 - (NSString* _Nullable)nd_urlTopLevelDomain {
   return GetHostCompos(self).lastObject;
+}
+
+- (BOOL)nd_containsRegexPattern:(NSString*)pattern {
+  NSError* err = nil;
+  auto regex = [[NSRegularExpression alloc] initWithPattern:pattern
+                                                    options:kNilOptions
+                                                      error:&err];
+  if (err) {
+    NDAssertionFailure(@"Invalid regex pattern: '%@'.", pattern);
+    return NO;
+  }
+
+  return [regex firstMatchInString:self
+                           options:kNilOptions
+                             range:NSMakeRange(0, self.length)];
 }
 
 namespace {

@@ -13,9 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSString (NDUtils)
 
 + (instancetype)nd_stringNamed:(NSString*)name NS_SWIFT_NAME(nd_(named:));
+
 - (NSString* _Nullable)nd_urlSubdomain;
 - (NSString* _Nullable)nd_urlDomain;
 - (NSString* _Nullable)nd_urlTopLevelDomain;
+
+- (BOOL)nd_containsRegexPattern:(NSString*)pattern
+    NS_SWIFT_NAME(nd_contains(regexPattern:));
 
 @end
 

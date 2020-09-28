@@ -33,4 +33,10 @@ class NSStringTests: XCTestCase {
     XCTAssertEqual("z", NSString(string: "a://bc.xy.z").nd_urlTopLevelDomain())
     XCTAssertEqual("z", NSString(string: "a://bc.x.y.z").nd_urlTopLevelDomain())
   }
+
+  func test_nd_containsRegexPattern() {
+    XCTAssertEqual(true, NSString("hat").nd_contains(regexPattern: "[a-z]at"))
+    XCTAssertEqual(false, NSString("hat").nd_contains(regexPattern: "[csm]at"))
+    XCTAssertEqual(true, NSString("card").nd_contains(regexPattern: "c[a-z]*d"))
+  }
 }
