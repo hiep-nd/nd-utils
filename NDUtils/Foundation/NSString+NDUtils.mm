@@ -83,4 +83,34 @@ auto cache = [[NDMemoryCache<NSString*, NSString*> alloc] init];
   return obj;
 }
 
+- (NSString* _Nullable)nd_urlSubdomain {
+  auto compos = GetHostCompos(self);
+  auto count = compos.count;
+  return count < 3 ? nil
+                   : [[compos subarrayWithRange:NSMakeRange(0, count - 2)]
+                         componentsJoinedByString:kHostSeparator];
+}
+
+- (NSString* _Nullable)nd_urlDomain {
+  auto compos = GetHostCompos(self);
+  auto count = compos.count;
+  return compos.count < 2 ? nil
+                          : [@[ compos[count - 2], compos[count - 1] ]
+                                componentsJoinedByString:kHostSeparator];
+}
+
+- (NSString* _Nullable)nd_urlTopLevelDomain {
+  return GetHostCompos(self).lastObject;
+}
+
+namespace {
+auto const kHostSeparator = @".";
+inline NSArray<NSString*>* GetHostCompos(NSString* self) {
+  auto compos = [[NSURLComponents alloc] initWithString:self];
+  auto hostCompos = [compos.host componentsSeparatedByString:kHostSeparator];
+  return hostCompos;
+  ;
+}
+}
+
 @end

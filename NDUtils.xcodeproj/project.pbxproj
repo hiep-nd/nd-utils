@@ -36,6 +36,7 @@
 		BA337A0A24E3CC660061B1DC /* NSObject+NDUtils_Foundation.h in Headers */ = {isa = PBXBuildFile; fileRef = BA337A0824E3CC660061B1DC /* NSObject+NDUtils_Foundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA337A0B24E3CC660061B1DC /* NSObject+NDUtils_Foundation.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA337A0924E3CC660061B1DC /* NSObject+NDUtils_Foundation.mm */; };
 		BA337A0C24E3CD300061B1DC /* NSObject+NDUtils_Foundation.h in Copy Files Foundation */ = {isa = PBXBuildFile; fileRef = BA337A0824E3CC660061B1DC /* NSObject+NDUtils_Foundation.h */; };
+		BA3704702521C9080071D494 /* NSStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA37046F2521C9080071D494 /* NSStringTests.swift */; };
 		BA96091A24BD506600EB97FB /* UIView+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA96091824BD506600EB97FB /* UIView+NDUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA96091B24BD506600EB97FB /* UIView+NDUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA96091924BD506600EB97FB /* UIView+NDUtils.mm */; };
 		BA9C378D24EFE08A0062BB30 /* libextobjc+NDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA9C378B24EFE08A0062BB30 /* libextobjc+NDUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -140,6 +141,7 @@
 		BA337A0424E39C960061B1DC /* UIImage+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+NDUtils.mm"; sourceTree = "<group>"; };
 		BA337A0824E3CC660061B1DC /* NSObject+NDUtils_Foundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NDUtils_Foundation.h"; sourceTree = "<group>"; };
 		BA337A0924E3CC660061B1DC /* NSObject+NDUtils_Foundation.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject+NDUtils_Foundation.mm"; sourceTree = "<group>"; };
+		BA37046F2521C9080071D494 /* NSStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSStringTests.swift; sourceTree = "<group>"; };
 		BA96091824BD506600EB97FB /* UIView+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+NDUtils.h"; sourceTree = "<group>"; };
 		BA96091924BD506600EB97FB /* UIView+NDUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIView+NDUtils.mm"; sourceTree = "<group>"; };
 		BA9C378B24EFE08A0062BB30 /* libextobjc+NDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libextobjc+NDUtils.h"; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				BAFD7F87247E1F7A00EC8CF3 /* Info.plist */,
 				BAFD7FA1247E23CD00EC8CF3 /* UIFontTests.swift */,
 				BAFD7FAE247E37E400EC8CF3 /* UIColorTests.swift */,
+				BA37046F2521C9080071D494 /* NSStringTests.swift */,
 				BAFD7FA0247E23CC00EC8CF3 /* NDUtilsTests-Bridging-Header.h */,
 			);
 			path = NDUtilsTests;
@@ -652,6 +655,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAFD7FA2247E23CD00EC8CF3 /* UIFontTests.swift in Sources */,
+				BA3704702521C9080071D494 /* NSStringTests.swift in Sources */,
 				BAFD7FAF247E37E400EC8CF3 /* UIColorTests.swift in Sources */,
 				BAFD7F86247E1F7A00EC8CF3 /* NDUtilsTests.m in Sources */,
 			);
