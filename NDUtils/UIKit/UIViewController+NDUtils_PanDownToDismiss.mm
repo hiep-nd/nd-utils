@@ -86,7 +86,15 @@ using namespace nd::objc;
 
 - (void)finishInteractiveTransition {
   [super finishInteractiveTransition];
+  self.hasStarted = NO;
+  self.shouldFinish = NO;
   NDCallAndReturnIfCan(self.didFinishInteractiveTransition);
+}
+
+- (void)cancelInteractiveTransition {
+  [super cancelInteractiveTransition];
+  self.hasStarted = NO;
+  self.shouldFinish = NO;
 }
 
 @end

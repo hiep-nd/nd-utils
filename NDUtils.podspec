@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NDUtils"
-  s.version      = "0.0.4.1"
+  s.version      = "0.0.4.2"
   s.summary      = "Utility for Foundation, UIKit,...."
   s.description  = <<-DESC
   NDUtils is a small utility framework for Foundation, UIKit,....
