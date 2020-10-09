@@ -14,10 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)nd_stringNamed:(NSString*)name NS_SWIFT_NAME(nd_(named:));
 
-- (NSString* _Nullable)nd_urlSubdomain;
-- (NSString* _Nullable)nd_urlDomain;
-- (NSString* _Nullable)nd_urlTopLevelDomain;
-
 - (BOOL)nd_containsRegexPattern:(NSString*)pattern
     NS_SWIFT_NAME(nd_contains(regexPattern:));
 - (BOOL)nd_matchsRegexPattern:(NSString*)pattern
