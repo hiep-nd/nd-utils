@@ -43,4 +43,10 @@ id UITextView_nd_delegateHandlers_creator(id owner) {
       self, @selector(nd_delegateHandlers));
 }
 
+- (void)nd_enableBorderStyleRoundedRect {
+  self.layer.borderColor = [UIColor colorWithWhite:0.8 alpha:1].CGColor;
+  self.layer.borderWidth = 1;
+  self.layer.cornerRadius = 5;
+}
+
 @end

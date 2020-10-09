@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, readonly)
     NDUIUITextViewDelegateHandlers* nd_delegateHandlers;
 
+- (void)nd_enableBorderStyleRoundedRect;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -25,6 +25,21 @@ inline BOOL Contain(id<NSFastEnumeration> container, BOOL (^conditioner)(id)) {
   }
   return NO;
 }
+
+inline NSMutableArray* Filter(id<NSFastEnumeration> container,
+                              BOOL (^isIncluded)(id)) {
+  if (!isIncluded) {
+    return nil;
+  }
+
+  auto builder = [[NSMutableArray alloc] init];
+  for (__unsafe_unretained id obj in container) {
+    if (isIncluded(obj)) {
+      [builder addObject:obj];
+    }
+  }
+  return builder;
+}
 }
 }
 #endif
