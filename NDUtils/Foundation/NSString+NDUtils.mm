@@ -97,7 +97,7 @@ auto cache = [[NDMemoryCache<NSString*, NSString*> alloc] init];
 
   return [regex firstMatchInString:self
                            options:kNilOptions
-                             range:NSMakeRange(0, self.length)];
+                             range:NSMakeRange(0, self.length)] != nil;
 }
 
 - (BOOL)nd_matchsRegexPattern:(NSString*)pattern {
