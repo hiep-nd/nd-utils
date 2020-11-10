@@ -1,16 +1,50 @@
 PODS:
-  - NDLog (0.0.4)
+  - NDLog (0.0.6.1):
+    - NDLog/Swift (= 0.0.6.1)
+  - NDLog/Core (0.0.6.1)
+  - NDLog/Swift (0.0.6.1):
+    - NDLog/Core
+  - NDUtils/Core (0.0.5)
+  - NDUtils/Foundation (0.0.5):
+    - NDLog (~> 0.0.6)
+    - NDUtils/Core
+  - NDUtils/Foundation_Swift (0.0.5):
+    - NDUtils/Foundation
+  - NDUtils/libextobjc (0.0.5):
+    - NDUtils/Core
+  - NDUtils/objc (0.0.5):
+    - NDLog (~> 0.0.6)
+    - NDUtils/Core
+  - NDUtils/QuartzCore (0.0.5):
+    - NDUtils/objc
+  - NDUtils/QuartzCore_Swift (0.0.5):
+    - NDUtils/QuartzCore
+  - NDUtils/Swift (0.0.5):
+    - NDUtils/Core
+    - NDUtils/Foundation_Swift
+    - NDUtils/libextobjc
+    - NDUtils/objc
+    - NDUtils/QuartzCore_Swift
+    - NDUtils/UIKit_Swift
+  - NDUtils/UIKit (0.0.5):
+    - NDUtils/QuartzCore
+  - NDUtils/UIKit_Swift (0.0.5):
+    - NDUtils/UIKit
 
 DEPENDENCIES:
   - NDLog (from `../NDLog`)
+  - NDUtils/Swift (from `.`)
 
 EXTERNAL SOURCES:
   NDLog:
     :path: "../NDLog"
+  NDUtils:
+    :path: "."
 
 SPEC CHECKSUMS:
-  NDLog: f84c4c42520a954db34fa487d88a9bcc2ee0100b
+  NDLog: 1e996efb979679f547dcf729a955fe92577ed2c5
+  NDUtils: 1a72e3cfd4f1510b261999c0f26f17648c033ac9
 
-PODFILE CHECKSUM: 2734fec5ce43934e207b7ba2e79df77973d29cc9
+PODFILE CHECKSUM: e3a555f583813f0136ece99972015355f03bd8b0
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

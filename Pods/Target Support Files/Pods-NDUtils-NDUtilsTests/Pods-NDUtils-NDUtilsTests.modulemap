@@ -1,6 +1,0 @@
-framework module Pods_NDUtils_NDUtilsTests {
-  umbrella header "Pods-NDUtils-NDUtilsTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -15,3 +15,4 @@
 
 FOUNDATION_EXPORT double NDLogVersionNumber;
 FOUNDATION_EXPORT const unsigned char NDLogVersionString[];
+
