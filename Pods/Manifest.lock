@@ -1,39 +1,51 @@
 PODS:
-  - NDLog (0.0.6.1):
-    - NDLog/Swift (= 0.0.6.1)
-  - NDLog/Core (0.0.6.1)
-  - NDLog/Swift (0.0.6.1):
-    - NDLog/Core
-  - NDUtils/Core (0.0.5)
-  - NDUtils/Foundation (0.0.5):
-    - NDLog (~> 0.0.6)
-    - NDUtils/Core
+  - NDLog (0.0.6.3):
+    - NDLog/Swift (= 0.0.6.3)
+  - NDLog/Core_ObjC (0.0.6.3)
+  - NDLog/Core_Swift (0.0.6.3):
+    - NDLog/Core_ObjC
+  - NDLog/ObjC (0.0.6.3):
+    - NDLog/Core_ObjC
+  - NDLog/Swift (0.0.6.3):
+    - NDLog/Core_Swift
+  - NDUtils (0.0.5):
+    - NDUtils/Swift (= 0.0.5)
+  - NDUtils/Core_ObjC (0.0.5)
+  - NDUtils/Core_Swift (0.0.5):
+    - NDUtils/Core_ObjC
+  - NDUtils/Foundation_ObjC (0.0.5):
+    - NDLog/ObjC (~> 0.0.6)
+    - NDUtils/objc_ObjC
   - NDUtils/Foundation_Swift (0.0.5):
-    - NDUtils/Foundation
-  - NDUtils/libextobjc (0.0.5):
-    - NDUtils/Core
-  - NDUtils/objc (0.0.5):
-    - NDLog (~> 0.0.6)
-    - NDUtils/Core
-  - NDUtils/QuartzCore (0.0.5):
-    - NDUtils/objc
+    - NDUtils/Foundation_ObjC
+  - NDUtils/libextobjc_ObjC (0.0.5):
+    - NDUtils/Core_ObjC
+  - NDUtils/libextobjc_Swift (0.0.5):
+    - NDUtils/libextobjc_ObjC
+  - NDUtils/objc_ObjC (0.0.5):
+    - NDLog/ObjC (~> 0.0.6)
+    - NDUtils/Core_ObjC
+  - NDUtils/objc_Swift (0.0.5):
+    - NDUtils/objc_ObjC
+  - NDUtils/QuartzCore_ObjC (0.0.5):
+    - NDUtils/objc_ObjC
   - NDUtils/QuartzCore_Swift (0.0.5):
-    - NDUtils/QuartzCore
+    - NDUtils/QuartzCore_ObjC
   - NDUtils/Swift (0.0.5):
-    - NDUtils/Core
+    - NDUtils/Core_Swift
     - NDUtils/Foundation_Swift
-    - NDUtils/libextobjc
-    - NDUtils/objc
+    - NDUtils/libextobjc_Swift
+    - NDUtils/objc_Swift
     - NDUtils/QuartzCore_Swift
     - NDUtils/UIKit_Swift
-  - NDUtils/UIKit (0.0.5):
-    - NDUtils/QuartzCore
+  - NDUtils/UIKit_ObjC (0.0.5):
+    - NDUtils/QuartzCore_ObjC
   - NDUtils/UIKit_Swift (0.0.5):
-    - NDUtils/UIKit
+    - NDUtils/UIKit_ObjC
 
 DEPENDENCIES:
   - NDLog (from `../NDLog`)
-  - NDUtils/Swift (from `.`)
+  - NDUtils (from `.`)
 
 EXTERNAL SOURCES:
   NDLog:
@@ -42,9 +54,9 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  NDLog: 1e996efb979679f547dcf729a955fe92577ed2c5
-  NDUtils: 1a72e3cfd4f1510b261999c0f26f17648c033ac9
+  NDLog: 783141ece6ac6a398262145b59cc7c27b80ab58d
+  NDUtils: 442ce18bf5671a0e56e3e81a81123841c8e40192
 
-PODFILE CHECKSUM: e3a555f583813f0136ece99972015355f03bd8b0
+PODFILE CHECKSUM: 35206e8b0cbc1bfbfbd6755ec0c112b5dc797527
 
 COCOAPODS: 1.9.3

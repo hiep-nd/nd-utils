@@ -22,4 +22,22 @@ using namespace nd::objc;
   XCTAssertEqualObjects(NSBundle.mainBundle, SubBundle(NDEvent.class, nil));
 }
 
+- (void)test_CFBundleVersion {
+  XCTAssertEqualObjects(@"1", NSBundle.mainBundle.nd_CFBundleVersion);
+}
+
+- (void)test_CFBundleShortVersionString {
+  XCTAssertEqualObjects(@"1.0",
+                        NSBundle.mainBundle.nd_CFBundleShortVersionString);
+}
+
+- (void)test_CFBundleInfoDictionaryVersion {
+  XCTAssertEqualObjects(@"6.0",
+                        NSBundle.mainBundle.nd_CFBundleInfoDictionaryVersion);
+}
+
+- (void)test_NSHumanReadableCopyright {
+  XCTAssertEqualObjects(nil, NSBundle.mainBundle.nd_NSHumanReadableCopyright);
+}
+
 @end

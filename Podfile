@@ -8,7 +8,7 @@ target 'Samples' do
   use_frameworks!
 
   # Pods for Samples
-  pod 'NDUtils/Swift', :path => '.'
+  pod 'NDUtils', :path => '.'
 
   pod 'NDLog', :path => '../NDLog'
 #  pod 'libextobjc/EXTScope'

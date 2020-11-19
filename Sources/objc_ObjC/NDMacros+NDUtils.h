@@ -18,3 +18,10 @@
       return block(__VA_ARGS__);         \
     }                                    \
   } while (0)
+#define NDCallIfCanAndReturn(block, ...) \
+  do {                                   \
+    if (block) {                         \
+      block(__VA_ARGS__);                \
+    }                                    \
+    return;                              \
+  } while (0)

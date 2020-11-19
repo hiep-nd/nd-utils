@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+#ifdef __cplusplus
+#import <initializer_list>
+#import <utility>
+#endif
+
 NS_ASSUME_NONNULL_BEGIN
 
 #ifdef __cplusplus
@@ -36,6 +41,27 @@ inline NSMutableArray* Filter(id<NSFastEnumeration> container,
   for (__unsafe_unretained id obj in container) {
     if (isIncluded(obj)) {
       [builder addObject:obj];
+    }
+  }
+  return builder;
+}
+
+inline NSMutableArray* SafeNSMutableArray(std::initializer_list<id> objs) {
+  auto builder = [[NSMutableArray alloc] initWithCapacity:objs.size()];
+  for (auto& obj : objs) {
+    if (obj) {
+      [builder addObject:obj];
+    }
+  }
+  return builder;
+}
+
+inline NSMutableDictionary* SafeNSMutableDictionary(
+    std::initializer_list<std::pair<id, id>> pairs) {
+  auto builder = [[NSMutableDictionary alloc] init];
+  for (auto& p : pairs) {
+    if (p.first) {
+      builder[p.first] = p.second;
     }
   }
   return builder;

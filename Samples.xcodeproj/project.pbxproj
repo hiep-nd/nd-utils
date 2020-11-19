@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9429CF7D506BEF418507E301 /* Pods_Samples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F6B014B8E75A022B9C8705 /* Pods_Samples.framework */; };
 		BA21349B255A2DCD0001ADC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA21349A255A2DCD0001ADC8 /* AppDelegate.swift */; };
-		BA21349D255A2DCD0001ADC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA21349C255A2DCD0001ADC8 /* SceneDelegate.swift */; };
 		BA21349F255A2DCD0001ADC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA21349E255A2DCD0001ADC8 /* ViewController.swift */; };
 		BA2134A2255A2DCD0001ADC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2134A0255A2DCD0001ADC8 /* Main.storyboard */; };
 		BA2134A4255A2DD00001ADC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2134A3255A2DD00001ADC8 /* Assets.xcassets */; };
@@ -20,6 +19,8 @@
 		BA2136B4255A30AA0001ADC8 /* NSStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2136AD255A30AA0001ADC8 /* NSStringTests.swift */; };
 		BA2136B6255A30AA0001ADC8 /* NDLocalizedStringTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA2136AF255A30AA0001ADC8 /* NDLocalizedStringTests.mm */; };
 		BA2136B7255A30AA0001ADC8 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2136B0255A30AA0001ADC8 /* UIColorTests.swift */; };
+		BA922FF52563B04E0002FB22 /* NSErrorTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA922FF42563B04E0002FB22 /* NSErrorTests.mm */; };
+		BA922FFA2563B0630002FB22 /* NSErrorSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA922FF92563B0630002FB22 /* NSErrorSwiftTests.swift */; };
 		E09B5EBF29922BC978A9C36C /* Pods_Samples_SamplesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76C44A2A7B5A4479100291A /* Pods_Samples_SamplesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +48,6 @@
 		868B2415041D1397A14DFFE9 /* Pods-Samples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Samples.debug.xcconfig"; path = "Target Support Files/Pods-Samples/Pods-Samples.debug.xcconfig"; sourceTree = "<group>"; };
 		BA213497255A2DCD0001ADC8 /* Samples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Samples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA21349A255A2DCD0001ADC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA21349C255A2DCD0001ADC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BA21349E255A2DCD0001ADC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA2134A1255A2DCD0001ADC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA2134A3255A2DD00001ADC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +67,8 @@
 		BA2136AD255A30AA0001ADC8 /* NSStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStringTests.swift; sourceTree = "<group>"; };
 		BA2136AF255A30AA0001ADC8 /* NDLocalizedStringTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NDLocalizedStringTests.mm; sourceTree = "<group>"; };
 		BA2136B0255A30AA0001ADC8 /* UIColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
+		BA922FF42563B04E0002FB22 /* NSErrorTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NSErrorTests.mm; sourceTree = "<group>"; };
+		BA922FF92563B0630002FB22 /* NSErrorSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSErrorSwiftTests.swift; sourceTree = "<group>"; };
 		D76C44A2A7B5A4479100291A /* Pods_Samples_SamplesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Samples_SamplesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F133DC4BDE889A060D103978 /* Pods-Samples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Samples.release.xcconfig"; path = "Target Support Files/Pods-Samples/Pods-Samples.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +108,6 @@
 				5A50456D5BE2D163C1441053 /* Pods-Samples-SamplesTests.debug.xcconfig */,
 				77344638B203BF30E78A2B79 /* Pods-Samples-SamplesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -137,7 +138,6 @@
 			children = (
 				BA213698255A2E0D0001ADC8 /* Configs */,
 				BA21349A255A2DCD0001ADC8 /* AppDelegate.swift */,
-				BA21349C255A2DCD0001ADC8 /* SceneDelegate.swift */,
 				BA21349E255A2DCD0001ADC8 /* ViewController.swift */,
 				BA2134A0255A2DCD0001ADC8 /* Main.storyboard */,
 				BA2134A3255A2DD00001ADC8 /* Assets.xcassets */,
@@ -157,6 +157,8 @@
 				BA2136AA255A30AA0001ADC8 /* UIFontTests.swift */,
 				BA2134B3255A2DD00001ADC8 /* Info.plist */,
 				BA2136A5255A30A90001ADC8 /* SamplesTests-Bridging-Header.h */,
+				BA922FF42563B04E0002FB22 /* NSErrorTests.mm */,
+				BA922FF92563B0630002FB22 /* NSErrorSwiftTests.swift */,
 			);
 			path = SamplesTests;
 			sourceTree = "<group>";
@@ -445,7 +447,6 @@
 			files = (
 				BA21349F255A2DCD0001ADC8 /* ViewController.swift in Sources */,
 				BA21349B255A2DCD0001ADC8 /* AppDelegate.swift in Sources */,
-				BA21349D255A2DCD0001ADC8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,9 +455,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2136B4255A30AA0001ADC8 /* NSStringTests.swift in Sources */,
+				BA922FF52563B04E0002FB22 /* NSErrorTests.mm in Sources */,
 				BA2136B6255A30AA0001ADC8 /* NDLocalizedStringTests.mm in Sources */,
 				BA2136B1255A30AA0001ADC8 /* UIFontTests.swift in Sources */,
 				BA2136B7255A30AA0001ADC8 /* UIColorTests.swift in Sources */,
+				BA922FFA2563B0630002FB22 /* NSErrorSwiftTests.swift in Sources */,
 				BA2136B2255A30AA0001ADC8 /* NDBundleTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -610,7 +613,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -670,7 +673,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UKD7V9S9N;
 				INFOPLIST_FILE = SamplesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -696,7 +698,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UKD7V9S9N;
 				INFOPLIST_FILE = SamplesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
