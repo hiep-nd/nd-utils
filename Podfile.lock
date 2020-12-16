@@ -8,39 +8,39 @@ PODS:
     - NDLog/Core_ObjC
   - NDLog/Swift (0.0.6.3):
     - NDLog/Core_Swift
-  - NDUtils (0.0.5):
-    - NDUtils/Swift (= 0.0.5)
-  - NDUtils/Core_ObjC (0.0.5)
-  - NDUtils/Core_Swift (0.0.5):
+  - NDUtils (0.0.5.1):
+    - NDUtils/Swift (= 0.0.5.1)
+  - NDUtils/Core_ObjC (0.0.5.1)
+  - NDUtils/Core_Swift (0.0.5.1):
     - NDUtils/Core_ObjC
-  - NDUtils/Foundation_ObjC (0.0.5):
+  - NDUtils/Foundation_ObjC (0.0.5.1):
     - NDLog/ObjC (~> 0.0.6)
     - NDUtils/objc_ObjC
-  - NDUtils/Foundation_Swift (0.0.5):
+  - NDUtils/Foundation_Swift (0.0.5.1):
     - NDUtils/Foundation_ObjC
-  - NDUtils/libextobjc_ObjC (0.0.5):
+  - NDUtils/libextobjc_ObjC (0.0.5.1):
     - NDUtils/Core_ObjC
-  - NDUtils/libextobjc_Swift (0.0.5):
+  - NDUtils/libextobjc_Swift (0.0.5.1):
     - NDUtils/libextobjc_ObjC
-  - NDUtils/objc_ObjC (0.0.5):
+  - NDUtils/objc_ObjC (0.0.5.1):
     - NDLog/ObjC (~> 0.0.6)
     - NDUtils/Core_ObjC
-  - NDUtils/objc_Swift (0.0.5):
+  - NDUtils/objc_Swift (0.0.5.1):
     - NDUtils/objc_ObjC
-  - NDUtils/QuartzCore_ObjC (0.0.5):
+  - NDUtils/QuartzCore_ObjC (0.0.5.1):
     - NDUtils/objc_ObjC
-  - NDUtils/QuartzCore_Swift (0.0.5):
+  - NDUtils/QuartzCore_Swift (0.0.5.1):
     - NDUtils/QuartzCore_ObjC
-  - NDUtils/Swift (0.0.5):
+  - NDUtils/Swift (0.0.5.1):
     - NDUtils/Core_Swift
     - NDUtils/Foundation_Swift
     - NDUtils/libextobjc_Swift
     - NDUtils/objc_Swift
     - NDUtils/QuartzCore_Swift
     - NDUtils/UIKit_Swift
-  - NDUtils/UIKit_ObjC (0.0.5):
+  - NDUtils/UIKit_ObjC (0.0.5.1):
     - NDUtils/QuartzCore_ObjC
-  - NDUtils/UIKit_Swift (0.0.5):
+  - NDUtils/UIKit_Swift (0.0.5.1):
     - NDUtils/UIKit_ObjC
 
 DEPENDENCIES:
@@ -55,7 +55,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   NDLog: 783141ece6ac6a398262145b59cc7c27b80ab58d
-  NDUtils: 442ce18bf5671a0e56e3e81a81123841c8e40192
+  NDUtils: aa4bbf2c741cf5d9b53276beb0cff3b7a365b7b2
 
 PODFILE CHECKSUM: 35206e8b0cbc1bfbfbd6755ec0c112b5dc797527
 

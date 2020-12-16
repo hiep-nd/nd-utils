@@ -9,6 +9,9 @@
 #import <objc/runtime.h>
 
 #ifdef __cplusplus
+
+#import <vector>
+
 namespace nd {
 namespace objc {
 template <typename T>
@@ -33,6 +36,31 @@ inline id _Nonnull GetAssociatedObject(id _Nonnull object,
   }
   return obj;
 }
+
+inline void SwizzleMethod(Class _Nonnull cls,
+                          SEL _Nonnull sel,
+                          SEL _Nonnull newSel) {
+  auto originalMethod = class_getInstanceMethod(cls, sel);
+  auto swizzledMethod = class_getInstanceMethod(cls, newSel);
+  BOOL didAddMethod =
+      class_addMethod(cls, sel, method_getImplementation(swizzledMethod),
+                      method_getTypeEncoding(swizzledMethod));
+  if (didAddMethod) {
+    class_replaceMethod(cls, newSel, method_getImplementation(originalMethod),
+                        method_getTypeEncoding(originalMethod));
+  } else {
+    method_exchangeImplementations(originalMethod, swizzledMethod);
+  }
+}
+
+inline void SwizzleMethods(
+    Class _Nonnull cls,
+    const std::vector<std::tuple<SEL _Nonnull, SEL _Nonnull>>& sels) {
+  for (auto& sel : sels) {
+    SwizzleMethod(cls, std::get<0>(sel), std::get<1>(sel));
+  }
+}
+
 }  // namespace objc
 }  // namespace nd
 #endif

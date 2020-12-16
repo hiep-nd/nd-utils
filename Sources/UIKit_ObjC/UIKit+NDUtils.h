@@ -11,6 +11,7 @@
 #import <NDUtils/UIControl+NDUtils.h>
 #import <NDUtils/UIDevice+NDUtils.h>
 #import <NDUtils/UIFont+NDUtils.h>
+#import <NDUtils/UIGestureRecognizer+NDUtils.h>
 #import <NDUtils/UIImage+NDUtils.h>
 #import <NDUtils/UIImagePickerController+NDUtils.h>
 #import <NDUtils/UINavigationController+NDUtils.h>
