@@ -41,4 +41,11 @@ id UIScrollView_nd_delegateHandlers_creator(id owner) {
       self, @selector(nd_delegateHandlers));
 }
 
+- (void)nd_scrollToTopWithAnimated:(BOOL)animated {
+  [self layoutIfNeeded];
+  [self setContentOffset:CGPointMake(self.contentOffset.x,
+                                     -self.adjustedContentInset.top)
+                animated:animated];
+}
+
 @end

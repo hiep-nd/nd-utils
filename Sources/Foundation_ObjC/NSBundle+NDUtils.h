@@ -10,11 +10,12 @@
 
 #import <NDUtils/NSObject+NDUtils.h>
 
+#ifdef __cplusplus
+
 #import <NDLog/NDLog.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-#ifdef __cplusplus
 namespace nd {
 namespace objc {
 inline NSBundle* SubBundle(Class containerCls, NSString* name) {
@@ -33,7 +34,10 @@ inline RType* _Nullable BundleInfo(NSBundle* bundle, NSString* key) {
 }
 }
 }
+NS_ASSUME_NONNULL_END
 #endif
+
+NS_ASSUME_NONNULL_BEGIN
 
 FOUNDATION_EXPORT
 NSBundle* NDSubBundle(Class containerCls, NSString* name);

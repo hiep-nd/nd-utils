@@ -9,7 +9,6 @@
 #import <NDUtils/NSString+NDUtils.h>
 
 #import <NDLog/NDLog.h>
-#import <UIKit/UIKit.h>
 
 @interface NDMemoryCache<__covariant KeyType, __covariant ObjectType> : NSObject
 

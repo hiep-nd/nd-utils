@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIControl (NDUtils)
+@protocol NDUIControlActionHandlers
 
 - (id<NSObject>)nd_events:(UIControlEvents)events
                addAction0:(void (^)(void))action
@@ -26,6 +26,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)nd_removeActionHandle:(id<NSObject>)actionHandle
     NS_SWIFT_NAME(nd_remove(actionHandle:));
+
+@end
+
+@interface UIControl (NDUtils) <NDUIControlActionHandlers>
 
 @end
 

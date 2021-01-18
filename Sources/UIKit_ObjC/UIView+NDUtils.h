@@ -17,7 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)nd_shakeWithDuration:(NSTimeInterval)duration
                  translation:(CGPoint)translation NS_REFINED_FOR_SWIFT
     API_AVAILABLE(ios(10.0));
-
+- (UIView*)nd_enableSeparatorWithHeight:(CGFloat)height
+                                leading:(CGFloat)leading
+                               trailing:(CGFloat)trailing
+                                  color:(UIColor*)color NS_REFINED_FOR_SWIFT;
 @end
 
 NS_ASSUME_NONNULL_END

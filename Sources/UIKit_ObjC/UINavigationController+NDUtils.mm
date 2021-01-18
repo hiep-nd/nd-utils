@@ -8,9 +8,12 @@
 
 #import <NDUtils/UINavigationController+NDUtils.h>
 
+#import <NDUtils/UIGestureRecognizer+NDUtils.h>
+
 #import <NDLog/NDLog.h>
-#import <NDUtils/CATransaction+NDUtils.h>
-#import <NDUtils/runtime+NDUtils.h>
+#import <NDUtils/QuartzCore+NDUtils.h>
+#import <NDUtils/libextobjc+NDUtils.h>
+#import <NDUtils/objc+NDUtils.h>
 
 using namespace nd::objc;
 
@@ -74,4 +77,12 @@ id UINavigationController_nd_delegateHandlers_creator(id owner) {
                            completion:completion];
 }
 
+- (void)nd_enableInteractivePopGestureRecognizerWithViewControllersCount {
+  @weakify(self);
+  self.interactivePopGestureRecognizer.nd_delegateHandlers.shouldBegin =
+      ^BOOL(__kindof UIGestureRecognizer* _Nonnull) {
+        @strongify(self);
+        return self.viewControllers.count > 1;
+      };
+}
 @end

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NDUtils"
-  s.version      = "0.0.5.1"
+  s.version      = "0.0.5.2"
   s.summary      = "Utility for Foundation, UIKit,...."
   s.description  = <<-DESC
   NDUtils is a small utility framework for Foundation, UIKit,....
@@ -74,6 +74,22 @@ Pod::Spec.new do |s|
     ss.dependency 'NDUtils/Foundation_Swift'
   end
 
+  s.subspec 'CoreGraphics_ObjC' do |ss|
+    ss.source_files = 'Sources/CoreGraphics_ObjC/*.{h,m,mm,swift}'
+
+    ss.framework = 'CoreGraphics'
+  end
+
+  s.subspec 'CoreGraphics_Swift' do |ss|
+#    ss.source_files = 'Sources/CoreGraphics_Swift/*.{h,m,mm,swift}'
+
+    ss.dependency 'NDUtils/CoreGraphics_ObjC'
+  end
+
+  s.subspec 'CoreGraphics' do |ss|
+    ss.dependency 'NDUtils/CoreGraphics_Swift'
+  end
+
   s.subspec 'QuartzCore_ObjC' do |ss|
     ss.source_files = 'Sources/QuartzCore_ObjC/*.{h,m,mm,swift}'
 
@@ -97,7 +113,10 @@ Pod::Spec.new do |s|
 
     ss.framework = 'UIKit'
 
+    ss.dependency 'NDUtils/CoreGraphics_ObjC'
+    ss.dependency 'NDUtils/Foundation_ObjC'
     ss.dependency 'NDUtils/QuartzCore_ObjC'
+    ss.dependency 'NDUtils/libextobjc_ObjC'
   end
 
   s.subspec 'UIKit_Swift' do |ss|
@@ -115,6 +134,7 @@ Pod::Spec.new do |s|
     ss.dependency 'NDUtils/libextobjc_ObjC'
     ss.dependency 'NDUtils/objc_ObjC'
     ss.dependency 'NDUtils/Foundation_ObjC'
+    ss.dependency 'NDUtils/CoreGraphics_ObjC'
     ss.dependency 'NDUtils/QuartzCore_ObjC'
     ss.dependency 'NDUtils/UIKit_ObjC'
   end
@@ -124,6 +144,7 @@ Pod::Spec.new do |s|
     ss.dependency 'NDUtils/libextobjc_Swift'
     ss.dependency 'NDUtils/objc_Swift'
     ss.dependency 'NDUtils/Foundation_Swift'
+    ss.dependency 'NDUtils/CoreGraphics_Swift'
     ss.dependency 'NDUtils/QuartzCore_Swift'
     ss.dependency 'NDUtils/UIKit_Swift'
   end

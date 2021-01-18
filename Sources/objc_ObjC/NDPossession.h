@@ -6,7 +6,7 @@
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <objc/NSObject.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

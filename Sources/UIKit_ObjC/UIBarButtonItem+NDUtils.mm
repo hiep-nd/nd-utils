@@ -10,34 +10,36 @@
 
 #import <NDLog/NDLog.h>
 #import <NDUtils/NDPossession.h>
-#import <NDUtils/NDUITargetActionHandle.h>
+#import <NDUtils/NDTargetActionHandle.h>
 #import <NDUtils/runtime+NDUtils.h>
 
 using namespace nd::objc;
 
 @interface NDUIBarButtonItemActionHandle
-    : NDUITargetActionHandle <UIBarButtonItem*>
+    : NDAbstractTargetActionHandle1 <UIBarButtonItem*,
+                                     UIBarButtonItem*,
+                                     UIEvent*>
 @end
 
 @implementation NDUIBarButtonItemActionHandle
 
 - (instancetype)initWithOwner:(UIBarButtonItem*)owner
                        action:(void (^)(__kindof id<NSObject> _Nonnull,
-                                        UIEvent* _Nonnull))action {
+                                        __kindof id<NSObject> _Nonnull))action {
   self = [super initWithOwner:owner action:action];
   if (self) {
     if (owner && action) {
       owner.target = self;
-      owner.action = @selector(actionWithSender:event:);
+      owner.action = @selector(actionWithSender:para:);
     }
   }
   return self;
 }
 
-- (void)dealloc {
+- (void)disconnectWithOwner {
   __unsafe_unretained auto owner = self.owner;
   if (owner && owner.target == self &&
-      owner.action == @selector(actionWithSender:event:)) {
+      owner.action == @selector(actionWithSender:para:)) {
     owner.target = nil;
     owner.action = nil;
   }

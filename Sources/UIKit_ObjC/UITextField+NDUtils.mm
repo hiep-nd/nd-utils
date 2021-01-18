@@ -12,7 +12,10 @@
 #import <NDUtils/NDMacros+NDUtils.h>
 #import <NDUtils/runtime+NDUtils.h>
 
+#import <map>
+
 using namespace nd::objc;
+using namespace std;
 
 @interface NDUITextFieldDelegateHandlers () <UITextFieldDelegate>
 @end
@@ -28,12 +31,15 @@ using namespace nd::objc;
   ;
 }
 
-// MARK: - UITextFieldDelegate
+// MARK: - UITextFieldDelegate - optionals
 - (void)textFieldDidBeginEditing:(UITextField*)textField {
   if (self.owner != textField) {
     NDAssertionFailure(@"Misused of '%@' as '%@' delegate.", self, textField);
   } else {
     NDCallAndReturnIfCan(self.didBeginEditing, textField);
+    NDAssertionFailure(@"Miscalled method '%s' before set handler '%@'.",
+                       __PRETTY_FUNCTION__,
+                       NSStringFromSelector(@selector(didBeginEditing)));
   }
 }
 
@@ -42,8 +48,42 @@ using namespace nd::objc;
     NDAssertionFailure(@"Misused of '%@' as '%@' delegate.", self, textField);
   } else {
     NDCallAndReturnIfCan(self.shouldReturn, textField);
+    NDAssertionFailure(@"Miscalled method '%s' before set handler '%@'.",
+                       __PRETTY_FUNCTION__,
+                       NSStringFromSelector(@selector(shouldReturn)));
   }
   return YES;
+}
+
+// MARK:- NSObject
+- (BOOL)respondsToSelector:(SEL)aSelector {
+  // clang-format off
+  static auto selectorsMap = ([]() {
+    auto builder = map<SEL, BOOL (^)(NDUITextFieldDelegateHandlers*)>({
+      {
+        @selector(textFieldDidBeginEditing:),
+        ^BOOL(NDUITextFieldDelegateHandlers* self) {
+          return self.didBeginEditing!= nil;
+        }
+      },
+      {
+        @selector(textFieldShouldReturn:),
+        ^BOOL(NDUITextFieldDelegateHandlers* self) {
+          return self.shouldReturn!= nil;
+        }
+      }
+    });
+
+    return builder;
+  })();
+
+  auto it = selectorsMap.find(aSelector);
+  if (it != selectorsMap.end()) {
+    return it->second(self);
+  }
+
+  return [super respondsToSelector:aSelector];
+// clang-format on
 }
 
 @end

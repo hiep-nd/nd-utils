@@ -79,7 +79,20 @@ NS_SWIFT_NAME(NDUIGestureRecognizerDelegateHandlersProtocol)
 @end
 // clang-format on
 
-@interface UIGestureRecognizer (NDUtils)
+@protocol NDUIGestureRecognizerActionHandlers
+
+- (id<NSObject>)nd_addAction0:(void (^)(void))action
+    NS_SWIFT_NAME(nd_add(action:));
+
+- (id<NSObject>)nd_addAction:(void (^)(__kindof UIGestureRecognizer*))action
+    NS_SWIFT_NAME(nd_add(action:));
+
+- (void)nd_removeActionHandle:(id<NSObject>)actionHandle
+    NS_SWIFT_NAME(nd_remove(actionHandle:));
+
+@end
+
+@interface UIGestureRecognizer (NDUtils) <NDUIGestureRecognizerActionHandlers>
 
 @property(nonatomic, strong, readonly) id<NDUIGestureRecognizerDelegateHandlers>
     nd_delegateHandlers;

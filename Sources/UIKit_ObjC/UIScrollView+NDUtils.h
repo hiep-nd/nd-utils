@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, readonly)
     NDUIScrollViewDelegateHandlers* nd_delegateHandlers;
 
+- (void)nd_scrollToTopWithAnimated:(BOOL)animated
+    API_AVAILABLE(ios(11.0), tvos(11.0))NS_REFINED_FOR_SWIFT;
+
 @end
 
 NS_ASSUME_NONNULL_END

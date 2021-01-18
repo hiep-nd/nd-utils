@@ -11,7 +11,11 @@ target 'Samples' do
   pod 'NDUtils', :path => '.'
 
   pod 'NDLog', :path => '../NDLog'
-#  pod 'libextobjc/EXTScope'
+  pod 'NDMVVM', :path => '../NDMVVM'
+  pod 'NDAutolayoutUtils', :path => '../NDAutolayoutUtils'
+  pod 'NDModificationOperators', :path => '../NDModificationOperators'
+  pod 'NDManualObjects', :path => '../NDManualObjects'
+
 
   target 'SamplesTests' do
     # Pods for testing

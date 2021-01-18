@@ -12,7 +12,10 @@
 #import <NDUtils/NDMacros+NDUtils.h>
 #import <NDUtils/runtime+NDUtils.h>
 
+#import <map>
+
 using namespace nd::objc;
+using namespace std;
 
 @interface NDUIImagePickerControllerDelegateHandlers () <
     UIImagePickerControllerDelegate>
@@ -35,6 +38,7 @@ using namespace nd::objc;
   return self;
 }
 
+// MARK:- UIImagePickerControllerDelegate - optionals
 - (void)imagePickerController:(UIImagePickerController*)picker
     didFinishPickingMediaWithInfo:
         (NSDictionary<UIImagePickerControllerInfoKey, id>*)info {
@@ -42,6 +46,9 @@ using namespace nd::objc;
     NDAssertionFailure(@"Misused of '%@' as '%@' delegate.", self, picker);
   } else {
     NDCallAndReturnIfCan(self.didFinishPickingMediaWithInfo, picker, info);
+    NDAssertionFailure(
+        @"Miscalled method '%s' before set handler '%@'.", __PRETTY_FUNCTION__,
+        NSStringFromSelector(@selector(didFinishPickingMediaWithInfo)));
   }
 }
 
@@ -50,7 +57,41 @@ using namespace nd::objc;
     NDAssertionFailure(@"Misused of '%@' as '%@' delegate.", self, picker);
   } else {
     NDCallAndReturnIfCan(self.didCancel, picker);
+    NDAssertionFailure(@"Miscalled method '%s' before set handler '%@'.",
+                       __PRETTY_FUNCTION__,
+                       NSStringFromSelector(@selector(didCancel)));
   }
+}
+
+// MARK:- NSObject
+- (BOOL)respondsToSelector:(SEL)aSelector {
+  // clang-format off
+  static auto selectorsMap = ([]() {
+    auto builder = map<SEL, BOOL (^)(NDUIImagePickerControllerDelegateHandlers*)>({
+      {
+        @selector(imagePickerController:didFinishPickingMediaWithInfo:),
+        ^BOOL(NDUIImagePickerControllerDelegateHandlers* self) {
+          return self.didFinishPickingMediaWithInfo!= nil;
+        }
+      },
+      {
+        @selector(imagePickerControllerDidCancel:),
+        ^BOOL(NDUIImagePickerControllerDelegateHandlers* self) {
+          return self.didCancel!= nil;
+        }
+      }
+    });
+
+    return builder;
+  })();
+
+  auto it = selectorsMap.find(aSelector);
+  if (it != selectorsMap.end()) {
+    return it->second(self);
+  }
+
+  return [super respondsToSelector:aSelector];
+// clang-format on
 }
 
 @end

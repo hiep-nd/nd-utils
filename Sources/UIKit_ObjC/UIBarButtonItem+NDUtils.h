@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIBarButtonItem (NDUtils)
+@protocol NDUIBarButtonItemActionHandlers
 
 @property(nonatomic, copy) void (^_Nullable nd_action)
     (__kindof UIBarButtonItem*, UIEvent*);
@@ -18,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
     NS_SWIFT_NAME(nd_set(action:));
 - (void)setNd_action1:(void (^_Nullable)(__kindof UIBarButtonItem*))nd_action1
     NS_SWIFT_NAME(nd_set(action:));
+
+@end
+
+@interface UIBarButtonItem (NDUtils) <NDUIBarButtonItemActionHandlers>
 
 @end
 

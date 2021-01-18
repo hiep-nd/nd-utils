@@ -41,4 +41,23 @@
   [animator startAnimation];
 }
 
+- (UIView*)nd_enableSeparatorWithHeight:(CGFloat)height
+                                leading:(CGFloat)leading
+                               trailing:(CGFloat)trailing
+                                  color:(UIColor*)color {
+  auto separatorView = [[UIView alloc] init];
+  separatorView.backgroundColor = color;
+  separatorView.translatesAutoresizingMaskIntoConstraints = NO;
+  [self addSubview:separatorView];
+  [NSLayoutConstraint activateConstraints:@[
+    [separatorView.heightAnchor constraintEqualToConstant:height],
+    [separatorView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor
+                                                constant:leading],
+    [separatorView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor
+                                                 constant:-trailing],
+    [separatorView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor]
+  ]];
+  return separatorView;
+}
+
 @end

@@ -37,6 +37,8 @@ NS_ASSUME_NONNULL_BEGIN
                         completion:(void (^_Nullable)(void))completion
     NS_REFINED_FOR_SWIFT;
 
+- (void)nd_enableInteractivePopGestureRecognizerWithViewControllersCount;
+
 @end
 
 NS_ASSUME_NONNULL_END

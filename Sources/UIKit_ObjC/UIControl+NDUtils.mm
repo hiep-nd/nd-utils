@@ -10,24 +10,22 @@
 
 #import <NDLog/NDLog.h>
 #import <NDUtils/NDMacros+NDUtils.h>
-#import <NDUtils/NDUITargetActionHandle.h>
+#import <NDUtils/NDTargetActionHandle.h>
 #import <NDUtils/runtime+NDUtils.h>
 
 using namespace nd::objc;
 
-@interface NDUIControlActionHandle : NDUITargetActionHandle <UIControl*>
-
-- (instancetype)initWithOwner:(UIControl*)owner
-                       action:(void (^)(__kindof UIControl* _Nonnull,
-                                        UIEvent* _Nonnull))action
+@interface NDUIControlActionHandle
+    : NDAbstractTargetActionHandle1 <UIControl*, UIControl*, UIEvent*>
+- (instancetype)initWithOwner:(id<NSObject>)owner
+                       action:(void (^)(__kindof id<NSObject> _Nonnull,
+                                        __kindof id<NSObject> _Nonnull))action
     NS_UNAVAILABLE;
 
 - (instancetype)initWithOwner:(UIControl*)control
                        events:(UIControlEvents)events
                        action:(void (^)(__kindof UIControl*, UIEvent*))action
     NS_DESIGNATED_INITIALIZER;
-
-- (void)disconnectWithControl;
 
 @end
 
@@ -43,23 +41,20 @@ using namespace nd::objc;
     _events = events;
     if (owner && action) {
       [owner addTarget:self
-                    action:@selector(actionWithSender:event:)
+                    action:@selector(actionWithSender:para:)
           forControlEvents:_events];
     }
   }
   return self;
 }
 
-- (void)disconnectWithControl {
+- (void)disconnectWithOwner {
   if (self.owner && self.action) {
     [self.owner removeTarget:self
-                      action:@selector(actionWithSender:event:)
+                      action:@selector(actionWithSender:para:)
             forControlEvents:_events];
+    self.action = nil;
   }
-}
-
-- (void)dealloc {
-  [self disconnectWithControl];
 }
 
 @end
@@ -111,7 +106,7 @@ using namespace nd::objc;
     return;
   }
 
-  [(NDUIControlActionHandle*)actionHandle disconnectWithControl];
+  [(NDUIControlActionHandle*)actionHandle disconnectWithOwner];
   [self.nd_actionHandles removeObject:actionHandle];
 }
 

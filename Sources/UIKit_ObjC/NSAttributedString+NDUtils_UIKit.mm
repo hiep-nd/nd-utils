@@ -11,9 +11,9 @@
 @implementation NSAttributedString (NDUtils_UIKit)
 
 - (UIImage*)nd_image {
-  UIGraphicsBeginImageContextWithOptions(self.size, NO,
-                                         UIScreen.mainScreen.scale);
-  [self drawInRect:{CGPointZero, self.size}];
+  auto size = self.size;
+  UIGraphicsBeginImageContextWithOptions(size, NO, UIScreen.mainScreen.scale);
+  [self drawInRect:{CGPointZero, size}];
   auto image = UIGraphicsGetImageFromCurrentImageContext();
   UIGraphicsEndImageContext();
 

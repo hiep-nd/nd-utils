@@ -12,19 +12,51 @@
 #import <NDUtils/NDMacros+NDUtils.h>
 #import <NDUtils/runtime+NDUtils.h>
 
+#import <map>
+
 using namespace nd::objc;
+using namespace std;
 
 @interface NDUIUITextViewDelegateHandlers () <UITextViewDelegate>
 @end
 
 @implementation NDUIUITextViewDelegateHandlers
 
+// MARK: - UITextViewDelegate - optionals
 - (void)textViewDidBeginEditing:(UITextView*)textView {
   if (self.owner != textView) {
     NDAssertionFailure(@"Misused of '%@' as '%@' delegate.", self, textView);
   } else {
     NDCallAndReturnIfCan(self.didBeginEditing, textView);
+    NDAssertionFailure(@"Miscalled method '%s' before set handler '%@'.",
+                       __PRETTY_FUNCTION__,
+                       NSStringFromSelector(@selector(didBeginEditing)));
   }
+}
+
+// MARK:- NSObject
+- (BOOL)respondsToSelector:(SEL)aSelector {
+  // clang-format off
+  static auto selectorsMap = ([]() {
+    auto builder = map<SEL, BOOL (^)(NDUIUITextViewDelegateHandlers*)>({
+      {
+        @selector(textViewDidBeginEditing:),
+        ^BOOL(NDUIUITextViewDelegateHandlers* self) {
+          return self.didBeginEditing!= nil;
+        }
+      }
+    });
+
+    return builder;
+  })();
+
+  auto it = selectorsMap.find(aSelector);
+  if (it != selectorsMap.end()) {
+    return it->second(self);
+  }
+
+  return [super respondsToSelector:aSelector];
+// clang-format on
 }
 
 @end
