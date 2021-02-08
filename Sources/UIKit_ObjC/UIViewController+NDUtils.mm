@@ -20,6 +20,15 @@ using namespace std;
 
 @implementation NDUIViewControllerTransitioningDelegateHandles
 
+namespace {
+template <typename T>
+void Set(NDUIViewControllerTransitioningDelegateHandles* self, T& lv, T rv) {
+  nd::objc::Set<OBJC_ASSOCIATION_COPY_NONATOMIC>(self, lv, rv);
+  self.owner.transitioningDelegate = nil;
+  self.owner.transitioningDelegate = self;
+}
+}
+
 - (instancetype)initWithOwner:(UIViewController*)owner {
   self = [super initWithOwner:owner];
   if (self) {
@@ -30,13 +39,61 @@ using namespace std;
 
 // MARK: - NDUIViewControllerTransitioningDelegateHandles
 
-@synthesize animationControllerForDismissedController;
+@synthesize animationControllerForDismissedController =
+    _animationControllerForDismissedController;
+- (void)setAnimationControllerForDismissedController:
+    (id<UIViewControllerAnimatedTransitioning> _Nullable (^)(
+        UIViewController* _Nonnull))animationControllerForDismissedController {
+  Set(self, _animationControllerForDismissedController,
+      animationControllerForDismissedController);
+}
+
 @synthesize
-    animationControllerForPresentedControllerPresentingControllerSourceController;
-@synthesize interactionControllerForDismissal;
-@synthesize interactionControllerForPresentation;
+    animationControllerForPresentedControllerPresentingControllerSourceController =
+        _animationControllerForPresentedControllerPresentingControllerSourceController;
+- (void)setAnimationControllerForPresentedControllerPresentingControllerSourceController:
+    (id<UIViewControllerAnimatedTransitioning> _Nullable (^)(
+        UIViewController* _Nonnull,
+        UIViewController* _Nonnull,
+        UIViewController* _Nonnull))
+        animationControllerForPresentedControllerPresentingControllerSourceController {
+  Set(self,
+      _animationControllerForPresentedControllerPresentingControllerSourceController,
+      animationControllerForPresentedControllerPresentingControllerSourceController);
+}
+
+@synthesize interactionControllerForDismissal =
+    _interactionControllerForDismissal;
+- (void)setInteractionControllerForDismissal:
+    (id<UIViewControllerInteractiveTransitioning> _Nullable (^)(
+        id<UIViewControllerAnimatedTransitioning> _Nonnull))
+        interactionControllerForDismissal {
+  Set(self, _interactionControllerForDismissal,
+      interactionControllerForDismissal);
+}
+
+@synthesize interactionControllerForPresentation =
+    _interactionControllerForPresentation;
+- (void)setInteractionControllerForPresentation:
+    (id<UIViewControllerInteractiveTransitioning> _Nullable (^)(
+        id<UIViewControllerAnimatedTransitioning> _Nonnull))
+        interactionControllerForPresentation {
+  Set(self, _interactionControllerForPresentation,
+      interactionControllerForPresentation);
+}
+
 @synthesize
-    presentationControllerForPresentedViewControllerPresentingViewControllerSourceViewController;
+    presentationControllerForPresentedViewControllerPresentingViewControllerSourceViewController =
+        _presentationControllerForPresentedViewControllerPresentingViewControllerSourceViewController;
+- (void)setPresentationControllerForPresentedViewControllerPresentingViewControllerSourceViewController:
+    (UIPresentationController* _Nullable (^)(UIViewController* _Nonnull,
+                                             UIViewController* _Nullable,
+                                             UIViewController* _Nonnull))
+        presentationControllerForPresentedViewControllerPresentingViewControllerSourceViewController {
+  Set(self,
+      _presentationControllerForPresentedViewControllerPresentingViewControllerSourceViewController,
+      presentationControllerForPresentedViewControllerPresentingViewControllerSourceViewController);
+}
 
 // MARK:- UIViewControllerTransitioningDelegate - optionals
 - (nullable id<UIViewControllerAnimatedTransitioning>)
@@ -174,6 +231,37 @@ id UIViewController_nd_transitioningDelegateHandlers_creator(id owner) {
       UIViewController_nd_transitioningDelegateHandlers_creator,
       OBJC_ASSOCIATION_RETAIN_NONATOMIC>(
       self, @selector(nd_transitioningDelegateHandlers));
+}
+
+- (UIViewController* _Nullable)nd_topPresentedViewController {
+  auto top = self.presentedViewController;
+  auto presented = top.presentedViewController;
+  while (presented) {
+    top = presented;
+    presented = top.presentedViewController;
+  }
+
+  return top;
+}
+
+- (UIViewController* _Nullable)nd_bottomPresentingViewController {
+  auto bottom = self.presentingViewController;
+  auto presenting = bottom.presentingViewController;
+  while (presenting) {
+    bottom = presenting;
+    presenting = bottom.presentingViewController;
+  }
+
+  return bottom;
+}
+
+- (void)nd_dismissWithAnimated:(BOOL)animated
+                    completion:(void (^)(void))completion {
+  auto presenting = self.presentingViewController;
+
+  if (presenting.presentedViewController == self) {
+    [presenting dismissViewControllerAnimated:animated completion:completion];
+  }
 }
 
 @end

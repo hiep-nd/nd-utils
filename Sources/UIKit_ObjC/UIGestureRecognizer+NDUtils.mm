@@ -24,13 +24,68 @@ using namespace std;
 
 @implementation NDUIGestureRecognizerDelegateHandlers
 
-@synthesize shouldBegin;
-@synthesize shouldRecognizeSimultaneouslyWithGestureRecognizer;
-@synthesize shouldRequireFailureOfGestureRecognizer;
-@synthesize shouldReceiveTouch;
-@synthesize shouldReceivePress;
-@synthesize shouldReceiveEvent;
-@synthesize shouldBeRequiredToFailByGestureRecognizer;
+namespace {
+template <typename T>
+void Set(NDUIGestureRecognizerDelegateHandlers* self, T& lv, T rv) {
+  nd::objc::Set<OBJC_ASSOCIATION_COPY_NONATOMIC>(self, lv, rv);
+  self.owner.delegate = nil;
+  self.owner.delegate = self;
+}
+}
+
+@synthesize shouldBegin = _shouldBegin;
+- (void)setShouldBegin:
+    (BOOL (^)(__kindof UIGestureRecognizer* _Nonnull))shouldBegin {
+  Set(self, _shouldBegin, shouldBegin);
+}
+
+@synthesize shouldRecognizeSimultaneouslyWithGestureRecognizer =
+    _shouldRecognizeSimultaneouslyWithGestureRecognizer;
+- (void)setShouldRecognizeSimultaneouslyWithGestureRecognizer:
+    (BOOL (^)(__kindof UIGestureRecognizer* _Nonnull,
+              UIGestureRecognizer* _Nonnull))
+        shouldRecognizeSimultaneouslyWithGestureRecognizer {
+  Set(self, _shouldRecognizeSimultaneouslyWithGestureRecognizer,
+      shouldRecognizeSimultaneouslyWithGestureRecognizer);
+}
+
+@synthesize shouldRequireFailureOfGestureRecognizer =
+    _shouldRequireFailureOfGestureRecognizer;
+- (void)setShouldRequireFailureOfGestureRecognizer:
+    (BOOL (^)(__kindof UIGestureRecognizer* _Nonnull,
+              UIGestureRecognizer* _Nonnull))
+        shouldRequireFailureOfGestureRecognizer {
+  Set(self, _shouldRequireFailureOfGestureRecognizer,
+      shouldRequireFailureOfGestureRecognizer);
+}
+
+@synthesize shouldReceiveTouch = _shouldReceiveTouch;
+- (void)setShouldReceiveTouch:(BOOL (^)(__kindof UIGestureRecognizer* _Nonnull,
+                                        UITouch* _Nonnull))shouldReceiveTouch {
+  Set(self, _shouldReceiveTouch, shouldReceiveTouch);
+}
+
+@synthesize shouldReceivePress = _shouldReceivePress;
+- (void)setShouldReceivePress:(BOOL (^)(__kindof UIGestureRecognizer* _Nonnull,
+                                        UIPress* _Nonnull))shouldReceivePress {
+  Set(self, _shouldReceivePress, shouldReceivePress);
+}
+
+@synthesize shouldReceiveEvent = _shouldReceiveEvent;
+- (void)setShouldReceiveEvent:(BOOL (^)(__kindof UIGestureRecognizer* _Nonnull,
+                                        UIEvent* _Nonnull))shouldReceiveEvent {
+  Set(self, _shouldReceiveEvent, shouldReceiveEvent);
+}
+
+@synthesize shouldBeRequiredToFailByGestureRecognizer =
+    _shouldBeRequiredToFailByGestureRecognizer;
+- (void)setShouldBeRequiredToFailByGestureRecognizer:
+    (BOOL (^)(__kindof UIGestureRecognizer* _Nonnull,
+              UIGestureRecognizer* _Nonnull))
+        shouldBeRequiredToFailByGestureRecognizer {
+  Set(self, _shouldBeRequiredToFailByGestureRecognizer,
+      shouldBeRequiredToFailByGestureRecognizer);
+}
 
 - (instancetype)initWithOwner:(UIGestureRecognizer*)owner {
   self = [super initWithOwner:owner];

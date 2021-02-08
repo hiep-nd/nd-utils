@@ -8,6 +8,14 @@ target 'Samples' do
   use_frameworks!
 
   # Pods for Samples
+#  pod 'NDUtils'
+#
+#  pod 'NDLog'
+#  pod 'NDMVVM'
+#  pod 'NDAutolayoutUtils'
+#  pod 'NDModificationOperators'
+#  pod 'NDManualObjects'
+
   pod 'NDUtils', :path => '.'
 
   pod 'NDLog', :path => '../NDLog'
@@ -15,7 +23,6 @@ target 'Samples' do
   pod 'NDAutolayoutUtils', :path => '../NDAutolayoutUtils'
   pod 'NDModificationOperators', :path => '../NDModificationOperators'
   pod 'NDManualObjects', :path => '../NDManualObjects'
-
 
   target 'SamplesTests' do
     # Pods for testing

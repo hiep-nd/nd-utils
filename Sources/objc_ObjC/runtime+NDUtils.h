@@ -10,6 +10,10 @@
 
 #ifdef __cplusplus
 
+#import <NDUtils/NSObject+NDUtils.h>
+
+#import <NDLog/NDLog.h>
+
 #import <vector>
 
 namespace nd {
@@ -58,6 +62,65 @@ inline void SwizzleMethods(
     const std::vector<std::tuple<SEL _Nonnull, SEL _Nonnull>>& sels) {
   for (auto& sel : sels) {
     SwizzleMethod(cls, std::get<0>(sel), std::get<1>(sel));
+  }
+}
+
+template <objc_AssociationPolicy policy, typename T>
+/// Default nonatomic setter (without self).
+/// @param lv the variable.
+/// @param rv the value.
+/// @param policy is
+/// OBJC_ASSOCIATION_ASSIGN|OBJC_ASSOCIATION_RETAIN_NONATOMIC|OBJC_ASSOCIATION_COPY_NONATOMIC.
+void Set(T& lv, T rv) {
+  static_assert(policy == OBJC_ASSOCIATION_ASSIGN ||
+                    policy == OBJC_ASSOCIATION_RETAIN_NONATOMIC ||
+                    policy == OBJC_ASSOCIATION_COPY_NONATOMIC,
+                "Nonatomic set with atomic policy.");
+
+  if (SameOrEquals(lv, rv)) {
+    return;
+  }
+
+  if (policy == OBJC_ASSOCIATION_ASSIGN ||
+      policy == OBJC_ASSOCIATION_RETAIN_NONATOMIC) {
+    lv = rv;
+  } else if (policy == OBJC_ASSOCIATION_COPY_NONATOMIC) {
+    lv = [rv copy];
+  }
+}
+
+template <objc_AssociationPolicy policy, typename T>
+/// Default setter.
+/// @param self the self.
+/// @param lv the variable.
+/// @param rv the value.
+void Set(id _Nonnull self, T& lv, T rv) {
+  static_assert(policy == OBJC_ASSOCIATION_ASSIGN ||
+                    policy == OBJC_ASSOCIATION_RETAIN_NONATOMIC ||
+                    policy == OBJC_ASSOCIATION_COPY_NONATOMIC ||
+                    policy == OBJC_ASSOCIATION_RETAIN ||
+                    policy == OBJC_ASSOCIATION_COPY,
+                "Set with invalid policy.");
+
+  if (policy == OBJC_ASSOCIATION_ASSIGN ||
+      policy == OBJC_ASSOCIATION_RETAIN_NONATOMIC ||
+      policy == OBJC_ASSOCIATION_COPY_NONATOMIC) {
+    Set<policy>(lv, rv);
+    return;
+  }
+
+  if (SameOrEquals(lv, rv)) {
+    return;
+  }
+
+  if (policy == OBJC_ASSOCIATION_RETAIN) {
+    @synchronized(self) {
+      lv = rv;
+    }
+  } else if (policy == OBJC_ASSOCIATION_COPY) {
+    @synchronized(self) {
+      lv = [rv copy];
+    }
   }
 }
 

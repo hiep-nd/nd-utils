@@ -22,6 +22,21 @@ using namespace std;
 
 @implementation NDUIUITextViewDelegateHandlers
 
+namespace {
+template <typename T>
+void Set(NDUIUITextViewDelegateHandlers* self, T& lv, T rv) {
+  nd::objc::Set<OBJC_ASSOCIATION_COPY_NONATOMIC>(self, lv, rv);
+  self.owner.delegate = nil;
+  self.owner.delegate = self;
+}
+}
+
+@synthesize didBeginEditing = _didBeginEditing;
+- (void)setDidBeginEditing:
+    (void (^)(__kindof UITextView* _Nonnull))didBeginEditing {
+  Set(self, _didBeginEditing, didBeginEditing);
+}
+
 // MARK: - UITextViewDelegate - optionals
 - (void)textViewDidBeginEditing:(UITextView*)textView {
   if (self.owner != textView) {

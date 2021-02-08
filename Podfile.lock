@@ -1,124 +1,124 @@
 PODS:
-  - NDAutolayoutUtils (0.0.7):
-    - NDAutolayoutUtils/Swift (= 0.0.7)
-  - NDAutolayoutUtils/Core (0.0.7):
-    - NDLog (~> 0.0.6)
-    - NDUtils/Foundation (~> 0.0.5)
-  - NDAutolayoutUtils/ObjC (0.0.7):
+  - NDAutolayoutUtils (1.0):
+    - NDAutolayoutUtils/Swift (= 1.0)
+  - NDAutolayoutUtils/Core (1.0):
+    - NDLog (~> 1.0)
+    - NDUtils/Foundation (~> 1.0)
+  - NDAutolayoutUtils/ObjC (1.0):
     - NDAutolayoutUtils/Core
-  - NDAutolayoutUtils/Swift (0.0.7):
+  - NDAutolayoutUtils/Swift (1.0):
     - NDAutolayoutUtils/Core
-  - NDLog (0.0.6.3):
-    - NDLog/Swift (= 0.0.6.3)
-  - NDLog/Core_ObjC (0.0.6.3)
-  - NDLog/Core_Swift (0.0.6.3):
+  - NDLog (1.0):
+    - NDLog/Swift (= 1.0)
+  - NDLog/Core_ObjC (1.0)
+  - NDLog/Core_Swift (1.0):
     - NDLog/Core_ObjC
-  - NDLog/ObjC (0.0.6.3):
+  - NDLog/ObjC (1.0):
     - NDLog/Core_ObjC
-  - NDLog/Swift (0.0.6.3):
+  - NDLog/Swift (1.0):
     - NDLog/Core_Swift
-  - NDManualObjects (0.0.8.2):
-    - NDLog/ObjC (~> 0.0.6)
-    - NDManualObjects/Swift (= 0.0.8.2)
-    - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDManualObjects/Abstracts_ObjC (0.0.8.2):
-    - NDLog/ObjC (~> 0.0.6)
+  - NDManualObjects (1.0):
+    - NDLog/ObjC (~> 1.0)
+    - NDManualObjects/Swift (= 1.0)
+    - NDUtils/objc_ObjC (~> 1.0)
+  - NDManualObjects/Abstracts_ObjC (1.0):
+    - NDLog/ObjC (~> 1.0)
     - NDManualObjects/Core_ObjC
-    - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDManualObjects/Abstracts_Swift (0.0.8.2):
-    - NDLog/ObjC (~> 0.0.6)
+    - NDUtils/objc_ObjC (~> 1.0)
+  - NDManualObjects/Abstracts_Swift (1.0):
+    - NDLog/ObjC (~> 1.0)
     - NDManualObjects/Abstracts_ObjC
-    - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDManualObjects/Core_ObjC (0.0.8.2):
-    - NDLog/ObjC (~> 0.0.6)
-    - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDManualObjects/Core_Swift (0.0.8.2):
-    - NDLog/ObjC (~> 0.0.6)
+    - NDUtils/objc_ObjC (~> 1.0)
+  - NDManualObjects/Core_ObjC (1.0):
+    - NDLog/ObjC (~> 1.0)
+    - NDUtils/objc_ObjC (~> 1.0)
+  - NDManualObjects/Core_Swift (1.0):
+    - NDLog/ObjC (~> 1.0)
     - NDManualObjects/Core_ObjC
-    - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDManualObjects/ObjC (0.0.8.2):
-    - NDLog/ObjC (~> 0.0.6)
+    - NDUtils/objc_ObjC (~> 1.0)
+  - NDManualObjects/ObjC (1.0):
+    - NDLog/ObjC (~> 1.0)
     - NDManualObjects/Abstracts_ObjC
     - NDManualObjects/Core_ObjC
     - NDManualObjects/Objects_ObjC
-    - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDManualObjects/Objects_ObjC (0.0.8.2):
-    - NDLog/ObjC (~> 0.0.6)
+    - NDUtils/objc_ObjC (~> 1.0)
+  - NDManualObjects/Objects_ObjC (1.0):
+    - NDLog/ObjC (~> 1.0)
     - NDManualObjects/Abstracts_ObjC
-    - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDManualObjects/Objects_Swift (0.0.8.2):
-    - NDLog/ObjC (~> 0.0.6)
+    - NDUtils/objc_ObjC (~> 1.0)
+  - NDManualObjects/Objects_Swift (1.0):
+    - NDLog/ObjC (~> 1.0)
     - NDManualObjects/Objects_ObjC
-    - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDManualObjects/Swift (0.0.8.2):
-    - NDLog/ObjC (~> 0.0.6)
+    - NDUtils/objc_ObjC (~> 1.0)
+  - NDManualObjects/Swift (1.0):
+    - NDLog/ObjC (~> 1.0)
     - NDManualObjects/Abstracts_Swift
     - NDManualObjects/Core_Swift
     - NDManualObjects/Objects_Swift
-    - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDModificationOperators (0.0.3.1):
-    - NDModificationOperators/Swift (= 0.0.3.1)
-  - NDModificationOperators/Swift (0.0.3.1)
-  - NDMVVM (0.0.4.2):
-    - NDMVVM/Swift (= 0.0.4.2)
-  - NDMVVM/Abstracts_ObjC (0.0.4.2):
-    - NDLog/ObjC (~> 0.0.6)
+    - NDUtils/objc_ObjC (~> 1.0)
+  - NDModificationOperators (1.0):
+    - NDModificationOperators/Swift (= 1.0)
+  - NDModificationOperators/Swift (1.0)
+  - NDMVVM (1.0):
+    - NDMVVM/Swift (= 1.0)
+  - NDMVVM/Abstracts_ObjC (1.0):
+    - NDLog/ObjC (~> 1.0)
     - NDMVVM/Core_ObjC
-    - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDMVVM/Abstracts_Swift (0.0.4.2):
+    - NDUtils/objc_ObjC (~> 1.0)
+  - NDMVVM/Abstracts_Swift (1.0):
     - NDMVVM/Abstracts_ObjC
-  - NDMVVM/Core_ObjC (0.0.4.2)
-  - NDMVVM/Core_Swift (0.0.4.2):
+  - NDMVVM/Core_ObjC (1.0)
+  - NDMVVM/Core_Swift (1.0):
     - NDMVVM/Core_ObjC
-  - NDMVVM/Swift (0.0.4.2):
+  - NDMVVM/Swift (1.0):
     - NDMVVM/Abstracts_Swift
     - NDMVVM/Core_Swift
     - NDMVVM/ViewModels_Swift
     - NDMVVM/Views_Swift
-  - NDMVVM/ViewModels_ObjC (0.0.4.2):
-    - NDLog/ObjC (~> 0.0.6)
+  - NDMVVM/ViewModels_ObjC (1.0):
+    - NDLog/ObjC (~> 1.0)
     - NDMVVM/Abstracts_ObjC
-    - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDMVVM/ViewModels_Swift (0.0.4.2):
+    - NDUtils/objc_ObjC (~> 1.0)
+  - NDMVVM/ViewModels_Swift (1.0):
     - NDMVVM/ViewModels_ObjC
-  - NDMVVM/Views_ObjC (0.0.4.2):
-    - NDAutolayoutUtils/ObjC (~> 0.0.7)
-    - NDLog/ObjC (~> 0.0.6)
-    - NDManualObjects/ObjC (~> 0.0.8)
+  - NDMVVM/Views_ObjC (1.0):
+    - NDAutolayoutUtils/ObjC (~> 1.0)
+    - NDLog/ObjC (~> 1.0)
+    - NDManualObjects/ObjC (~> 1.0)
     - NDMVVM/Abstracts_ObjC
-    - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDMVVM/Views_Swift (0.0.4.2):
+    - NDUtils/UIKit_ObjC (~> 1.0)
+  - NDMVVM/Views_Swift (1.0):
     - NDMVVM/Views_ObjC
-    - NDUtils/UIKit_Swift (~> 0.0.5)
-  - NDUtils (0.0.5.1):
-    - NDUtils/Swift (= 0.0.5.1)
-  - NDUtils/Core_ObjC (0.0.5.1)
-  - NDUtils/Core_Swift (0.0.5.1):
+    - NDUtils/UIKit_Swift (~> 1.0)
+  - NDUtils (1.0):
+    - NDUtils/Swift (= 1.0)
+  - NDUtils/Core_ObjC (1.0)
+  - NDUtils/Core_Swift (1.0):
     - NDUtils/Core_ObjC
-  - NDUtils/CoreGraphics_ObjC (0.0.5.1)
-  - NDUtils/CoreGraphics_Swift (0.0.5.1):
+  - NDUtils/CoreGraphics_ObjC (1.0)
+  - NDUtils/CoreGraphics_Swift (1.0):
     - NDUtils/CoreGraphics_ObjC
-  - NDUtils/Foundation (0.0.5.1):
+  - NDUtils/Foundation (1.0):
     - NDUtils/Foundation_Swift
-  - NDUtils/Foundation_ObjC (0.0.5.1):
-    - NDLog/ObjC (~> 0.0.6)
+  - NDUtils/Foundation_ObjC (1.0):
+    - NDLog/ObjC (~> 1.0)
     - NDUtils/objc_ObjC
-  - NDUtils/Foundation_Swift (0.0.5.1):
+  - NDUtils/Foundation_Swift (1.0):
     - NDUtils/Foundation_ObjC
-  - NDUtils/libextobjc_ObjC (0.0.5.1):
+  - NDUtils/libextobjc_ObjC (1.0):
     - NDUtils/Core_ObjC
-  - NDUtils/libextobjc_Swift (0.0.5.1):
+  - NDUtils/libextobjc_Swift (1.0):
     - NDUtils/libextobjc_ObjC
-  - NDUtils/objc_ObjC (0.0.5.1):
-    - NDLog/ObjC (~> 0.0.6)
+  - NDUtils/objc_ObjC (1.0):
+    - NDLog/ObjC (~> 1.0)
     - NDUtils/Core_ObjC
-  - NDUtils/objc_Swift (0.0.5.1):
+  - NDUtils/objc_Swift (1.0):
     - NDUtils/objc_ObjC
-  - NDUtils/QuartzCore_ObjC (0.0.5.1):
+  - NDUtils/QuartzCore_ObjC (1.0):
     - NDUtils/objc_ObjC
-  - NDUtils/QuartzCore_Swift (0.0.5.1):
+  - NDUtils/QuartzCore_Swift (1.0):
     - NDUtils/QuartzCore_ObjC
-  - NDUtils/Swift (0.0.5.1):
+  - NDUtils/Swift (1.0):
     - NDUtils/Core_Swift
     - NDUtils/CoreGraphics_Swift
     - NDUtils/Foundation_Swift
@@ -126,11 +126,12 @@ PODS:
     - NDUtils/objc_Swift
     - NDUtils/QuartzCore_Swift
     - NDUtils/UIKit_Swift
-  - NDUtils/UIKit_ObjC (0.0.5.1):
+  - NDUtils/UIKit_ObjC (1.0):
     - NDUtils/CoreGraphics_ObjC
+    - NDUtils/Foundation_ObjC
     - NDUtils/libextobjc_ObjC
     - NDUtils/QuartzCore_ObjC
-  - NDUtils/UIKit_Swift (0.0.5.1):
+  - NDUtils/UIKit_Swift (1.0):
     - NDUtils/UIKit_ObjC
 
 DEPENDENCIES:
@@ -156,13 +157,13 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  NDAutolayoutUtils: 82fc48d4cba9e7a0d1dfce819cc36e74ed60514d
-  NDLog: 783141ece6ac6a398262145b59cc7c27b80ab58d
-  NDManualObjects: 352b918cd30731fabb7649cb6384b0e2c7a6d9c1
-  NDModificationOperators: ce7cf4900dd8c49546cda0e8ae465bb02d74e089
-  NDMVVM: d025a234fde6848460f958663ef7fc84008f3448
-  NDUtils: 3e101a0b09037a7a8a5e2bbd419253788879b754
+  NDAutolayoutUtils: 5f95bc90b92a5e90e7331672af0489872d57a77f
+  NDLog: 81509c11e58a8143df72d3793a79d436f6e2d6d8
+  NDManualObjects: d9df10ba12498465ae6f96d4b61dc2fecb785a3f
+  NDModificationOperators: 6599c843fc9d945ac03eb01689f635144e95905c
+  NDMVVM: 6b5599cdcfca4f5e3be099274aad291a99267ba1
+  NDUtils: 88150120d1391b58493e5245019e4ad6224c1362
 
-PODFILE CHECKSUM: 79d4c69a0975c245ed77802980d1e2357969d61a
+PODFILE CHECKSUM: 41bc2f9d51abcd7514d882c509d8659fb064bdfd
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

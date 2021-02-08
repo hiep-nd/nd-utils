@@ -10,13 +10,29 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NSString* NDUIViewControllerPanDownToDismissOptionsKey
+    NS_TYPED_EXTENSIBLE_ENUM;
+
+/// UIScrollView
+UIKIT_EXTERN NDUIViewControllerPanDownToDismissOptionsKey const
+    NDUIViewControllerPanDownToDismissOptionsKeyScrollView
+        NS_SWIFT_NAME(scrollView);
+
+/// Time interval, 0..
+UIKIT_EXTERN NDUIViewControllerPanDownToDismissOptionsKey const
+    NDUIViewControllerPanDownToDismissOptionsKeyTransitionDuration
+        NS_SWIFT_NAME(transitionDuration);
+
+/// CGFloat, 0..1
+UIKIT_EXTERN NDUIViewControllerPanDownToDismissOptionsKey const
+    NDUIViewControllerPanDownToDismissOptionsKeyPercentThreshold
+        NS_SWIFT_NAME(percentThreshold);
+
 @interface UIViewController (NDUtils_PanDownToDismiss)
 
-@property(nonatomic, assign, readonly) BOOL nd_panDownToDismiss;
-- (void)nd_enablePanDownToDismissWithScrollView:
-            (UIScrollView* _Nullable)scrollView
-                 didFinishInteractiveTransition:
-                     (void (^_Nullable)(void))didFinishInteractiveTransition;
+- (void)nd_enablePanDownToDismissWithOptions:
+    (NSDictionary<NDUIViewControllerPanDownToDismissOptionsKey, id>* _Nullable)
+        options NS_REFINED_FOR_SWIFT;
 - (void)nd_disablePanDownToDismiss;
 
 @end

@@ -9,19 +9,37 @@
 #import <NDUtils/UIImagePickerController+NDUtils.h>
 
 #import <NDLog/NDLog.h>
-#import <NDUtils/NDMacros+NDUtils.h>
-#import <NDUtils/runtime+NDUtils.h>
+#import <NDUtils/objc+NDUtils.h>
 
 #import <map>
 
 using namespace nd::objc;
 using namespace std;
 
-@interface NDUIImagePickerControllerDelegateHandlers () <
-    UIImagePickerControllerDelegate>
-@end
-
 @implementation NDUIImagePickerControllerDelegateHandlers
+
+namespace {
+template <typename T>
+void Set(NDUIImagePickerControllerDelegateHandlers* self, T& lv, T rv) {
+  nd::objc::Set<OBJC_ASSOCIATION_COPY_NONATOMIC>(self, lv, rv);
+  self.owner.delegate = nil;
+  self.owner.delegate = self;
+}
+}
+
+@synthesize didFinishPickingMediaWithInfo = _didFinishPickingMediaWithInfo;
+- (void)setDidFinishPickingMediaWithInfo:
+    (void (^)(__kindof UIImagePickerController* _Nonnull,
+              NSDictionary<UIImagePickerControllerInfoKey, id>* _Nonnull))
+        didFinishPickingMediaWithInfo {
+  Set(self, _didFinishPickingMediaWithInfo, didFinishPickingMediaWithInfo);
+}
+
+@synthesize didCancel = _didCancel;
+- (void)setDidCancel:
+    (void (^)(__kindof UIImagePickerController* _Nonnull))didCancel {
+  Set(self, _didCancel, didCancel);
+}
 
 - (instancetype)initWithOwner:(id)owner {
   self = [super initWithOwner:owner];

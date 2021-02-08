@@ -57,6 +57,17 @@ NS_SWIFT_NAME(NDUIViewControllerTransitioningDelegateHandlesProtocol)
 @property(nonatomic, strong, readonly)
     __kindof id<NDUIViewControllerTransitioningDelegateHandles>
         nd_transitioningDelegateHandlers;
+@property(nonatomic, readonly)
+    UIViewController* _Nullable nd_topPresentedViewController;
+@property(nonatomic, readonly)
+    UIViewController* _Nullable nd_bottomPresentingViewController;
+
+/// Dismiss this view controller.
+/// @param animated The animated.
+/// @param completion The completion.
+- (void)nd_dismissWithAnimated:(BOOL)animated
+                    completion:(void (^_Nullable)(void))completion
+    NS_REFINED_FOR_SWIFT;
 
 @end
 

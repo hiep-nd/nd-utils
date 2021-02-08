@@ -12,9 +12,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// clang-format off
 @interface NDUINavigationControllerDelegateHandlers
-    : NDPossession <UINavigationController*>
+    : NDPossession <UINavigationController*> <UINavigationControllerDelegate>
+
 @end
+// clang-format on
 
 @interface UINavigationController (NDUtils)
 

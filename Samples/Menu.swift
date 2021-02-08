@@ -14,38 +14,71 @@ import StoreKit
 class MenuViewModel: NDViewModel {
   lazy private(set) var listViewModel = NDListViewModel(itemViewModels: [
     TextSelectableViewModel(identifier: "item") • {
+      $0.text = "Pan down to dismiss - without scoll view"
+      $0.select.addHandler { [weak self] _ in
+        (self?.view as? MenuViewController)?.present(
+          UIControlViewController() • {
+            $0.view.backgroundColor = .green
+            $0.modalPresentationStyle = .fullScreen
+            $0.nd_enablePanDownToDismiss()
+          },
+          animated: true
+        )
+      }
+    },
+    TextSelectableViewModel(identifier: "item") • {
+      $0.text = "Pan down to dismiss - with scroll view"
+      $0.select.addHandler { [weak self] _ in
+        (self?.view as? MenuViewController)?.present(
+          NDTableViewController() • {
+            $0.view.backgroundColor = .green
+            $0.modalPresentationStyle = .fullScreen
+            $0.register(identifier: "item", class: TextTableViewCell.self)
+            nd_connect(
+              viewModel: NDListViewModel(itemViewModels: (0...100).map {
+                let text = "Item \($0)"
+                return TextItemViewModel(identifier: "item") • { $0.text = text }
+              }),
+              view: $0
+            )
+            $0.nd_enablePanDownToDismiss(
+              options: [
+                .scrollView: $0.tableView!
+              ]
+            )
+          },
+          animated: true
+        )
+      }
+    },
+    TextSelectableViewModel(identifier: "item") • {
       $0.text = "Swipe to dismiss"
       $0.select.addHandler { [weak self] _ in
-        let now = Date()
-        (self?.view as? MenuViewController)?
-          .present(UIControlViewController() • {
+        (self?.view as? MenuViewController)?.present(
+          UIControlViewController() • {
             $0.view.backgroundColor = .green
             $0.modalPresentationStyle = .fullScreen
             $0.nd_enableSlideTransitioning(options: [
               .coverAlpha: 0.4,
-//              .transitionDuration: 0.33,
               .dockingEdge: UIRectEdge.left,
               .panPercentThreshold: 0.8
             ])
           },
-          animated: true,
-          completion: {
-            print(Date().timeIntervalSince(now))
-          })
+          animated: true
+        )
       }
     },
     TextSelectableViewModel(identifier: "item") • {
-      $0.text = "Swipe to dismiss 2"
-      $0.select.addHandler { [weak self] _ in
-        let now = Date()
-        (self?.view as? MenuViewController)?
-          .present(SFSafariViewController(url: URL(string: "https://google.com")!) • {
-            $0.modalPresentationStyle = .fullScreen
-          },
-          animated: true,
-          completion: {
-            print(Date().timeIntervalSince(now))
-          })
+      $0.text = "UIImagePickerController"
+      $0.select.addHandler { [unowned self] _ in
+        (self.view as? UIViewController)?.nd_present(
+          UIImagePickerController() • {
+            $0.nd_delegateHandlers.didFinishPickingMediaWithInfo = {
+              print(($1[.originalImage] as? UIImage)?.size ?? "nil")
+              $0.nd_dismiss()
+            }
+          }
+        )
       }
     },
     TextSelectableViewModel(identifier: "item") • {
@@ -107,15 +140,14 @@ class MenuViewController: NDViewController {
     super.didSetViewModel(fromOldViewModel: oldViewModel)
     nd_connect(viewModel: (viewModel as? MenuViewModel)?.listViewModel, view: listViewController)
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    self.dismiss(animated: true)
-  }
 }
 
 protocol TextItemViewModelProtocol: NDItemViewModelProtocol {
   var text: String { get }
+}
+
+class TextItemViewModel: NDItemViewModel, TextItemViewModelProtocol {
+  var text = ""
 }
 
 class TextSelectableViewModel: NDSelectableItemViewModel, TextItemViewModelProtocol {

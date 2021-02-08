@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NDUtils"
-  s.version      = "0.0.5.2"
+  s.version      = "1.0"
   s.summary      = "Utility for Foundation, UIKit,...."
   s.description  = <<-DESC
   NDUtils is a small utility framework for Foundation, UIKit,....
@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'Sources/objc_ObjC/*.{h,m,mm,swift}'
 
     ss.dependency 'NDUtils/Core_ObjC'
-    ss.dependency 'NDLog/ObjC', '~> 0.0.6'
+    ss.dependency 'NDLog/ObjC', '~> 1.0'
   end
 
   s.subspec 'objc_Swift' do |ss|
@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
     ss.framework = 'Foundation'
 
     ss.dependency 'NDUtils/objc_ObjC'
-    ss.dependency 'NDLog/ObjC', '~> 0.0.6'
+    ss.dependency 'NDLog/ObjC', '~> 1.0'
   end
 
   s.subspec 'Foundation_Swift' do |ss|

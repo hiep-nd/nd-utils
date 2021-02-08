@@ -22,13 +22,32 @@ using namespace std;
 
 @implementation NDUITextFieldDelegateHandlers
 
+namespace {
+template <typename T>
+void Set(NDUITextFieldDelegateHandlers* self, T& lv, T rv) {
+  nd::objc::Set<OBJC_ASSOCIATION_COPY_NONATOMIC>(self, lv, rv);
+  self.owner.delegate = nil;
+  self.owner.delegate = self;
+}
+}
+
+@synthesize didBeginEditing = _didBeginEditing;
+- (void)setDidBeginEditing:
+    (void (^)(__kindof UITextField* _Nonnull))didBeginEditing {
+  Set(self, _didBeginEditing, didBeginEditing);
+}
+
+@synthesize shouldReturn = _shouldReturn;
+- (void)setShouldReturn:(BOOL (^)(__kindof UITextField* _Nonnull))shouldReturn {
+  Set(self, _shouldReturn, shouldReturn);
+}
+
 - (instancetype)initWithOwner:(UITextField*)owner {
   self = [super initWithOwner:owner];
   if (self) {
     owner.delegate = self;
   }
   return self;
-  ;
 }
 
 // MARK: - UITextFieldDelegate - optionals

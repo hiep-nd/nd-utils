@@ -17,10 +17,6 @@
 
 using namespace nd::objc;
 
-@interface NDUINavigationControllerDelegateHandlers () <
-    UINavigationControllerDelegate>
-@end
-
 @implementation NDUINavigationControllerDelegateHandlers
 
 - (instancetype)initWithOwner:(UINavigationController*)owner {
@@ -29,7 +25,6 @@ using namespace nd::objc;
     owner.delegate = self;
   }
   return self;
-  ;
 }
 
 @end

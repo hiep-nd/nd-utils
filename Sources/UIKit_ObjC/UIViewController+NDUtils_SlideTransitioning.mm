@@ -39,21 +39,33 @@ NDUIViewControllerSlideTransitioningOptionsKey const
     NDUIViewControllerSlideTransitioningOptionsKeyPanPercentThreshold =
         @"NDUIViewControllerSlideTransitioningOptionsKeyPanPercentThreshold";
 
-@implementation UIViewController (NDUtils_SwipeToDismiss)
+@implementation UIViewController (NDUtils_SlideTransitioning)
 
 - (void)nd_enableSlideTransitioningWithOptions:
     (NSDictionary<NDUIViewControllerSlideTransitioningOptionsKey, id>*)options {
+  // options
   auto transitionDuration =
       Get<NSNumber>(
           options,
           NDUIViewControllerSlideTransitioningOptionsKeyTransitionDuration,
-          @(1.0/3))
+          @(1.0 / 3))
           .nd_NSTimeIntervalValue;
+  if (transitionDuration < 0) {
+    NDDAssertionFailure(@"Invalid transition duration: '%g'.",
+                        transitionDuration);
+    transitionDuration = 1.0 / 3;
+  }
+
   auto coverAlpha =
       Get<NSNumber>(options,
                     NDUIViewControllerSlideTransitioningOptionsKeyCoverAlpha,
                     @(0.4))
           .nd_CGFloatValue;
+  if (coverAlpha < 0 || coverAlpha > 1) {
+    NDDAssertionFailure(@"Invalid cover alpha: '%g'.", coverAlpha);
+    coverAlpha = 0.4;
+  }
+
   auto dockingEdge =
       Get<NSNumber>(options,
                     NDUIViewControllerSlideTransitioningOptionsKeyDockingEdge,
@@ -61,14 +73,22 @@ NDUIViewControllerSlideTransitioningOptionsKey const
           .nd_UIRectEdgeValue;
   if ((dockingEdge != UIRectEdgeLeft) && (dockingEdge != UIRectEdgeRight) &&
       (dockingEdge != UIRectEdgeTop) && (dockingEdge != UIRectEdgeBottom)) {
+    NDDAssertionFailure(@"Invalid docking edge: '%lu'.",
+                        (unsigned long)dockingEdge);
     dockingEdge = UIRectEdgeLeft;
   }
+
   auto percentThreshold =
       Get<NSNumber>(
           options,
           NDUIViewControllerSlideTransitioningOptionsKeyPanPercentThreshold,
           @(0.5))
           .nd_CGFloatValue;
+  if (percentThreshold < 0 || percentThreshold > 1) {
+    NDDAssertionFailure(@"Invalid percent threshold: '%g'.", percentThreshold);
+    percentThreshold = 0.5;
+  }
+
   auto hiddenFrame = [=](CGRect rect) {
     switch (dockingEdge) {
       case UIRectEdgeRight:

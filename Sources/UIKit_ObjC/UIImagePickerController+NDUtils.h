@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NDUIImagePickerControllerDelegateHandlers
-    : NDUINavigationControllerDelegateHandlers
+    : NDUINavigationControllerDelegateHandlers <UIImagePickerControllerDelegate>
 
 // The picker does not dismiss itself; the client dismisses it in these
 // callbacks. The delegate will receive one or the other, but not both,

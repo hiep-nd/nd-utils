@@ -8,7 +8,6 @@
 import NDMVVM
 import NDModificationOperators
 import NDLog
-//import NDAutolayoutUtils
 
 class UIGestureRecognizerViewController: NDViewController {
   override func manualInit() {
@@ -65,21 +64,5 @@ class UIControlViewController: NDViewController {
       },
       visualConstraints: ["V:[safeArea_center][item_center]", "H:[safeArea_center][item_center]"]
     )
-    let labels = [
-      UILabel() • { $0.text = "Zero" },
-      UILabel() • { $0.text = "One" },
-      UILabel() • { $0.text = "Two" },
-      UILabel() • { $0.text = "Three" },
-      UILabel() • { $0.text = "Four" },
-      UILabel() • { $0.text = "Five" },
-      UILabel() • { $0.text = "Six" }
-    ] • { $0.forEach { $0.frame = .init(origin: .zero, size: .init(width: 100, height: 100)) } }
-
-    view.addSubview(labels[0])
-    view.addSubview(labels[1])
-    view.addSubview(labels[2])
-    view.insertSubview(labels[3], at: 2)
-    view.insertSubview(labels[4], belowSubview: labels[2])
-    view.insertSubview(labels[5], aboveSubview: labels[2])
   }
 }
